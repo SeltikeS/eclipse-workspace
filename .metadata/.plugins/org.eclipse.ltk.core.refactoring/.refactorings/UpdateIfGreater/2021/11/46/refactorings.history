@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;UpdateIfGreater/src/UpgradeIfGreater.cpp&apos; to &apos;UpdateIfGreater.cpp&apos;" description="Rename resource &apos;UpgradeIfGreater.cpp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="src/UpgradeIfGreater.cpp" name="UpdateIfGreater.cpp" stamp="1637484685920" updateReferences="true"/>
+</session>

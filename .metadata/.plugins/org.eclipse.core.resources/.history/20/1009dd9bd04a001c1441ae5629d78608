@@ -1,0 +1,27 @@
+//============================================================================
+// Name        : Concerns.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <vector>
+#include <string>
+using namespace std;
+
+int main() {
+
+	vector<int> month = { 31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31 };
+	int counter = 0;
+
+	vector<vector<string>> days(month[counter]);
+
+	int q;
+	cin >> q;
+
+
+
+	return 0;
+}

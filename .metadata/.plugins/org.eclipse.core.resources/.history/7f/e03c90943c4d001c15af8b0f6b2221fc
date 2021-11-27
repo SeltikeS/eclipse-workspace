@@ -1,0 +1,39 @@
+//============================================================================
+// Name        : Synonyms.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <string>
+#include <set>
+#include <map>
+using namespace std;
+
+int main() {
+
+	int q;
+	cin >> q;
+
+	for(int i = 0; i < q; ++i){
+		string command;
+		cin >> command;
+
+		map<string, set<string>> dictionary;
+
+		if(command == "ADD"){
+			string s1, s2;
+			cin >> s1 >> s2;
+
+			dictionary[s1].insert(s2);
+		} else if(command == "COUNT") {
+
+		} else if(command == "CHECK") {
+
+		}
+	}
+
+	return 0;
+}

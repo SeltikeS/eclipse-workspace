@@ -1,0 +1,29 @@
+//============================================================================
+// Name        : Nod.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+using namespace std;
+
+int main() {
+
+	int a, b;
+	std::cin >> a >> b;
+
+	int nod = 1;
+
+	for(int i = a; i >= 1; --i) {
+		if(((a%i) == 0) && ((b%i) == 0)) {
+			nod = i;
+			break;
+		}
+	}
+
+	std::cout << nod << std::endl;
+
+	return 0;
+}

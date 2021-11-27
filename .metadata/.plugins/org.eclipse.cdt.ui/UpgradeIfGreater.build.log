@@ -1,0 +1,11 @@
+11:50:17 **** Rebuild of configuration Debug for project UpgradeIfGreater ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\UpgradeIfGreater.o" "..\\src\\UpgradeIfGreater.cpp" 
+..\src\UpgradeIfGreater.cpp: In function 'int main()':
+..\src\UpgradeIfGreater.cpp:22:9: error: 'UpdateIfGreater' was not declared in this scope; did you mean 'UpgradeIfGreater'?
+   22 |         UpdateIfGreater(a, b);
+      |         ^~~~~~~~~~~~~~~
+      |         UpgradeIfGreater
+
+11:50:17 Build Failed. 1 errors, 0 warnings. (took 400ms)
+

@@ -1,0 +1,36 @@
+//============================================================================
+// Name        : sorted_strings.cpp
+// Author      : 
+// Version     :
+// Copyright   : Your copyright notice
+// Description : Hello World in C++, Ansi-style
+//============================================================================
+
+#include <iostream>
+#include <string>
+#include <vector>
+#include <algorithm>
+using namespace std;
+
+class SortedStrings {
+public:
+  void AddString(const string& s) {
+    // добавить строку s в набор
+	  strings.push_back(s);
+  }
+  vector<string> GetSortedStrings() {
+    // получить набор из всех добавленных строк в отсортированном порядке
+	  sort(strings.begin(), strings.end());
+	  return strings;
+  }
+private:
+  // приватные поля
+  vector<string> strings;
+};
+
+int main() {
+
+
+
+	return 0;
+}
