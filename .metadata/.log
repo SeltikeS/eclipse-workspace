@@ -4634,3 +4634,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.cdt.core 1 0 2021-11-27 20:08:04.954
 !MESSAGE Indexed 'FirstAndLastNames1' (1 sources, 143 headers) in 5,04 sec: 16 712 declarations; 26 362 references; 0 unresolved inclusions; 9 syntax errors; 19 unresolved names (0,044 %)
+
+!ENTRY org.eclipse.cdt.core 1 0 2021-11-27 20:27:38.250
+!MESSAGE Indexed 'FisrtAndLastNames2' (1 sources, 143 headers) in 2,13 sec: 16 712 declarations; 26 362 references; 0 unresolved inclusions; 9 syntax errors; 19 unresolved names (0,044 %)

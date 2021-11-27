@@ -2105,3 +2105,1486 @@ g++ -o FirstAndLastNames1.exe "src\\FirstAndLastNames1.o"
 Info: Nothing to build for SortModul
 Info: Nothing to build for SortWithoutRegister
 Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+20:31:06 **** Rebuild of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+20:37:59 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::GetFullName(int)':
+..\src\FisrtAndLastNames2.cpp:34:54: error: no matching function for call to 'Person::getThisYearName(std::map<int, std::__cxx11::basic_string<char> >&)'
+   34 |         string this_year_first_name = getThisYearName(m_first_names);
+      |                                       ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+..\src\FisrtAndLastNames2.cpp:73:12: note: candidate: 'std::string Person::getThisYearName(const std::map<int, std::__cxx11::basic_string<char> >&, int)'
+   73 |     string getThisYearName(const map<int, string>& name, int year) {
+      |            ^~~~~~~~~~~~~~~
+..\src\FisrtAndLastNames2.cpp:73:12: note:   candidate expects 2 arguments, 1 provided
+..\src\FisrtAndLastNames2.cpp:35:53: error: no matching function for call to 'Person::getThisYearName(std::map<int, std::__cxx11::basic_string<char> >&)'
+   35 |         string this_year_last_name = getThisYearName(m_last_names);
+      |                                      ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+..\src\FisrtAndLastNames2.cpp:73:12: note: candidate: 'std::string Person::getThisYearName(const std::map<int, std::__cxx11::basic_string<char> >&, int)'
+   73 |     string getThisYearName(const map<int, string>& name, int year) {
+      |            ^~~~~~~~~~~~~~~
+..\src\FisrtAndLastNames2.cpp:73:12: note:   candidate expects 2 arguments, 1 provided
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::GetFullNameWithHistory(int)':
+..\src\FisrtAndLastNames2.cpp:67:5: error: expected primary-expression before '}' token
+   67 |     }
+      |     ^
+..\src\FisrtAndLastNames2.cpp:67:5: error: expected ';' before '}' token
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+20:38:27 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::GetFullName(int)':
+..\src\FisrtAndLastNames2.cpp:34:54: error: no matching function for call to 'Person::getThisYearName(std::map<int, std::__cxx11::basic_string<char> >&)'
+   34 |         string this_year_first_name = getThisYearName(m_first_names);
+      |                                       ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~
+..\src\FisrtAndLastNames2.cpp:73:12: note: candidate: 'std::string Person::getThisYearName(const std::map<int, std::__cxx11::basic_string<char> >&, int)'
+   73 |     string getThisYearName(const map<int, string>& name, int year) {
+      |            ^~~~~~~~~~~~~~~
+..\src\FisrtAndLastNames2.cpp:73:12: note:   candidate expects 2 arguments, 1 provided
+..\src\FisrtAndLastNames2.cpp:35:53: error: no matching function for call to 'Person::getThisYearName(std::map<int, std::__cxx11::basic_string<char> >&)'
+   35 |         string this_year_last_name = getThisYearName(m_last_names);
+      |                                      ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~
+..\src\FisrtAndLastNames2.cpp:73:12: note: candidate: 'std::string Person::getThisYearName(const std::map<int, std::__cxx11::basic_string<char> >&, int)'
+   73 |     string getThisYearName(const map<int, string>& name, int year) {
+      |            ^~~~~~~~~~~~~~~
+..\src\FisrtAndLastNames2.cpp:73:12: note:   candidate expects 2 arguments, 1 provided
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::GetFullNameWithHistory(int)':
+..\src\FisrtAndLastNames2.cpp:66:9: error: return-statement with no value, in function returning 'std::string' {aka 'std::__cxx11::basic_string<char>'} [-fpermissive]
+   66 |         return ;
+      |         ^~~~~~
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+20:38:47 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::GetFullNameWithHistory(int)':
+..\src\FisrtAndLastNames2.cpp:66:9: error: return-statement with no value, in function returning 'std::string' {aka 'std::__cxx11::basic_string<char>'} [-fpermissive]
+   66 |         return ;
+      |         ^~~~~~
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+20:38:58 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::GetFullNameWithHistory(int)':
+..\src\FisrtAndLastNames2.cpp:66:9: error: return-statement with no value, in function returning 'std::string' {aka 'std::__cxx11::basic_string<char>'} [-fpermissive]
+   66 |         return ;
+      |         ^~~~~~
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+20:39:12 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+20:42:40 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+20:43:17 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+20:43:32 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+20:43:38 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+20:47:02 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::GetFullNameWithHistory(int)':
+..\src\FisrtAndLastNames2.cpp:56:9: error: return-statement with no value, in function returning 'std::string' {aka 'std::__cxx11::basic_string<char>'} [-fpermissive]
+   56 |         return ;
+      |         ^~~~~~
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+20:47:29 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for FirstAndLastNames1
+20:53:23 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::GetFullNameWithHistory(int)':
+..\src\FisrtAndLastNames2.cpp:60:9: error: return-statement with no value, in function returning 'std::string' {aka 'std::__cxx11::basic_string<char>'} [-fpermissive]
+   60 |         return ;
+      |         ^~~~~~
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::getNameHistory(const std::map<int, std::__cxx11::basic_string<char> >&, const int&)':
+..\src\FisrtAndLastNames2.cpp:83:5: warning: no return statement in function returning non-void [-Wreturn-type]
+   83 |     }
+      |     ^
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+21:03:42 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::GetFullNameWithHistory(int)':
+..\src\FisrtAndLastNames2.cpp:64:30: error: no match for 'operator>' (operand types are 'std::string' {aka 'std::__cxx11::basic_string<char>'} and 'int')
+   64 |         if(last_name_history > 0) {
+      |            ~~~~~~~~~~~~~~~~~ ^ ~
+      |            |                   |
+      |            |                   int
+      |            std::string {aka std::__cxx11::basic_string<char>}
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:64,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_pair.h:502:5: note: candidate: 'template<class _T1, class _T2> constexpr bool std::operator>(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)'
+  502 |     operator>(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_pair.h:502:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::pair<_T1, _T2>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:437:5: note: candidate: 'template<class _Iterator> constexpr bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)'
+  437 |     operator>(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:437:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:476:5: note: candidate: 'template<class _IteratorL, class _IteratorR> constexpr bool std::operator>(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)'
+  476 |     operator>(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:476:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1575:5: note: candidate: 'template<class _IteratorL, class _IteratorR> constexpr bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)'
+ 1575 |     operator>(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1575:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::move_iterator<_IteratorL>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1625:5: note: candidate: 'template<class _Iterator> constexpr bool std::operator>(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)'
+ 1625 |     operator>(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1625:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::move_iterator<_IteratorL>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:607:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator>(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)'
+  607 |     operator> (basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:607:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::__cxx11::basic_string<char>' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:613:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator>(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)'
+  613 |     operator> (basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:613:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::__cxx11::basic_string<char>' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:620:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator>(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)'
+  620 |     operator> (__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:620:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   mismatched types 'std::basic_string_view<_CharT, _Traits>' and 'int'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6377:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6377 |     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6377:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'int'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6390:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)'
+ 6390 |     operator>(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6390:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   mismatched types 'const _CharT*' and 'int'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6402:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator>(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6402 |     operator>(const _CharT* __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6402:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   mismatched types 'const _CharT*' and 'std::__cxx11::basic_string<char>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\tuple:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:63,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\array:320:5: note: candidate: 'template<class _Tp, long long unsigned int _Nm> bool std::operator>(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)'
+  320 |     operator>(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\array:320:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::array<_Tp, _Nm>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:63,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\tuple:1574:5: note: candidate: 'template<class ... _TElements, class ... _UElements> constexpr bool std::operator>(const std::tuple<_Tps ...>&, const std::tuple<_Args2 ...>&)'
+ 1574 |     operator>(const tuple<_TElements...>& __t,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\tuple:1574:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::tuple<_Tps ...>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:1515:5: note: candidate: 'template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)'
+ 1515 |     operator>(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:1515:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::map<_Key, _Tp, _Compare, _Allocator>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:62,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multimap.h:1180:5: note: candidate: 'template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator>(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)'
+ 1180 |     operator>(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multimap.h:1180:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::multimap<_Key, _Tp, _Compare, _Allocator>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\vector:67,
+                 from ..\src\FisrtAndLastNames2.cpp:12:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1943:5: note: candidate: 'template<class _Tp, class _Alloc> bool std::operator>(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)'
+ 1943 |     operator>(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1943:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const std::vector<_Tp, _Alloc>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1168:5: note: candidate: 'template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator>(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)'
+ 1168 |     operator>(const __normal_iterator<_IteratorL, _Container>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1168:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1176:5: note: candidate: 'template<class _Iterator, class _Container> bool __gnu_cxx::operator>(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)'
+ 1176 |     operator>(const __normal_iterator<_Iterator, _Container>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1176:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:64:32: note:   'std::string' {aka 'std::__cxx11::basic_string<char>'} is not derived from 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>'
+   64 |         if(last_name_history > 0) {
+      |                                ^
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+21:03:56 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:04:21 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+..\src\FisrtAndLastNames2.cpp: In function 'int main()':
+..\src\FisrtAndLastNames2.cpp:107:5: error: 'name_history' was not declared in this scope
+  107 |     name_history = item.second + ", " + name_history;
+      |     ^~~~~~~~~~~~
+..\src\FisrtAndLastNames2.cpp:107:20: error: 'item' was not declared in this scope; did you mean 'tm'?
+  107 |     name_history = item.second + ", " + name_history;
+      |                    ^~~~
+      |                    tm
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+21:04:36 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:05:16 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:10:04 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+21:12:03 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::getNameHistory(const std::map<int, std::__cxx11::basic_string<char> >&, const int&, const string&)':
+..\src\FisrtAndLastNames2.cpp:90:69: error: no matching function for call to 'std::set<std::__cxx11::basic_string<char> >::count(const int&)'
+   90 |                 if((names_history.length() == 0)&&(!names_data.count(item.first))&&(!name)){
+      |                                                     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\set:61,
+                 from ..\src\FisrtAndLastNames2.cpp:13:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:754:9: note: candidate: 'template<class _Kt> decltype (((const std::set<_Key, _Compare, _Alloc>*)this)->std::set<_Key, _Compare, _Alloc>::_M_t._M_count_tr(__x)) std::set<_Key, _Compare, _Alloc>::count(const _Kt&) const [with _Kt = _Kt; _Key = std::__cxx11::basic_string<char>; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+  754 |         count(const _Kt& __x) const
+      |         ^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:754:9: note:   template argument deduction/substitution failed:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h: In substitution of 'template<class _Kt> decltype (((const std::set<std::__cxx11::basic_string<char> >*)this)->std::set<std::__cxx11::basic_string<char> >::_M_t.std::_Rb_tree<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, std::_Identity<std::__cxx11::basic_string<char> >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::basic_string<char> > >::_M_count_tr<_Kt, _Req>(__x)) std::set<std::__cxx11::basic_string<char> >::count<_Kt>(const _Kt&) const [with _Kt = int]':
+..\src\FisrtAndLastNames2.cpp:90:59:   required from here
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:755:37: error: no matching function for call to 'std::_Rb_tree<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, std::_Identity<std::__cxx11::basic_string<char> >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::basic_string<char> > >::_M_count_tr(const int&) const'
+  755 |         -> decltype(_M_t._M_count_tr(__x))
+      |                     ~~~~~~~~~~~~~~~~^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:60,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_tree.h:1314:9: note: candidate: 'template<class _Kt, class _Req> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::size_type std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_count_tr(const _Kt&) const [with _Kt = _Kt; _Req = _Req; _Key = std::__cxx11::basic_string<char>; _Val = std::__cxx11::basic_string<char>; _KeyOfValue = std::_Identity<std::__cxx11::basic_string<char> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+ 1314 |         _M_count_tr(const _Kt& __k) const
+      |         ^~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_tree.h:1314:9: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_function.h: In substitution of 'template<class _Func, class _SfinaeType> using __has_is_transparent_t = typename std::__has_is_transparent<_Func, _SfinaeType>::type [with _Func = std::less<std::__cxx11::basic_string<char> >; _SfinaeType = int]':
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_tree.h:1312:9:   required by substitution of 'template<class _Kt> decltype (((const std::set<std::__cxx11::basic_string<char> >*)this)->std::set<std::__cxx11::basic_string<char> >::_M_t.std::_Rb_tree<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, std::_Identity<std::__cxx11::basic_string<char> >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::basic_string<char> > >::_M_count_tr<_Kt, _Req>(__x)) std::set<std::__cxx11::basic_string<char> >::count<_Kt>(const _Kt&) const [with _Kt = int]'
+..\src\FisrtAndLastNames2.cpp:90:59:   required from here
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_function.h:1399:11: error: no type named 'type' in 'struct std::__has_is_transparent<std::less<std::__cxx11::basic_string<char> >, int, void>'
+ 1399 |     using __has_is_transparent_t
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\set:61,
+                 from ..\src\FisrtAndLastNames2.cpp:13:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:748:7: note: candidate: 'std::set<_Key, _Compare, _Alloc>::size_type std::set<_Key, _Compare, _Alloc>::count(const key_type&) const [with _Key = std::__cxx11::basic_string<char>; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::set<_Key, _Compare, _Alloc>::size_type = long long unsigned int; std::set<_Key, _Compare, _Alloc>::key_type = std::__cxx11::basic_string<char>]'
+  748 |       count(const key_type& __x) const
+      |       ^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:748:29: note:   no known conversion for argument 1 from 'const int' to 'const key_type&' {aka 'const std::__cxx11::basic_string<char>&'}
+  748 |       count(const key_type& __x) const
+      |             ~~~~~~~~~~~~~~~~^~~
+..\src\FisrtAndLastNames2.cpp:90:85: error: no match for 'operator!' (operand type is 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   90 |                 if((names_history.length() == 0)&&(!names_data.count(item.first))&&(!name)){
+      |                                                                                     ^~~~~
+..\src\FisrtAndLastNames2.cpp:90:85: note: candidate: 'operator!(bool)' (built-in)
+..\src\FisrtAndLastNames2.cpp:90:85: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'bool'
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+21:13:21 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::getNameHistory(const std::map<int, std::__cxx11::basic_string<char> >&, const int&, const string&)':
+..\src\FisrtAndLastNames2.cpp:90:68: error: no matching function for call to 'std::set<std::__cxx11::basic_string<char> >::count(const int&)'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                    ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\set:61,
+                 from ..\src\FisrtAndLastNames2.cpp:13:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:754:9: note: candidate: 'template<class _Kt> decltype (((const std::set<_Key, _Compare, _Alloc>*)this)->std::set<_Key, _Compare, _Alloc>::_M_t._M_count_tr(__x)) std::set<_Key, _Compare, _Alloc>::count(const _Kt&) const [with _Kt = _Kt; _Key = std::__cxx11::basic_string<char>; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+  754 |         count(const _Kt& __x) const
+      |         ^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:754:9: note:   template argument deduction/substitution failed:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h: In substitution of 'template<class _Kt> decltype (((const std::set<std::__cxx11::basic_string<char> >*)this)->std::set<std::__cxx11::basic_string<char> >::_M_t.std::_Rb_tree<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, std::_Identity<std::__cxx11::basic_string<char> >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::basic_string<char> > >::_M_count_tr<_Kt, _Req>(__x)) std::set<std::__cxx11::basic_string<char> >::count<_Kt>(const _Kt&) const [with _Kt = int]':
+..\src\FisrtAndLastNames2.cpp:90:58:   required from here
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:755:37: error: no matching function for call to 'std::_Rb_tree<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, std::_Identity<std::__cxx11::basic_string<char> >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::basic_string<char> > >::_M_count_tr(const int&) const'
+  755 |         -> decltype(_M_t._M_count_tr(__x))
+      |                     ~~~~~~~~~~~~~~~~^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:60,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_tree.h:1314:9: note: candidate: 'template<class _Kt, class _Req> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::size_type std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_count_tr(const _Kt&) const [with _Kt = _Kt; _Req = _Req; _Key = std::__cxx11::basic_string<char>; _Val = std::__cxx11::basic_string<char>; _KeyOfValue = std::_Identity<std::__cxx11::basic_string<char> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+ 1314 |         _M_count_tr(const _Kt& __k) const
+      |         ^~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_tree.h:1314:9: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_function.h: In substitution of 'template<class _Func, class _SfinaeType> using __has_is_transparent_t = typename std::__has_is_transparent<_Func, _SfinaeType>::type [with _Func = std::less<std::__cxx11::basic_string<char> >; _SfinaeType = int]':
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_tree.h:1312:9:   required by substitution of 'template<class _Kt> decltype (((const std::set<std::__cxx11::basic_string<char> >*)this)->std::set<std::__cxx11::basic_string<char> >::_M_t.std::_Rb_tree<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, std::_Identity<std::__cxx11::basic_string<char> >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::basic_string<char> > >::_M_count_tr<_Kt, _Req>(__x)) std::set<std::__cxx11::basic_string<char> >::count<_Kt>(const _Kt&) const [with _Kt = int]'
+..\src\FisrtAndLastNames2.cpp:90:58:   required from here
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_function.h:1399:11: error: no type named 'type' in 'struct std::__has_is_transparent<std::less<std::__cxx11::basic_string<char> >, int, void>'
+ 1399 |     using __has_is_transparent_t
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\set:61,
+                 from ..\src\FisrtAndLastNames2.cpp:13:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:748:7: note: candidate: 'std::set<_Key, _Compare, _Alloc>::size_type std::set<_Key, _Compare, _Alloc>::count(const key_type&) const [with _Key = std::__cxx11::basic_string<char>; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::set<_Key, _Compare, _Alloc>::size_type = long long unsigned int; std::set<_Key, _Compare, _Alloc>::key_type = std::__cxx11::basic_string<char>]'
+  748 |       count(const key_type& __x) const
+      |       ^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:748:29: note:   no known conversion for argument 1 from 'const int' to 'const key_type&' {aka 'const std::__cxx11::basic_string<char>&'}
+  748 |       count(const key_type& __x) const
+      |             ~~~~~~~~~~~~~~~~^~~
+..\src\FisrtAndLastNames2.cpp:90:94: error: no match for 'operator!=' (operand types are 'const string' {aka 'const std::__cxx11::basic_string<char>'} and 'const int')
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                         ~~~~ ^~ ~~~~~~~~~~
+      |                                                                                         |            |
+      |                                                                                         |            const int
+      |                                                                                         const string {aka const std::__cxx11::basic_string<char>}
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iosfwd:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\postypes.h:227:5: note: candidate: 'template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)'
+  227 |     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\postypes.h:227:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::fpos<_StateT>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:64,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_pair.h:496:5: note: candidate: 'template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)'
+  496 |     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_pair.h:496:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::pair<_T1, _T2>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:431:5: note: candidate: 'template<class _Iterator> constexpr bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)'
+  431 |     operator!=(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:431:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:470:5: note: candidate: 'template<class _IteratorL, class _IteratorR> constexpr bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)'
+  470 |     operator!=(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:470:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1550:5: note: candidate: 'template<class _IteratorL, class _IteratorR> constexpr bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)'
+ 1550 |     operator!=(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1550:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::move_iterator<_IteratorL>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1607:5: note: candidate: 'template<class _Iterator> constexpr bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)'
+ 1607 |     operator!=(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1607:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::move_iterator<_IteratorL>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:237:5: note: candidate: 'template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)'
+  237 |     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:237:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::allocator<_CharT>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:569:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator!=(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)'
+  569 |     operator!=(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:569:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'std::__cxx11::basic_string<char>' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:575:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator!=(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)'
+  575 |     operator!=(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:575:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'std::__cxx11::basic_string<char>' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:582:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator!=(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)'
+  582 |     operator!=(__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:582:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   mismatched types 'std::basic_string_view<_CharT, _Traits>' and 'int'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6301:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6301 |     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6301:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'const int'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6314:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6314 |     operator!=(const _CharT* __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6314:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   mismatched types 'const _CharT*' and 'std::__cxx11::basic_string<char>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6326:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)'
+ 6326 |     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6326:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   mismatched types 'const _CharT*' and 'int'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_facets.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_ios.h:37,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:44,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\streambuf_iterator.h:232:5: note: candidate: 'template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)'
+  232 |     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\streambuf_iterator.h:232:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::istreambuf_iterator<_CharT, _Traits>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\tuple:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:63,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\array:305:5: note: candidate: 'template<class _Tp, long long unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)'
+  305 |     operator!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\array:305:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::array<_Tp, _Nm>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:63,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\tuple:1568:5: note: candidate: 'template<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Tps ...>&, const std::tuple<_Args2 ...>&)'
+ 1568 |     operator!=(const tuple<_TElements...>& __t,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\tuple:1568:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::tuple<_Tps ...>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:1508:5: note: candidate: 'template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)'
+ 1508 |     operator!=(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:1508:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::map<_Key, _Tp, _Compare, _Allocator>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:62,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multimap.h:1173:5: note: candidate: 'template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)'
+ 1173 |     operator!=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multimap.h:1173:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::multimap<_Key, _Tp, _Compare, _Allocator>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\vector:67,
+                 from ..\src\FisrtAndLastNames2.cpp:12:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1937:5: note: candidate: 'template<class _Tp, class _Alloc> bool std::operator!=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)'
+ 1937 |     operator!=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1937:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::vector<_Tp, _Alloc>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\set:61,
+                 from ..\src\FisrtAndLastNames2.cpp:13:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:1030:5: note: candidate: 'template<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)'
+ 1030 |     operator!=(const set<_Key, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:1030:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::set<_Key, _Compare, _Allocator>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\set:62,
+                 from ..\src\FisrtAndLastNames2.cpp:13:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multiset.h:1016:5: note: candidate: 'template<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)'
+ 1016 |     operator!=(const multiset<_Key, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multiset.h:1016:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::multiset<_Key, _Compare, _Allocator>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1137:5: note: candidate: 'template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)'
+ 1137 |     operator!=(const __normal_iterator<_IteratorL, _Container>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1137:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1145:5: note: candidate: 'template<class _Iterator, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)'
+ 1145 |     operator!=(const __normal_iterator<_Iterator, _Container>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1145:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\x86_64-w64-mingw32\bits\c++allocator.h:33,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:46,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ext\new_allocator.h:190:9: note: candidate: 'template<class _Up> bool __gnu_cxx::operator!=(const __gnu_cxx::new_allocator<char>&, const __gnu_cxx::new_allocator<_Tp>&)'
+  190 |         operator!=(const new_allocator&, const new_allocator<_Up>&)
+      |         ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ext\new_allocator.h:190:9: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:102: note:   mismatched types 'const __gnu_cxx::new_allocator<_Tp>' and 'const int'
+   90 |                 if((names_history.length() == 0)&&(names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                                                      ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:46,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:400:3: note: candidate: 'bool std::operator!=(const std::error_code&, const std::error_code&)'
+  400 |   operator!=(const error_code& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:400:32: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_code&'
+  400 |   operator!=(const error_code& __lhs, const error_code& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:406:3: note: candidate: 'bool std::operator!=(const std::error_code&, const std::error_condition&)'
+  406 |   operator!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:406:32: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_code&'
+  406 |   operator!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:412:3: note: candidate: 'bool std::operator!=(const std::error_condition&, const std::error_code&)'
+  412 |   operator!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:412:37: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_condition&'
+  412 |   operator!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:417:3: note: candidate: 'bool std::operator!=(const std::error_condition&, const std::error_condition&)'
+  417 |   operator!=(const error_condition& __lhs,
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:417:37: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_condition&'
+  417 |   operator!=(const error_condition& __lhs,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:221:7: note: candidate: 'bool std::operator!=(const std::allocator<char>&, const std::allocator<char>&)'
+  221 |       operator!=(const allocator&, const allocator&) _GLIBCXX_NOTHROW
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:221:18: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::allocator<char>&'
+  221 |       operator!=(const allocator&, const allocator&) _GLIBCXX_NOTHROW
+      |                  ^~~~~~~~~~~~~~~~
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+21:15:24 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::getNameHistory(const std::map<int, std::__cxx11::basic_string<char> >&, const int&, const string&)':
+..\src\FisrtAndLastNames2.cpp:90:37: error: no matching function for call to 'std::set<std::__cxx11::basic_string<char> >::count(const int&)'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\set:61,
+                 from ..\src\FisrtAndLastNames2.cpp:13:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:754:9: note: candidate: 'template<class _Kt> decltype (((const std::set<_Key, _Compare, _Alloc>*)this)->std::set<_Key, _Compare, _Alloc>::_M_t._M_count_tr(__x)) std::set<_Key, _Compare, _Alloc>::count(const _Kt&) const [with _Kt = _Kt; _Key = std::__cxx11::basic_string<char>; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+  754 |         count(const _Kt& __x) const
+      |         ^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:754:9: note:   template argument deduction/substitution failed:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h: In substitution of 'template<class _Kt> decltype (((const std::set<std::__cxx11::basic_string<char> >*)this)->std::set<std::__cxx11::basic_string<char> >::_M_t.std::_Rb_tree<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, std::_Identity<std::__cxx11::basic_string<char> >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::basic_string<char> > >::_M_count_tr<_Kt, _Req>(__x)) std::set<std::__cxx11::basic_string<char> >::count<_Kt>(const _Kt&) const [with _Kt = int]':
+..\src\FisrtAndLastNames2.cpp:90:27:   required from here
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:755:37: error: no matching function for call to 'std::_Rb_tree<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, std::_Identity<std::__cxx11::basic_string<char> >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::basic_string<char> > >::_M_count_tr(const int&) const'
+  755 |         -> decltype(_M_t._M_count_tr(__x))
+      |                     ~~~~~~~~~~~~~~~~^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:60,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_tree.h:1314:9: note: candidate: 'template<class _Kt, class _Req> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::size_type std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_count_tr(const _Kt&) const [with _Kt = _Kt; _Req = _Req; _Key = std::__cxx11::basic_string<char>; _Val = std::__cxx11::basic_string<char>; _KeyOfValue = std::_Identity<std::__cxx11::basic_string<char> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+ 1314 |         _M_count_tr(const _Kt& __k) const
+      |         ^~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_tree.h:1314:9: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_function.h: In substitution of 'template<class _Func, class _SfinaeType> using __has_is_transparent_t = typename std::__has_is_transparent<_Func, _SfinaeType>::type [with _Func = std::less<std::__cxx11::basic_string<char> >; _SfinaeType = int]':
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_tree.h:1312:9:   required by substitution of 'template<class _Kt> decltype (((const std::set<std::__cxx11::basic_string<char> >*)this)->std::set<std::__cxx11::basic_string<char> >::_M_t.std::_Rb_tree<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, std::_Identity<std::__cxx11::basic_string<char> >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::basic_string<char> > >::_M_count_tr<_Kt, _Req>(__x)) std::set<std::__cxx11::basic_string<char> >::count<_Kt>(const _Kt&) const [with _Kt = int]'
+..\src\FisrtAndLastNames2.cpp:90:27:   required from here
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_function.h:1399:11: error: no type named 'type' in 'struct std::__has_is_transparent<std::less<std::__cxx11::basic_string<char> >, int, void>'
+ 1399 |     using __has_is_transparent_t
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\set:61,
+                 from ..\src\FisrtAndLastNames2.cpp:13:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:748:7: note: candidate: 'std::set<_Key, _Compare, _Alloc>::size_type std::set<_Key, _Compare, _Alloc>::count(const key_type&) const [with _Key = std::__cxx11::basic_string<char>; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::set<_Key, _Compare, _Alloc>::size_type = long long unsigned int; std::set<_Key, _Compare, _Alloc>::key_type = std::__cxx11::basic_string<char>]'
+  748 |       count(const key_type& __x) const
+      |       ^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:748:29: note:   no known conversion for argument 1 from 'const int' to 'const key_type&' {aka 'const std::__cxx11::basic_string<char>&'}
+  748 |       count(const key_type& __x) const
+      |             ~~~~~~~~~~~~~~~~^~~
+..\src\FisrtAndLastNames2.cpp:90:63: error: no match for 'operator!=' (operand types are 'const string' {aka 'const std::__cxx11::basic_string<char>'} and 'const int')
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                          ~~~~ ^~ ~~~~~~~~~~
+      |                                                          |            |
+      |                                                          |            const int
+      |                                                          const string {aka const std::__cxx11::basic_string<char>}
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iosfwd:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\postypes.h:227:5: note: candidate: 'template<class _StateT> bool std::operator!=(const std::fpos<_StateT>&, const std::fpos<_StateT>&)'
+  227 |     operator!=(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\postypes.h:227:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::fpos<_StateT>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:64,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_pair.h:496:5: note: candidate: 'template<class _T1, class _T2> constexpr bool std::operator!=(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)'
+  496 |     operator!=(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_pair.h:496:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::pair<_T1, _T2>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:431:5: note: candidate: 'template<class _Iterator> constexpr bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)'
+  431 |     operator!=(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:431:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:470:5: note: candidate: 'template<class _IteratorL, class _IteratorR> constexpr bool std::operator!=(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)'
+  470 |     operator!=(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:470:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1550:5: note: candidate: 'template<class _IteratorL, class _IteratorR> constexpr bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)'
+ 1550 |     operator!=(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1550:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::move_iterator<_IteratorL>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1607:5: note: candidate: 'template<class _Iterator> constexpr bool std::operator!=(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)'
+ 1607 |     operator!=(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1607:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::move_iterator<_IteratorL>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:237:5: note: candidate: 'template<class _T1, class _T2> bool std::operator!=(const std::allocator<_CharT>&, const std::allocator<_T2>&)'
+  237 |     operator!=(const allocator<_T1>&, const allocator<_T2>&)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:237:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::allocator<_CharT>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:569:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator!=(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)'
+  569 |     operator!=(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:569:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'std::__cxx11::basic_string<char>' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:575:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator!=(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)'
+  575 |     operator!=(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:575:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'std::__cxx11::basic_string<char>' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:582:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator!=(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)'
+  582 |     operator!=(__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:582:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   mismatched types 'std::basic_string_view<_CharT, _Traits>' and 'int'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6301:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6301 |     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6301:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'const int'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6314:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6314 |     operator!=(const _CharT* __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6314:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   mismatched types 'const _CharT*' and 'std::__cxx11::basic_string<char>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6326:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator!=(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)'
+ 6326 |     operator!=(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6326:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   mismatched types 'const _CharT*' and 'int'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_facets.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_ios.h:37,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:44,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\streambuf_iterator.h:232:5: note: candidate: 'template<class _CharT, class _Traits> bool std::operator!=(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)'
+  232 |     operator!=(const istreambuf_iterator<_CharT, _Traits>& __a,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\streambuf_iterator.h:232:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::istreambuf_iterator<_CharT, _Traits>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\tuple:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:63,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\array:305:5: note: candidate: 'template<class _Tp, long long unsigned int _Nm> bool std::operator!=(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)'
+  305 |     operator!=(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\array:305:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::array<_Tp, _Nm>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:63,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\tuple:1568:5: note: candidate: 'template<class ... _TElements, class ... _UElements> constexpr bool std::operator!=(const std::tuple<_Tps ...>&, const std::tuple<_Args2 ...>&)'
+ 1568 |     operator!=(const tuple<_TElements...>& __t,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\tuple:1568:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::tuple<_Tps ...>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:1508:5: note: candidate: 'template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)'
+ 1508 |     operator!=(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:1508:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::map<_Key, _Tp, _Compare, _Allocator>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:62,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multimap.h:1173:5: note: candidate: 'template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator!=(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)'
+ 1173 |     operator!=(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multimap.h:1173:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::multimap<_Key, _Tp, _Compare, _Allocator>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\vector:67,
+                 from ..\src\FisrtAndLastNames2.cpp:12:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1937:5: note: candidate: 'template<class _Tp, class _Alloc> bool std::operator!=(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)'
+ 1937 |     operator!=(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1937:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::vector<_Tp, _Alloc>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\set:61,
+                 from ..\src\FisrtAndLastNames2.cpp:13:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:1030:5: note: candidate: 'template<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::set<_Key, _Compare, _Allocator>&, const std::set<_Key, _Compare, _Allocator>&)'
+ 1030 |     operator!=(const set<_Key, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:1030:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::set<_Key, _Compare, _Allocator>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\set:62,
+                 from ..\src\FisrtAndLastNames2.cpp:13:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multiset.h:1016:5: note: candidate: 'template<class _Key, class _Compare, class _Alloc> bool std::operator!=(const std::multiset<_Key, _Compare, _Allocator>&, const std::multiset<_Key, _Compare, _Allocator>&)'
+ 1016 |     operator!=(const multiset<_Key, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multiset.h:1016:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::multiset<_Key, _Compare, _Allocator>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1137:5: note: candidate: 'template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)'
+ 1137 |     operator!=(const __normal_iterator<_IteratorL, _Container>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1137:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1145:5: note: candidate: 'template<class _Iterator, class _Container> bool __gnu_cxx::operator!=(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)'
+ 1145 |     operator!=(const __normal_iterator<_Iterator, _Container>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1145:5: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\x86_64-w64-mingw32\bits\c++allocator.h:33,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:46,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ext\new_allocator.h:190:9: note: candidate: 'template<class _Up> bool __gnu_cxx::operator!=(const __gnu_cxx::new_allocator<char>&, const __gnu_cxx::new_allocator<_Tp>&)'
+  190 |         operator!=(const new_allocator&, const new_allocator<_Up>&)
+      |         ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ext\new_allocator.h:190:9: note:   template argument deduction/substitution failed:
+..\src\FisrtAndLastNames2.cpp:90:71: note:   mismatched types 'const __gnu_cxx::new_allocator<_Tp>' and 'const int'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.first)){
+      |                                                                       ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:46,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:400:3: note: candidate: 'bool std::operator!=(const std::error_code&, const std::error_code&)'
+  400 |   operator!=(const error_code& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:400:32: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_code&'
+  400 |   operator!=(const error_code& __lhs, const error_code& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:406:3: note: candidate: 'bool std::operator!=(const std::error_code&, const std::error_condition&)'
+  406 |   operator!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:406:32: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_code&'
+  406 |   operator!=(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:412:3: note: candidate: 'bool std::operator!=(const std::error_condition&, const std::error_code&)'
+  412 |   operator!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:412:37: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_condition&'
+  412 |   operator!=(const error_condition& __lhs, const error_code& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:417:3: note: candidate: 'bool std::operator!=(const std::error_condition&, const std::error_condition&)'
+  417 |   operator!=(const error_condition& __lhs,
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:417:37: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_condition&'
+  417 |   operator!=(const error_condition& __lhs,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:221:7: note: candidate: 'bool std::operator!=(const std::allocator<char>&, const std::allocator<char>&)'
+  221 |       operator!=(const allocator&, const allocator&) _GLIBCXX_NOTHROW
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:221:18: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::allocator<char>&'
+  221 |       operator!=(const allocator&, const allocator&) _GLIBCXX_NOTHROW
+      |                  ^~~~~~~~~~~~~~~~
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+21:16:01 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+..\src\FisrtAndLastNames2.cpp: In member function 'std::string Person::getNameHistory(const std::map<int, std::__cxx11::basic_string<char> >&, const int&, const string&)':
+..\src\FisrtAndLastNames2.cpp:90:37: error: no matching function for call to 'std::set<std::__cxx11::basic_string<char> >::count(const int&)'
+   90 |                 if((names_data.count(item.first) == 0)&&(name != item.second)){
+      |                     ~~~~~~~~~~~~~~~~^~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\set:61,
+                 from ..\src\FisrtAndLastNames2.cpp:13:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:754:9: note: candidate: 'template<class _Kt> decltype (((const std::set<_Key, _Compare, _Alloc>*)this)->std::set<_Key, _Compare, _Alloc>::_M_t._M_count_tr(__x)) std::set<_Key, _Compare, _Alloc>::count(const _Kt&) const [with _Kt = _Kt; _Key = std::__cxx11::basic_string<char>; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+  754 |         count(const _Kt& __x) const
+      |         ^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:754:9: note:   template argument deduction/substitution failed:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h: In substitution of 'template<class _Kt> decltype (((const std::set<std::__cxx11::basic_string<char> >*)this)->std::set<std::__cxx11::basic_string<char> >::_M_t.std::_Rb_tree<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, std::_Identity<std::__cxx11::basic_string<char> >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::basic_string<char> > >::_M_count_tr<_Kt, _Req>(__x)) std::set<std::__cxx11::basic_string<char> >::count<_Kt>(const _Kt&) const [with _Kt = int]':
+..\src\FisrtAndLastNames2.cpp:90:27:   required from here
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:755:37: error: no matching function for call to 'std::_Rb_tree<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, std::_Identity<std::__cxx11::basic_string<char> >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::basic_string<char> > >::_M_count_tr(const int&) const'
+  755 |         -> decltype(_M_t._M_count_tr(__x))
+      |                     ~~~~~~~~~~~~~~~~^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:60,
+                 from ..\src\FisrtAndLastNames2.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_tree.h:1314:9: note: candidate: 'template<class _Kt, class _Req> std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::size_type std::_Rb_tree<_Key, _Val, _KeyOfValue, _Compare, _Alloc>::_M_count_tr(const _Kt&) const [with _Kt = _Kt; _Req = _Req; _Key = std::__cxx11::basic_string<char>; _Val = std::__cxx11::basic_string<char>; _KeyOfValue = std::_Identity<std::__cxx11::basic_string<char> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::__cxx11::basic_string<char> >]'
+ 1314 |         _M_count_tr(const _Kt& __k) const
+      |         ^~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_tree.h:1314:9: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\FisrtAndLastNames2.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_function.h: In substitution of 'template<class _Func, class _SfinaeType> using __has_is_transparent_t = typename std::__has_is_transparent<_Func, _SfinaeType>::type [with _Func = std::less<std::__cxx11::basic_string<char> >; _SfinaeType = int]':
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_tree.h:1312:9:   required by substitution of 'template<class _Kt> decltype (((const std::set<std::__cxx11::basic_string<char> >*)this)->std::set<std::__cxx11::basic_string<char> >::_M_t.std::_Rb_tree<std::__cxx11::basic_string<char>, std::__cxx11::basic_string<char>, std::_Identity<std::__cxx11::basic_string<char> >, std::less<std::__cxx11::basic_string<char> >, std::allocator<std::__cxx11::basic_string<char> > >::_M_count_tr<_Kt, _Req>(__x)) std::set<std::__cxx11::basic_string<char> >::count<_Kt>(const _Kt&) const [with _Kt = int]'
+..\src\FisrtAndLastNames2.cpp:90:27:   required from here
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_function.h:1399:11: error: no type named 'type' in 'struct std::__has_is_transparent<std::less<std::__cxx11::basic_string<char> >, int, void>'
+ 1399 |     using __has_is_transparent_t
+      |           ^~~~~~~~~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\set:61,
+                 from ..\src\FisrtAndLastNames2.cpp:13:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:748:7: note: candidate: 'std::set<_Key, _Compare, _Alloc>::size_type std::set<_Key, _Compare, _Alloc>::count(const key_type&) const [with _Key = std::__cxx11::basic_string<char>; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::__cxx11::basic_string<char> >; std::set<_Key, _Compare, _Alloc>::size_type = long long unsigned int; std::set<_Key, _Compare, _Alloc>::key_type = std::__cxx11::basic_string<char>]'
+  748 |       count(const key_type& __x) const
+      |       ^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_set.h:748:29: note:   no known conversion for argument 1 from 'const int' to 'const key_type&' {aka 'const std::__cxx11::basic_string<char>&'}
+  748 |       count(const key_type& __x) const
+      |             ~~~~~~~~~~~~~~~~^~~
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+21:16:18 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:16:48 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:27:19 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:27:38 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:28:04 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:29:54 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:30:55 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+21:37:33 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+21:37:55 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:39:13 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+21:41:33 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:41:53 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:43:01 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:47:56 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+21:48:18 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+21:49:08 **** Incremental Build of configuration Debug for project FisrtAndLastNames2 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FisrtAndLastNames2.o" "..\\src\\FisrtAndLastNames2.cpp" 
+g++ -o FisrtAndLastNames2.exe "src\\FisrtAndLastNames2.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FisrtAndLastNames2
