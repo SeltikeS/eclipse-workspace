@@ -3588,3 +3588,539 @@ Info: Nothing to build for SortModul
 Info: Nothing to build for SortWithoutRegister
 Info: Nothing to build for sorted_strings
 Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:26:12 **** Rebuild of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+..\src\ReversibleString.cpp:14:9: error: 'Re' does not name a type
+   14 |         Re
+      |         ^~
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:30:00 **** Incremental Build of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+..\src\ReversibleString.cpp: In member function 'std::string ReversibleString::Reverse()':
+..\src\ReversibleString.cpp:29:9: error: expected primary-expression before '}' token
+   29 |         }
+      |         ^
+..\src\ReversibleString.cpp:29:9: error: expected ';' before '}' token
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:30:34 **** Incremental Build of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+..\src\ReversibleString.cpp: In member function 'std::string ReversibleString::Reverse()':
+..\src\ReversibleString.cpp:28:31: error: no matching function for call to 'reverse(std::string&)'
+   28 |                 return reverse(m_string);
+      |                        ~~~~~~~^~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\algorithm:62,
+                 from ..\src\ReversibleString.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algo.h:1145:5: note: candidate: 'template<class _BIter> void std::reverse(_BIter, _BIter)'
+ 1145 |     reverse(_BidirectionalIterator __first, _BidirectionalIterator __last)
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algo.h:1145:5: note:   template argument deduction/substitution failed:
+..\src\ReversibleString.cpp:28:31: note:   candidate expects 2 arguments, 1 provided
+   28 |                 return reverse(m_string);
+      |                        ~~~~~~~^~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\algorithm:74,
+                 from ..\src\ReversibleString.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\pstl\glue_algorithm_defs.h:249:1: note: candidate: 'template<class _ExecutionPolicy, class _BidirectionalIterator> __pstl::__internal::__enable_if_execution_policy<_ExecutionPolicy, void> std::reverse(_ExecutionPolicy&&, _BidirectionalIterator, _BidirectionalIterator)'
+  249 | reverse(_ExecutionPolicy&& __exec, _BidirectionalIterator __first, _BidirectionalIterator __last);
+      | ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\pstl\glue_algorithm_defs.h:249:1: note:   template argument deduction/substitution failed:
+..\src\ReversibleString.cpp:28:31: note:   candidate expects 3 arguments, 1 provided
+   28 |                 return reverse(m_string);
+      |                        ~~~~~~~^~~~~~~~~~
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:31:31 **** Incremental Build of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+..\src\ReversibleString.cpp: In member function 'std::string ReversibleString::Reverse()':
+..\src\ReversibleString.cpp:28:31: error: could not convert 'std::reverse<__gnu_cxx::__normal_iterator<char*, std::__cxx11::basic_string<char> > >(((ReversibleString*)this)->ReversibleString::m_string.std::__cxx11::basic_string<char>::begin(), ((ReversibleString*)this)->ReversibleString::m_string.std::__cxx11::basic_string<char>::end())' from 'void' to 'std::string' {aka 'std::__cxx11::basic_string<char>'}
+   28 |                 return reverse(m_string.begin(), m_string.end());
+      |                        ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |                               |
+      |                               void
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:33:30 **** Incremental Build of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+..\src\ReversibleString.cpp:35:23: error: 'BidirectionalIterator' has not been declared
+   35 |         void reverse (BidirectionalIterator first, BidirectionalIterator last)
+      |                       ^~~~~~~~~~~~~~~~~~~~~
+..\src\ReversibleString.cpp:35:52: error: 'BidirectionalIterator' has not been declared
+   35 |         void reverse (BidirectionalIterator first, BidirectionalIterator last)
+      |                                                    ^~~~~~~~~~~~~~~~~~~~~
+..\src\ReversibleString.cpp: In member function 'std::string ReversibleString::Reverse()':
+..\src\ReversibleString.cpp:30:46: error: cannot convert 'std::__cxx11::basic_string<char>::iterator' to 'int'
+   30 |                 return reverse(m_string.begin(), m_string.end());
+      |                                ~~~~~~~~~~~~~~^~
+      |                                              |
+      |                                              std::__cxx11::basic_string<char>::iterator
+..\src\ReversibleString.cpp:35:45: note:   initializing argument 1 of 'void ReversibleString::reverse(int, int)'
+   35 |         void reverse (BidirectionalIterator first, BidirectionalIterator last)
+      |                       ~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\ReversibleString.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h: In instantiation of 'void std::iter_swap(_ForwardIterator1, _ForwardIterator2) [with _ForwardIterator1 = int; _ForwardIterator2 = int]':
+..\src\ReversibleString.cpp:38:19:   required from here
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:182:12: error: invalid type argument of unary '*' (have 'int')
+  182 |       swap(*__a, *__b);
+      |            ^~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:182:18: error: invalid type argument of unary '*' (have 'int')
+  182 |       swap(*__a, *__b);
+      |                  ^~~~
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:34:33 **** Incremental Build of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+..\src\ReversibleString.cpp: In member function 'std::string ReversibleString::Reverse()':
+..\src\ReversibleString.cpp:29:37: error: conversion from 'void' to non-scalar type 'std::string' {aka 'std::__cxx11::basic_string<char>'} requested
+   29 |                 string str = reverse(m_string.begin(), m_string.end());
+      |                              ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:35:17 **** Incremental Build of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+..\src\ReversibleString.cpp: In member function 'std::string ReversibleString::Reverse()':
+..\src\ReversibleString.cpp:29:42: error: conversion from 'void' to non-scalar type 'std::string' {aka 'std::__cxx11::basic_string<char>'} requested
+   29 |                 string str = std::reverse(m_string.begin(), m_string.end());
+      |                              ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:36:41 **** Incremental Build of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+g++ -o ReversibleString.exe "src\\ReversibleString.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:37:04 **** Incremental Build of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+..\src\ReversibleString.cpp: In function 'int main()':
+..\src\ReversibleString.cpp:44:38: error: passing 'const ReversibleString' as 'this' argument discards qualifiers [-fpermissive]
+   44 |           string tmp = s_ref.ToString();
+      |                        ~~~~~~~~~~~~~~^~
+..\src\ReversibleString.cpp:23:16: note:   in call to 'std::string ReversibleString::ToString()'
+   23 |         string ToString() {
+      |                ^~~~~~~~
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:38:00 **** Incremental Build of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+g++ -o ReversibleString.exe "src\\ReversibleString.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:38:14 **** Incremental Build of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+g++ -o ReversibleString.exe "src\\ReversibleString.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:38:59 **** Incremental Build of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+..\src\ReversibleString.cpp: In member function 'std::string ReversibleString::Reverse()':
+..\src\ReversibleString.cpp:29:24: error: 'str' was not declared in this scope; did you mean 'std'?
+   29 |                 return str;
+      |                        ^~~
+      |                        std
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:39:25 **** Incremental Build of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+g++ -o ReversibleString.exe "src\\ReversibleString.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FisrtAndLastNames2
+17:42:02 **** Incremental Build of configuration Debug for project ReversibleString ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ReversibleString.o" "..\\src\\ReversibleString.cpp" 
+g++ -o ReversibleString.exe "src\\ReversibleString.o" 
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for FirstAndLastNames1
+17:45:09 **** Rebuild of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+g++ -o FirstAndLastNames3.exe "src\\FirstAndLastNames3.o" 
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+17:52:08 **** Incremental Build of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+..\src\FirstAndLastNames3.cpp: In member function 'std::string Person::GetFullName(int) const':
+..\src\FirstAndLastNames3.cpp:40:54: error: passing 'const Person' as 'this' argument discards qualifiers [-fpermissive]
+   40 |         string this_year_first_name = getThisYearName(m_first_names, year);
+      |                                       ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+..\src\FirstAndLastNames3.cpp:105:12: note:   in call to 'std::string Person::getThisYearName(const std::map<int, std::__cxx11::basic_string<char> >&, const int&)'
+  105 |     string getThisYearName(const map<int, string>& name, const int& year) {
+      |            ^~~~~~~~~~~~~~~
+..\src\FirstAndLastNames3.cpp:41:53: error: passing 'const Person' as 'this' argument discards qualifiers [-fpermissive]
+   41 |         string this_year_last_name = getThisYearName(m_last_names, year);
+      |                                      ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+..\src\FirstAndLastNames3.cpp:105:12: note:   in call to 'std::string Person::getThisYearName(const std::map<int, std::__cxx11::basic_string<char> >&, const int&)'
+  105 |     string getThisYearName(const map<int, string>& name, const int& year) {
+      |            ^~~~~~~~~~~~~~~
+..\src\FirstAndLastNames3.cpp: In member function 'std::string Person::GetFullNameWithHistory(int) const':
+..\src\FirstAndLastNames3.cpp:61:54: error: passing 'const Person' as 'this' argument discards qualifiers [-fpermissive]
+   61 |         string this_year_first_name = getThisYearName(m_first_names, year);
+      |                                       ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+..\src\FirstAndLastNames3.cpp:105:12: note:   in call to 'std::string Person::getThisYearName(const std::map<int, std::__cxx11::basic_string<char> >&, const int&)'
+  105 |     string getThisYearName(const map<int, string>& name, const int& year) {
+      |            ^~~~~~~~~~~~~~~
+..\src\FirstAndLastNames3.cpp:62:53: error: passing 'const Person' as 'this' argument discards qualifiers [-fpermissive]
+   62 |         string this_year_last_name = getThisYearName(m_last_names, year);
+      |                                      ~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+..\src\FirstAndLastNames3.cpp:105:12: note:   in call to 'std::string Person::getThisYearName(const std::map<int, std::__cxx11::basic_string<char> >&, const int&)'
+  105 |     string getThisYearName(const map<int, string>& name, const int& year) {
+      |            ^~~~~~~~~~~~~~~
+..\src\FirstAndLastNames3.cpp:64:51: error: passing 'const Person' as 'this' argument discards qualifiers [-fpermissive]
+   64 |         string first_name_history = getNameHistory(m_first_names, year);
+      |                                     ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~
+..\src\FirstAndLastNames3.cpp:115:12: note:   in call to 'std::string Person::getNameHistory(const std::map<int, std::__cxx11::basic_string<char> >&, const int&)'
+  115 |     string getNameHistory(const map<int, string>& names, const int& year) {
+      |            ^~~~~~~~~~~~~~
+..\src\FirstAndLastNames3.cpp:65:50: error: passing 'const Person' as 'this' argument discards qualifiers [-fpermissive]
+   65 |         string last_name_history = getNameHistory(m_last_names, year);
+      |                                    ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~
+..\src\FirstAndLastNames3.cpp:115:12: note:   in call to 'std::string Person::getNameHistory(const std::map<int, std::__cxx11::basic_string<char> >&, const int&)'
+  115 |     string getNameHistory(const map<int, string>& names, const int& year) {
+      |            ^~~~~~~~~~~~~~
+..\src\FirstAndLastNames3.cpp: In function 'int main()':
+..\src\FirstAndLastNames3.cpp:146:12: error: no matching function for call to 'Person::Person()'
+  146 |     Person person;
+      |            ^~~~~~
+..\src\FirstAndLastNames3.cpp:18:5: note: candidate: 'Person::Person(const string&, const string&, const int&)'
+   18 |     Person(const string& first_name, const string& last_name, const int& year) {
+      |     ^~~~~~
+..\src\FirstAndLastNames3.cpp:18:5: note:   candidate expects 3 arguments, 0 provided
+..\src\FirstAndLastNames3.cpp:16:7: note: candidate: 'Person::Person(const Person&)'
+   16 | class Person {
+      |       ^~~~~~
+..\src\FirstAndLastNames3.cpp:16:7: note:   candidate expects 1 argument, 0 provided
+..\src\FirstAndLastNames3.cpp:16:7: note: candidate: 'Person::Person(Person&&)'
+..\src\FirstAndLastNames3.cpp:16:7: note:   candidate expects 1 argument, 0 provided
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+17:52:20 **** Incremental Build of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+..\src\FirstAndLastNames3.cpp: In function 'int main()':
+..\src\FirstAndLastNames3.cpp:146:12: error: no matching function for call to 'Person::Person()'
+  146 |     Person person;
+      |            ^~~~~~
+..\src\FirstAndLastNames3.cpp:18:5: note: candidate: 'Person::Person(const string&, const string&, const int&)'
+   18 |     Person(const string& first_name, const string& last_name, const int& year) {
+      |     ^~~~~~
+..\src\FirstAndLastNames3.cpp:18:5: note:   candidate expects 3 arguments, 0 provided
+..\src\FirstAndLastNames3.cpp:16:7: note: candidate: 'Person::Person(const Person&)'
+   16 | class Person {
+      |       ^~~~~~
+..\src\FirstAndLastNames3.cpp:16:7: note:   candidate expects 1 argument, 0 provided
+..\src\FirstAndLastNames3.cpp:16:7: note: candidate: 'Person::Person(Person&&)'
+..\src\FirstAndLastNames3.cpp:16:7: note:   candidate expects 1 argument, 0 provided
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+17:54:46 **** Incremental Build of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+..\src\FirstAndLastNames3.cpp: In function 'int main()':
+..\src\FirstAndLastNames3.cpp:156:12: error: no matching function for call to 'Person::Person()'
+  156 |     Person person;
+      |            ^~~~~~
+..\src\FirstAndLastNames3.cpp:18:5: note: candidate: 'Person::Person(const string&, const string&, const int&)'
+   18 |     Person(const string& first_name, const string& last_name, const int& year) {
+      |     ^~~~~~
+..\src\FirstAndLastNames3.cpp:18:5: note:   candidate expects 3 arguments, 0 provided
+..\src\FirstAndLastNames3.cpp:16:7: note: candidate: 'Person::Person(const Person&)'
+   16 | class Person {
+      |       ^~~~~~
+..\src\FirstAndLastNames3.cpp:16:7: note:   candidate expects 1 argument, 0 provided
+..\src\FirstAndLastNames3.cpp:16:7: note: candidate: 'Person::Person(Person&&)'
+..\src\FirstAndLastNames3.cpp:16:7: note:   candidate expects 1 argument, 0 provided
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+17:55:07 **** Incremental Build of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+g++ -o FirstAndLastNames3.exe "src\\FirstAndLastNames3.o" 
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames3
+Info: Nothing to build for FirstAndLastNames1
+17:56:06 **** Incremental Build of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+g++ -o FirstAndLastNames3.exe "src\\FirstAndLastNames3.o" 
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames3
+Info: Nothing to build for FirstAndLastNames1
+17:56:37 **** Incremental Build of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+g++ -o FirstAndLastNames3.exe "src\\FirstAndLastNames3.o" 
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames3
+Info: Nothing to build for FirstAndLastNames1
+17:57:22 **** Incremental Build of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+g++ -o FirstAndLastNames3.exe "src\\FirstAndLastNames3.o" 
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+17:57:28 **** Incremental Build of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+g++ -o FirstAndLastNames3.exe "src\\FirstAndLastNames3.o" 
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames3
+Info: Nothing to build for FirstAndLastNames1
+18:01:41 **** Incremental Build of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+..\src\FirstAndLastNames3.cpp:16:71: error: non-member function 'std::string getThisYearName(const std::map<int, std::__cxx11::basic_string<char> >&, const int&)' cannot have cv-qualifier
+   16 | string getThisYearName(const map<int, string>& name, const int& year) const {
+      |                                                                       ^~~~~
+..\src\FirstAndLastNames3.cpp:26:71: error: non-member function 'std::string getNameHistory(const std::map<int, std::__cxx11::basic_string<char> >&, const int&)' cannot have cv-qualifier
+   26 | string getNameHistory(const map<int, string>& names, const int& year) const {
+      |                                                                       ^~~~~
+..\src\FirstAndLastNames3.cpp: In function 'std::string getNameHistory(const std::map<int, std::__cxx11::basic_string<char> >&, const int&)':
+..\src\FirstAndLastNames3.cpp:137:9: error: expected unqualified-id before 'for'
+  137 |         for(int i = names_data.size()-1; i >= 0; --i){
+      |         ^~~
+..\src\FirstAndLastNames3.cpp:137:42: error: 'i' does not name a type
+  137 |         for(int i = names_data.size()-1; i >= 0; --i){
+      |                                          ^
+..\src\FirstAndLastNames3.cpp:137:50: error: expected unqualified-id before '--' token
+  137 |         for(int i = names_data.size()-1; i >= 0; --i){
+      |                                                  ^~
+..\src\FirstAndLastNames3.cpp:149:9: error: expected unqualified-id before 'return'
+  149 |         return names_history;
+      |         ^~~~~~
+..\src\FirstAndLastNames3.cpp:150:6: error: expected ';' after class definition
+  150 |     }
+      |      ^
+      |      ;
+..\src\FirstAndLastNames3.cpp:151:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  151 | };
+      | ^
+..\src\FirstAndLastNames3.cpp: In function 'int main()':
+..\src\FirstAndLastNames3.cpp:158:9: error: 'Person' was not declared in this scope
+  158 |         Person person("Polina", "Sergeeva", 1960);
+      |         ^~~~~~
+..\src\FirstAndLastNames3.cpp:160:21: error: 'person' was not declared in this scope; did you mean 'perror'?
+  160 |             cout << person.GetFullNameWithHistory(year) << endl;
+      |                     ^~~~~~
+      |                     perror
+..\src\FirstAndLastNames3.cpp:163:11: error: 'person' was not declared in this scope; did you mean 'perror'?
+  163 |           person.ChangeFirstName(1965, "Appolinaria");
+      |           ^~~~~~
+      |           perror
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+18:02:55 **** Incremental Build of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+..\src\FirstAndLastNames3.cpp:16:71: error: non-member function 'std::string getThisYearName(const std::map<int, std::__cxx11::basic_string<char> >&, const int&)' cannot have cv-qualifier
+   16 | string getThisYearName(const map<int, string>& name, const int& year) const {
+      |                                                                       ^~~~~
+..\src\FirstAndLastNames3.cpp:26:71: error: non-member function 'std::string getNameHistory(const std::map<int, std::__cxx11::basic_string<char> >&, const int&)' cannot have cv-qualifier
+   26 | string getNameHistory(const map<int, string>& names, const int& year) const {
+      |                                                                       ^~~~~
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+18:03:43 **** Incremental Build of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+..\src\FirstAndLastNames3.cpp:26:71: error: non-member function 'std::string getNameHistory(const std::map<int, std::__cxx11::basic_string<char> >&, const int&)' cannot have cv-qualifier
+   26 | string getNameHistory(const map<int, string>& names, const int& year) const {
+      |                                                                       ^~~~~
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+18:03:49 **** Incremental Build of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+g++ -o FirstAndLastNames3.exe "src\\FirstAndLastNames3.o" 
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+18:04:13 **** Incremental Build of configuration Debug for project FirstAndLastNames3 ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\FirstAndLastNames3.o" "..\\src\\FirstAndLastNames3.cpp" 
+g++ -o FirstAndLastNames3.exe "src\\FirstAndLastNames3.o" 
+Info: Nothing to build for FisrtAndLastNames2
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames3
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FirstAndLastNames3
+Info: Nothing to build for FisrtAndLastNames2
+18:10:43 **** Rebuild of configuration Debug for project Incognizable ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Incognizable.o" "..\\src\\Incognizable.cpp" 
+g++ -o Incognizable.exe "src\\Incognizable.o" 
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FirstAndLastNames3
+Info: Nothing to build for FisrtAndLastNames2
+18:11:17 **** Incremental Build of configuration Debug for project Incognizable ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Incognizable.o" "..\\src\\Incognizable.cpp" 
+g++ -o Incognizable.exe "src\\Incognizable.o" 
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FirstAndLastNames3
+Info: Nothing to build for FisrtAndLastNames2
+18:11:44 **** Incremental Build of configuration Debug for project Incognizable ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Incognizable.o" "..\\src\\Incognizable.cpp" 
+..\src\Incognizable.cpp: In function 'int main()':
+..\src\Incognizable.cpp:25:22: warning: variable 'b' set but not used [-Wunused-but-set-variable]
+   25 |         Incognizable b = {};
+      |                      ^
+..\src\Incognizable.cpp:26:22: warning: variable 'c' set but not used [-Wunused-but-set-variable]
+   26 |         Incognizable c = {0};
+      |                      ^
+..\src\Incognizable.cpp:27:22: warning: variable 'd' set but not used [-Wunused-but-set-variable]
+   27 |         Incognizable d = {0, 1};
+      |                      ^
+g++ -o Incognizable.exe "src\\Incognizable.o" 
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for Incognizable
+Info: Nothing to build for FirstAndLastNames1
+Info: Nothing to build for FirstAndLastNames3
+Info: Nothing to build for FisrtAndLastNames2
+18:12:38 **** Incremental Build of configuration Debug for project Incognizable ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Incognizable.o" "..\\src\\Incognizable.cpp" 
+..\src\Incognizable.cpp: In function 'int main()':
+..\src\Incognizable.cpp:25:22: warning: variable 'b' set but not used [-Wunused-but-set-variable]
+   25 |         Incognizable b = {};
+      |                      ^
+..\src\Incognizable.cpp:26:22: warning: variable 'c' set but not used [-Wunused-but-set-variable]
+   26 |         Incognizable c = {0};
+      |                      ^
+..\src\Incognizable.cpp:27:22: warning: variable 'd' set but not used [-Wunused-but-set-variable]
+   27 |         Incognizable d = {0, 1};
+      |                      ^
+g++ -o Incognizable.exe "src\\Incognizable.o" 
+Info: Nothing to build for ReversibleString
+Info: Nothing to build for SortModul
+Info: Nothing to build for SortWithoutRegister
+Info: Nothing to build for sorted_strings
+Info: Nothing to build for Incognizable
