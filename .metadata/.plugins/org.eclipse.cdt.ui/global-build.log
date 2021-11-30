@@ -1239,3 +1239,11 @@ Info: Nothing to build for output_with_precision
 Info: Nothing to build for read_file
 Info: Nothing to build for read_file_write_to_file
 Info: Nothing to build for input_and_output_table
+23:16:22 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+g++ -o input_and_output_table.exe "src\\input_and_output_table.o" 
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for input_and_output_table
