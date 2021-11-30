@@ -1,36 +1,1241 @@
-05:03:32 **** Incremental Build of configuration Debug for project Function ****
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file
+20:36:17 **** Rebuild of configuration Debug for project read_file_write_to_file ****
 Info: Internal Builder is used for build
-g++ -o Function.exe "src\\Function.o" 
-d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o):crt0_c.c:(.text+0x46): undefined reference to `WinMain'
-collect2.exe: error: ld returned 1 exit status
-05:03:48 **** Incremental Build of configuration Debug for project Function ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\read_file_write_to_file.o" "..\\src\\read_file_write_to_file.cpp" 
+g++ -o read_file_write_to_file.exe "src\\read_file_write_to_file.o" 
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+20:47:32 **** Rebuild of configuration Debug for project output_with_precision ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Function.o" "..\\src\\Function.cpp" 
-g++ -o Function.exe "src\\Function.o" 
-d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o):crt0_c.c:(.text+0x46): undefined reference to `WinMain'
-collect2.exe: error: ld returned 1 exit status
-05:03:49 **** Incremental Build of configuration Debug for project Function2 ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+..\src\output_with_precision.cpp: In function 'int main()':
+..\src\output_with_precision.cpp:18:26: error: 'setpre' was not declared in this scope
+   18 |         cout << fixed << setpre
+      |                          ^~~~~~
+..\src\output_with_precision.cpp:16:16: warning: unused variable 'number' [-Wunused-variable]
+   16 |         double number;
+      |                ^~~~~~
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+20:47:56 **** Incremental Build of configuration Debug for project output_with_precision ****
 Info: Internal Builder is used for build
-g++ -o Function2.exe "src\\Function2.o" 
-d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o):crt0_c.c:(.text+0x46): undefined reference to `WinMain'
-collect2.exe: error: ld returned 1 exit status
-05:03:51 **** Incremental Build of configuration Debug for project Function ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+..\src\output_with_precision.cpp: In function 'int main()':
+..\src\output_with_precision.cpp:18:26: error: 'setprecision' was not declared in this scope
+   18 |         cout << fixed << setprecision(3);
+      |                          ^~~~~~~~~~~~
+..\src\output_with_precision.cpp:20:22: error: no matching function for call to 'getline(std::ifstream&, double&)'
+   20 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:56,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.tcc:1557:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)'
+ 1557 |     getline(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.tcc:1557:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:20:22: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'double'
+   20 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6570:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6570 |     getline(basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6570:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:20:22: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'double'
+   20 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6578:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)'
+ 6578 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6578:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:20:22: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'double'
+   20 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6585:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6585 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6585:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:20:22: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'double'
+   20 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+20:48:43 **** Incremental Build of configuration Debug for project output_with_precision ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Function.o" "..\\src\\Function.cpp" 
-g++ -o Function.exe "src\\Function.o" 
-05:03:52 **** Incremental Build of configuration Debug for project Function2 ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+..\src\output_with_precision.cpp: In function 'int main()':
+..\src\output_with_precision.cpp:21:22: error: no matching function for call to 'getline(std::ifstream&, double&)'
+   21 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:56,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.tcc:1557:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)'
+ 1557 |     getline(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.tcc:1557:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:21:22: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'double'
+   21 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6570:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6570 |     getline(basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6570:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:21:22: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'double'
+   21 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6578:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)'
+ 6578 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6578:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:21:22: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'double'
+   21 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6585:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6585 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6585:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:21:22: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'double'
+   21 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+20:48:57 **** Incremental Build of configuration Debug for project output_with_precision ****
 Info: Internal Builder is used for build
-g++ -o Function2.exe "src\\Function2.o" 
-d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o):crt0_c.c:(.text+0x46): undefined reference to `WinMain'
-collect2.exe: error: ld returned 1 exit status
-05:04:03 **** Incremental Build of configuration Debug for project Function ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+..\src\output_with_precision.cpp: In function 'int main()':
+..\src\output_with_precision.cpp:22:22: error: no matching function for call to 'getline(std::ifstream&, double&)'
+   22 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:56,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.tcc:1557:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)'
+ 1557 |     getline(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.tcc:1557:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:22:22: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'double'
+   22 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6570:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6570 |     getline(basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6570:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:22:22: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'double'
+   22 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6578:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)'
+ 6578 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6578:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:22:22: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'double'
+   22 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6585:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6585 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6585:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:22:22: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'double'
+   22 |         while(getline(input, number)) {
+      |               ~~~~~~~^~~~~~~~~~~~~~~
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+20:51:55 **** Incremental Build of configuration Debug for project output_with_precision ****
 Info: Internal Builder is used for build
-g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Function.o" "..\\src\\Function.cpp" 
-g++ -o Function.exe "src\\Function.o" 
-d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o):crt0_c.c:(.text+0x46): undefined reference to `WinMain'
-collect2.exe: error: ld returned 1 exit status
-05:04:04 **** Incremental Build of configuration Debug for project Function2 ****
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+g++ -o output_with_precision.exe "src\\output_with_precision.o" 
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+20:53:00 **** Incremental Build of configuration Debug for project output_with_precision ****
 Info: Internal Builder is used for build
-g++ -o Function2.exe "src\\Function2.o" 
-d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/lib/../lib/libmingw32.a(lib64_libmingw32_a-crt0_c.o):crt0_c.c:(.text+0x46): undefined reference to `WinMain'
-collect2.exe: error: ld returned 1 exit status
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+g++ -o output_with_precision.exe "src\\output_with_precision.o" 
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+21:04:57 **** Incremental Build of configuration Debug for project output_with_precision ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+g++ -o output_with_precision.exe "src\\output_with_precision.o" 
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+21:45:04 **** Incremental Build of configuration Debug for project output_with_precision ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+g++ -o output_with_precision.exe "src\\output_with_precision.o" 
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+21:46:40 **** Incremental Build of configuration Debug for project output_with_precision ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+..\src\output_with_precision.cpp: In function 'int main()':
+..\src\output_with_precision.cpp:17:23: warning: empty parentheses were disambiguated as a function declaration [-Wvexing-parse]
+   17 |         ifstream input();
+      |                       ^~
+..\src\output_with_precision.cpp:17:23: note: remove parentheses to default-initialize a variable
+   17 |         ifstream input();
+      |                       ^~
+      |                       --
+..\src\output_with_precision.cpp:17:23: note: or replace parentheses with braces to value-initialize a variable
+..\src\output_with_precision.cpp:18:15: error: request for member 'open' in 'input', which is of non-class type 'std::ifstream()' {aka 'std::basic_ifstream<char>()'}
+   18 |         input.open("input.txt");
+      |               ^~~~
+..\src\output_with_precision.cpp:19:23: error: request for member 'is_open' in 'input', which is of non-class type 'std::ifstream()' {aka 'std::basic_ifstream<char>()'}
+   19 |         cout << input.is_open();
+      |                       ^~~~~~~
+..\src\output_with_precision.cpp:24:15: warning: the address of 'std::ifstream input()' will never be NULL [-Waddress]
+   24 |         while(input) {
+      |               ^~~~~
+..\src\output_with_precision.cpp:25:23: error: invalid operands of types 'std::ifstream()' {aka 'std::basic_ifstream<char>()'} and 'double' to binary 'operator>>'
+   25 |                 input >> number;
+      |                 ~~~~~ ^~ ~~~~~~
+      |                 |        |
+      |                 |        double
+      |                 std::ifstream() {aka std::basic_ifstream<char>()}
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+21:46:47 **** Incremental Build of configuration Debug for project output_with_precision ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+g++ -o output_with_precision.exe "src\\output_with_precision.o" 
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+21:47:23 **** Incremental Build of configuration Debug for project output_with_precision ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+g++ -o output_with_precision.exe "src\\output_with_precision.o" 
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+21:51:52 **** Incremental Build of configuration Debug for project output_with_precision ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+..\src\output_with_precision.cpp: In function 'int main()':
+..\src\output_with_precision.cpp:18:14: error: no match for 'operator<<' (operand types are 'std::ostream' {aka 'std::basic_ostream<char>'} and 'std::ifstream' {aka 'std::basic_ifstream<char>'})
+   18 |         cout << input;
+      |         ~~~~ ^~ ~~~~~
+      |         |       |
+      |         |       std::ifstream {aka std::basic_ifstream<char>}
+      |         std::ostream {aka std::basic_ostream<char>}
+..\src\output_with_precision.cpp:18:14: note: candidate: 'operator<<(int, int)' (built-in)
+   18 |         cout << input;
+      |         ~~~~~^~~~~~~~
+..\src\output_with_precision.cpp:18:14: note:   no known conversion for argument 2 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'int'
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:108:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  108 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:108:36: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)' {aka 'std::basic_ostream<char>& (*)(std::basic_ostream<char>&)'}
+  108 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:117:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]'
+  117 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:117:32: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  117 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:127:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  127 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:127:30: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::ios_base& (*)(std::ios_base&)'
+  127 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:166:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  166 |       operator<<(long __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:166:23: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long int'
+  166 |       operator<<(long __n)
+      |                  ~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:170:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  170 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:170:32: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long unsigned int'
+  170 |       operator<<(unsigned long __n)
+      |                  ~~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:174:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  174 |       operator<<(bool __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:174:23: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'bool'
+  174 |       operator<<(bool __n)
+      |                  ~~~~~^~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\ostream:826,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:91:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]'
+   91 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:92:22: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'short int'
+   92 |     operator<<(short __n)
+      |                ~~~~~~^~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:181:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  181 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:181:33: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'short unsigned int'
+  181 |       operator<<(unsigned short __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\ostream:826,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:105:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]'
+  105 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:106:20: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'int'
+  106 |     operator<<(int __n)
+      |                ~~~~^~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:192:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  192 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:192:31: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'unsigned int'
+  192 |       operator<<(unsigned int __n)
+      |                  ~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:201:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  201 |       operator<<(long long __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:201:28: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long long int'
+  201 |       operator<<(long long __n)
+      |                  ~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:205:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  205 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:205:37: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long long unsigned int'
+  205 |       operator<<(unsigned long long __n)
+      |                  ~~~~~~~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:220:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  220 |       operator<<(double __f)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:220:25: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'double'
+  220 |       operator<<(double __f)
+      |                  ~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:224:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  224 |       operator<<(float __f)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:224:24: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'float'
+  224 |       operator<<(float __f)
+      |                  ~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:232:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  232 |       operator<<(long double __f)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:232:30: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long double'
+  232 |       operator<<(long double __f)
+      |                  ~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:245:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  245 |       operator<<(const void* __p)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:245:30: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'const void*'
+  245 |       operator<<(const void* __p)
+      |                  ~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:250:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::nullptr_t) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::nullptr_t = std::nullptr_t]'
+  250 |       operator<<(nullptr_t)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:250:18: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::nullptr_t'
+  250 |       operator<<(nullptr_t)
+      |                  ^~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\ostream:826,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:119:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]'
+  119 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:120:34: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::basic_ostream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  120 |     operator<<(__streambuf_type* __sbin)
+      |                ~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:666:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::basic_string_view<_CharT, _Traits>)'
+  666 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:666:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   'std::basic_ifstream<char>' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6530:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6530 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6530:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   'std::ifstream' {aka 'std::basic_ifstream<char>'} is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:46,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:263:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)'
+  263 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:263:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const std::error_code&'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:506:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)'
+  506 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:506:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   deduced conflicting types for parameter '_CharT' ('char' and 'std::basic_ifstream<char>')
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:511:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)'
+  511 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:511:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'char'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:517:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)'
+  517 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:517:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'char'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:523:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)'
+  523 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:523:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'signed char'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:528:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)'
+  528 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:528:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'unsigned char'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:589:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)'
+  589 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:589:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   mismatched types 'const _CharT*' and 'std::basic_ifstream<char>'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\ostream:826,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:321:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)'
+  321 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const char*'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:606:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)'
+  606 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:606:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const char*'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:619:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)'
+  619 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:619:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const signed char*'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:624:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)'
+  624 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:624:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const unsigned char*'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:747:5: note: candidate: 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)'
+  747 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:747:5: note:   template argument deduction/substitution failed:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream: In substitution of 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = std::basic_ifstream<char>]':
+..\src\output_with_precision.cpp:18:10:   required from here
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:747:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:79:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Resetiosflags)'
+   79 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:79:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Resetiosflags'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:109:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setiosflags)'
+  109 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:109:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Setiosflags'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:143:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setbase)'
+  143 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:143:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Setbase'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:178:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setfill<_CharT>)'
+  178 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:178:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   'std::basic_ifstream<char>' is not derived from 'std::_Setfill<_CharT>'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:208:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setprecision)'
+  208 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:208:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Setprecision'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:238:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setw)'
+  238 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:238:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Setw'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:311:5: note: candidate: 'template<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_money<_MoneyT>)'
+  311 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:311:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   'std::basic_ifstream<char>' is not derived from 'std::_Put_money<_MoneyT>'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:363:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_time<_CharT>)'
+  363 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:363:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   'std::basic_ifstream<char>' is not derived from 'std::_Put_time<_CharT>'
+   18 |         cout << input;
+      |                 ^~~~~
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+21:51:54 **** Incremental Build of configuration Debug for project output_with_precision ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+..\src\output_with_precision.cpp: In function 'int main()':
+..\src\output_with_precision.cpp:18:14: error: no match for 'operator<<' (operand types are 'std::ostream' {aka 'std::basic_ostream<char>'} and 'std::ifstream' {aka 'std::basic_ifstream<char>'})
+   18 |         cout << input;
+      |         ~~~~ ^~ ~~~~~
+      |         |       |
+      |         |       std::ifstream {aka std::basic_ifstream<char>}
+      |         std::ostream {aka std::basic_ostream<char>}
+..\src\output_with_precision.cpp:18:14: note: candidate: 'operator<<(int, int)' (built-in)
+   18 |         cout << input;
+      |         ~~~~~^~~~~~~~
+..\src\output_with_precision.cpp:18:14: note:   no known conversion for argument 2 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'int'
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:108:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ostream_type& (*)(std::basic_ostream<_CharT, _Traits>::__ostream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  108 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:108:36: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::basic_ostream<char>::__ostream_type& (*)(std::basic_ostream<char>::__ostream_type&)' {aka 'std::basic_ostream<char>& (*)(std::basic_ostream<char>&)'}
+  108 |       operator<<(__ostream_type& (*__pf)(__ostream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:117:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__ios_type& (*)(std::basic_ostream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::basic_ostream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]'
+  117 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:117:32: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::basic_ostream<char>::__ios_type& (*)(std::basic_ostream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  117 |       operator<<(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:127:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  127 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:127:30: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::ios_base& (*)(std::ios_base&)'
+  127 |       operator<<(ios_base& (*__pf) (ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:166:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  166 |       operator<<(long __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:166:23: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long int'
+  166 |       operator<<(long __n)
+      |                  ~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:170:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  170 |       operator<<(unsigned long __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:170:32: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long unsigned int'
+  170 |       operator<<(unsigned long __n)
+      |                  ~~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:174:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(bool) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  174 |       operator<<(bool __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:174:23: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'bool'
+  174 |       operator<<(bool __n)
+      |                  ~~~~~^~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\ostream:826,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:91:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(short int) [with _CharT = char; _Traits = std::char_traits<char>]'
+   91 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:92:22: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'short int'
+   92 |     operator<<(short __n)
+      |                ~~~~~~^~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:181:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(short unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  181 |       operator<<(unsigned short __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:181:33: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'short unsigned int'
+  181 |       operator<<(unsigned short __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\ostream:826,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:105:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(int) [with _CharT = char; _Traits = std::char_traits<char>]'
+  105 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:106:20: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'int'
+  106 |     operator<<(int __n)
+      |                ~~~~^~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:192:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  192 |       operator<<(unsigned int __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:192:31: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'unsigned int'
+  192 |       operator<<(unsigned int __n)
+      |                  ~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:201:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  201 |       operator<<(long long __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:201:28: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long long int'
+  201 |       operator<<(long long __n)
+      |                  ~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:205:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long long unsigned int) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  205 |       operator<<(unsigned long long __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:205:37: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long long unsigned int'
+  205 |       operator<<(unsigned long long __n)
+      |                  ~~~~~~~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:220:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  220 |       operator<<(double __f)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:220:25: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'double'
+  220 |       operator<<(double __f)
+      |                  ~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:224:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(float) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  224 |       operator<<(float __f)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:224:24: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'float'
+  224 |       operator<<(float __f)
+      |                  ~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:232:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(long double) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  232 |       operator<<(long double __f)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:232:30: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'long double'
+  232 |       operator<<(long double __f)
+      |                  ~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:245:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(const void*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>]'
+  245 |       operator<<(const void* __p)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:245:30: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'const void*'
+  245 |       operator<<(const void* __p)
+      |                  ~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:250:7: note: candidate: 'std::basic_ostream<_CharT, _Traits>::__ostream_type& std::basic_ostream<_CharT, _Traits>::operator<<(std::nullptr_t) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__ostream_type = std::basic_ostream<char>; std::nullptr_t = std::nullptr_t]'
+  250 |       operator<<(nullptr_t)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:250:18: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::nullptr_t'
+  250 |       operator<<(nullptr_t)
+      |                  ^~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\ostream:826,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:119:5: note: candidate: 'std::basic_ostream<_CharT, _Traits>& std::basic_ostream<_CharT, _Traits>::operator<<(std::basic_ostream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_ostream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]'
+  119 |     basic_ostream<_CharT, _Traits>::
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:120:34: note:   no known conversion for argument 1 from 'std::ifstream' {aka 'std::basic_ifstream<char>'} to 'std::basic_ostream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  120 |     operator<<(__streambuf_type* __sbin)
+      |                ~~~~~~~~~~~~~~~~~~^~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:666:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::basic_string_view<_CharT, _Traits>)'
+  666 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:666:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   'std::basic_ifstream<char>' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6530:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6530 |     operator<<(basic_ostream<_CharT, _Traits>& __os,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6530:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   'std::ifstream' {aka 'std::basic_ifstream<char>'} is not derived from 'const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:46,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:263:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const std::error_code&)'
+  263 |     operator<<(basic_ostream<_CharT, _Traits>& __os, const error_code& __e)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:263:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const std::error_code&'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:506:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, _CharT)'
+  506 |     operator<<(basic_ostream<_CharT, _Traits>& __out, _CharT __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:506:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   deduced conflicting types for parameter '_CharT' ('char' and 'std::basic_ifstream<char>')
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:511:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, char)'
+  511 |     operator<<(basic_ostream<_CharT, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:511:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'char'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:517:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, char)'
+  517 |     operator<<(basic_ostream<char, _Traits>& __out, char __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:517:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'char'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:523:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, signed char)'
+  523 |     operator<<(basic_ostream<char, _Traits>& __out, signed char __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:523:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'signed char'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:528:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, unsigned char)'
+  528 |     operator<<(basic_ostream<char, _Traits>& __out, unsigned char __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:528:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'unsigned char'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:589:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const _CharT*)'
+  589 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const _CharT* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:589:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   mismatched types 'const _CharT*' and 'std::basic_ifstream<char>'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\ostream:826,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:321:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, const char*)'
+  321 |     operator<<(basic_ostream<_CharT, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\ostream.tcc:321:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const char*'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:606:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const char*)'
+  606 |     operator<<(basic_ostream<char, _Traits>& __out, const char* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:606:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const char*'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:619:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const signed char*)'
+  619 |     operator<<(basic_ostream<char, _Traits>& __out, const signed char* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:619:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const signed char*'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:624:5: note: candidate: 'template<class _Traits> std::basic_ostream<char, _Traits>& std::operator<<(std::basic_ostream<char, _Traits>&, const unsigned char*)'
+  624 |     operator<<(basic_ostream<char, _Traits>& __out, const unsigned char* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:624:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'const unsigned char*'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\output_with_precision.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:747:5: note: candidate: 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&)'
+  747 |     operator<<(_Ostream&& __os, const _Tp& __x)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:747:5: note:   template argument deduction/substitution failed:
+d:\eclipse\mingw64\include\c++\11.2.0\ostream: In substitution of 'template<class _Ostream, class _Tp> _Ostream&& std::operator<<(_Ostream&&, const _Tp&) [with _Ostream = std::basic_ostream<char>&; _Tp = std::basic_ifstream<char>]':
+..\src\output_with_precision.cpp:18:10:   required from here
+d:\eclipse\mingw64\include\c++\11.2.0\ostream:747:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:79:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Resetiosflags)'
+   79 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Resetiosflags __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:79:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Resetiosflags'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:109:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setiosflags)'
+  109 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setiosflags __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:109:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Setiosflags'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:143:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setbase)'
+  143 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setbase __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:143:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Setbase'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:178:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setfill<_CharT>)'
+  178 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setfill<_CharT> __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:178:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   'std::basic_ifstream<char>' is not derived from 'std::_Setfill<_CharT>'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:208:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setprecision)'
+  208 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setprecision __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:208:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Setprecision'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:238:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Setw)'
+  238 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Setw __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:238:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   cannot convert 'input' (type 'std::ifstream' {aka 'std::basic_ifstream<char>'}) to type 'std::_Setw'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:311:5: note: candidate: 'template<class _CharT, class _Traits, class _MoneyT> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_money<_MoneyT>)'
+  311 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_money<_MoneyT> __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:311:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   'std::basic_ifstream<char>' is not derived from 'std::_Put_money<_MoneyT>'
+   18 |         cout << input;
+      |                 ^~~~~
+In file included from ..\src\output_with_precision.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:363:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_ostream<_CharT, _Traits>& std::operator<<(std::basic_ostream<_CharT, _Traits>&, std::_Put_time<_CharT>)'
+  363 |     operator<<(basic_ostream<_CharT, _Traits>& __os, _Put_time<_CharT> __f)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\iomanip:363:5: note:   template argument deduction/substitution failed:
+..\src\output_with_precision.cpp:18:17: note:   'std::basic_ifstream<char>' is not derived from 'std::_Put_time<_CharT>'
+   18 |         cout << input;
+      |                 ^~~~~
+21:52:09 **** Incremental Build of configuration Debug for project output_with_precision ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+g++ -o output_with_precision.exe "src\\output_with_precision.o" 
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+21:52:49 **** Incremental Build of configuration Debug for project output_with_precision ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+g++ -o output_with_precision.exe "src\\output_with_precision.o" 
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+21:53:21 **** Incremental Build of configuration Debug for project output_with_precision ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+g++ -o output_with_precision.exe "src\\output_with_precision.o" 
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+21:58:50 **** Incremental Build of configuration Debug for project output_with_precision ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+g++ -o output_with_precision.exe "src\\output_with_precision.o" 
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+22:01:00 **** Incremental Build of configuration Debug for project output_with_precision ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+g++ -o output_with_precision.exe "src\\output_with_precision.o" 
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+22:01:11 **** Incremental Build of configuration Debug for project output_with_precision ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\output_with_precision.o" "..\\src\\output_with_precision.cpp" 
+g++ -o output_with_precision.exe "src\\output_with_precision.o" 
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for output_with_precision
+22:25:17 **** Rebuild of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+..\src\input_and_output_table.cpp: In function 'int main()':
+..\src\input_and_output_table.cpp:19:13: warning: unused variable 'n' [-Wunused-variable]
+   19 |         int n, m;
+      |             ^
+..\src\input_and_output_table.cpp:19:16: warning: unused variable 'm' [-Wunused-variable]
+   19 |         int n, m;
+      |                ^
+g++ -o input_and_output_table.exe "src\\input_and_output_table.o" 
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+22:31:23 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+..\src\input_and_output_table.cpp: In function 'int main()':
+..\src\input_and_output_table.cpp:26:32: error: no matching function for call to 'getline(std::ifstream&, int&, char)'
+   26 |                         getline(input, number, ',');
+      |                         ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:56,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\input_and_output_table.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.tcc:1557:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)'
+ 1557 |     getline(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.tcc:1557:5: note:   template argument deduction/substitution failed:
+..\src\input_and_output_table.cpp:26:32: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'int'
+   26 |                         getline(input, number, ',');
+      |                         ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\input_and_output_table.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6570:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6570 |     getline(basic_istream<_CharT, _Traits>& __is,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6570:5: note:   template argument deduction/substitution failed:
+..\src\input_and_output_table.cpp:26:32: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'int'
+   26 |                         getline(input, number, ',');
+      |                         ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\input_and_output_table.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6578:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, _CharT)'
+ 6578 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6578:5: note:   template argument deduction/substitution failed:
+..\src\input_and_output_table.cpp:26:32: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'int'
+   26 |                         getline(input, number, ',');
+      |                         ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\input_and_output_table.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6585:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::getline(std::basic_istream<_CharT, _Traits>&&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6585 |     getline(basic_istream<_CharT, _Traits>&& __is,
+      |     ^~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6585:5: note:   template argument deduction/substitution failed:
+..\src\input_and_output_table.cpp:26:32: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'int'
+   26 |                         getline(input, number, ',');
+      |                         ~~~~~~~^~~~~~~~~~~~~~~~~~~~
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+22:31:53 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+..\src\input_and_output_table.cpp: In function 'int main()':
+..\src\input_and_output_table.cpp:27:38: error: no matching function for call to 'std::vector<int>::push_back(std::string&)'
+   27 |                         raw.push_back(number);
+      |                         ~~~~~~~~~~~~~^~~~~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\vector:67,
+                 from ..\src\input_and_output_table.cpp:12:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1187:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(const value_type&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::value_type = int]'
+ 1187 |       push_back(const value_type& __x)
+      |       ^~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1187:35: note:   no known conversion for argument 1 from 'std::string' {aka 'std::__cxx11::basic_string<char>'} to 'const value_type&' {aka 'const int&'}
+ 1187 |       push_back(const value_type& __x)
+      |                 ~~~~~~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1203:7: note: candidate: 'void std::vector<_Tp, _Alloc>::push_back(std::vector<_Tp, _Alloc>::value_type&&) [with _Tp = int; _Alloc = std::allocator<int>; std::vector<_Tp, _Alloc>::value_type = int]'
+ 1203 |       push_back(value_type&& __x)
+      |       ^~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1203:30: note:   no known conversion for argument 1 from 'std::string' {aka 'std::__cxx11::basic_string<char>'} to 'std::vector<int>::value_type&&' {aka 'int&&'}
+ 1203 |       push_back(value_type&& __x)
+      |                 ~~~~~~~~~~~~~^~~
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+22:46:33 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+..\src\input_and_output_table.cpp: In function 'int main()':
+..\src\input_and_output_table.cpp:24:37: warning: 'm' may be used uninitialized [-Wmaybe-uninitialized]
+   24 |                 for(int j = 0; j < m-1; ++j) {
+      |                                    ~^~
+..\src\input_and_output_table.cpp:23:26: warning: 'n' may be used uninitialized [-Wmaybe-uninitialized]
+   23 |         for(int i = 0; i < n; ++i) {
+      |                        ~~^~~
+g++ -o input_and_output_table.exe "src\\input_and_output_table.o" 
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+22:47:03 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+..\src\input_and_output_table.cpp: In function 'int main()':
+..\src\input_and_output_table.cpp:25:37: warning: 'm' may be used uninitialized [-Wmaybe-uninitialized]
+   25 |                 for(int j = 0; j < m-1; ++j) {
+      |                                    ~^~
+..\src\input_and_output_table.cpp:23:26: warning: 'n' may be used uninitialized [-Wmaybe-uninitialized]
+   23 |         for(int i = 0; i < n; ++i) {
+      |                        ~~^~~
+g++ -o input_and_output_table.exe "src\\input_and_output_table.o" 
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+22:47:58 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+g++ -o input_and_output_table.exe "src\\input_and_output_table.o" 
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+22:49:13 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+g++ -o input_and_output_table.exe "src\\input_and_output_table.o" 
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for input_and_output_table
+22:55:56 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+..\src\input_and_output_table.cpp: In function 'int main()':
+..\src\input_and_output_table.cpp:40:26: error: 'setprecision' was not declared in this scope
+   40 |         cout << fixed << setprecision(9);
+      |                          ^~~~~~~~~~~~
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+22:55:59 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+..\src\input_and_output_table.cpp: In function 'int main()':
+..\src\input_and_output_table.cpp:40:26: error: 'setprecision' was not declared in this scope
+   40 |         cout << fixed << setprecision(9);
+      |                          ^~~~~~~~~~~~
+22:56:20 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+g++ -o input_and_output_table.exe "src\\input_and_output_table.o" 
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for input_and_output_table
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for input_and_output_table
+22:57:42 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+g++ -o input_and_output_table.exe "src\\input_and_output_table.o" 
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for input_and_output_table
+23:00:39 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+g++ -o input_and_output_table.exe "src\\input_and_output_table.o" 
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for input_and_output_table
+23:03:16 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+g++ -o input_and_output_table.exe "src\\input_and_output_table.o" 
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for input_and_output_table
+23:09:52 **** Incremental Build of configuration Debug for project input_and_output_table ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\input_and_output_table.o" "..\\src\\input_and_output_table.cpp" 
+g++ -o input_and_output_table.exe "src\\input_and_output_table.o" 
+Info: Nothing to build for output_with_precision
+Info: Nothing to build for read_file
+Info: Nothing to build for read_file_write_to_file
+Info: Nothing to build for input_and_output_table
