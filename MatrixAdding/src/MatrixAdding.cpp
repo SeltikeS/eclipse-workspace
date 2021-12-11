@@ -19,6 +19,11 @@ public:
 	Matrix() {}
 	Matrix(const int& num_rows, const int& num_cols)
 	{
+		if(num_rows < 0 || num_cols < 0)
+		{
+			throw out_of_range("");
+		}
+
 		Reset(num_rows, num_cols);
 	}
 
@@ -26,65 +31,68 @@ public:
 	{
 		if(num_rows < 0 || num_cols < 0)
 		{
-			throw out_of_range("reset");
+			throw out_of_range("");
+		}
+		if(num_rows == 0 || num_cols == 0) {
+			m_matrix.resize(0);
+		} else {
+			m_matrix.assign(num_rows, vector<int>(num_cols));
 		}
 
-		m_matrix.resize(num_rows);
-		for(auto& item : m_matrix)
-		{
-			item.resize(num_cols);
-		}
 	}
 
-	const int& At(const int& raw_num, const int& col_num) const
+	const int& At(const int& row_num, const int& col_num) const
 	{
-		if(raw_num < 0)
+		if(row_num < 0)
 		{
-			throw out_of_range("raw1 < 0");
+			throw out_of_range("");
 		}
-		if(raw_num > GetNumRows())
+		if(row_num >= GetNumRows())
 		{
-			throw out_of_range("raw1 > size");
+			throw out_of_range("");
 		}
 		if(col_num < 0)
 		{
-			throw out_of_range("col1 < 0");
+			throw out_of_range("");
 		}
-		if(col_num > GetNumCols())
+		if(col_num >= GetNumColumns())
 		{
-			throw out_of_range("col1 > size");
+			throw out_of_range("");
 		}
 
 
-		return m_matrix.at(raw_num).at(col_num);
+		return m_matrix.at(row_num).at(col_num);
 	}
-	int& At(const int& raw_num, const int& col_num)
+	int& At(const int& row_num, const int& col_num)
 	{
-		if(raw_num < 0)
+		if(row_num < 0)
 		{
-			throw out_of_range("raw2 < 0");
+			throw out_of_range("");
 		}
-		if(raw_num > GetNumRows())
+		if(row_num >= GetNumRows())
 		{
-			throw out_of_range("raw2 > size");
+			throw out_of_range("");
 		}
 		if(col_num < 0)
 		{
-			throw out_of_range("col2 < 0");
+			throw out_of_range("");
 		}
-		if(col_num > GetNumCols())
+		if(col_num >= GetNumColumns())
 		{
-			throw out_of_range("col2 > size");
+			throw out_of_range("");
 		}
-		return m_matrix[raw_num][col_num];
+		return m_matrix[row_num][col_num];
 	}
 
 	int GetNumRows() const
 	{
 		return m_matrix.size();
 	}
-	int GetNumCols() const
+	int GetNumColumns() const
 	{
+		if(GetNumRows() == 0) {
+			return 0;
+		}
 		return m_matrix.at(0).size();
 	}
 
@@ -99,13 +107,13 @@ private:
 
 istream& operator>>(istream& stream, Matrix& m)
 {
-	int num_raws, num_cols;
-	stream >> num_raws >> num_cols;
+	int num_rows, num_cols;
+	stream >> num_rows >> num_cols;
 
-	m = Matrix(num_raws, num_cols);
+	m = Matrix(num_rows, num_cols);
 
-	for(auto& raw : m.m_matrix) {
-		for(auto& col : raw)
+	for(auto& row : m.m_matrix) {
+		for(auto& col : row)
 		{
 			stream >> col;
 		}
@@ -116,7 +124,7 @@ istream& operator>>(istream& stream, Matrix& m)
 ostream& operator<<(ostream& stream, const Matrix& m)
 {
 	int num_rows = m.GetNumRows();
-	int num_cols = m.GetNumCols();
+	int num_cols = m.GetNumColumns();
 	stream << num_rows << ' ' << num_cols << endl;
 
 	for(const auto& row : m.m_matrix)
@@ -137,14 +145,10 @@ bool operator==(const Matrix& a, const Matrix& b)
 Matrix operator+(const Matrix& a, const Matrix& b)
 {
 	Matrix m;
-	if(a == b)
-	{
-		m = Matrix();
-	}
-	else if(a.GetNumRows() == b.GetNumRows() && a.GetNumCols() == b.GetNumCols())
+	if(a.GetNumRows() == b.GetNumRows() && a.GetNumColumns() == b.GetNumColumns())
 	{
 		int num_rows = a.GetNumRows();
-		int num_cols = a.GetNumCols();
+		int num_cols = a.GetNumColumns();
 
 		m = Matrix(num_rows, num_cols);
 
@@ -166,11 +170,25 @@ Matrix operator+(const Matrix& a, const Matrix& b)
 
 int main()
 {
-	Matrix one;
-	Matrix two;
+	try
+	{
+//		Matrix one;
+//		Matrix two;
+//
+		Matrix m;
+		cin >> m;
+		m.Reset(2, 3);
+		cout << m;
+//
+//
+//		cin >> one >> two;
+//		cout << one + two << endl;
+	}
+	catch (exception& e)
+	{
+		cout << e.what() << endl;
+	}
 
-	cin >> one >> two;
 
-	cout << one + two << endl;
 	return 0;
 }
