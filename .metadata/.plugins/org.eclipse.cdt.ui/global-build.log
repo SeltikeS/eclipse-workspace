@@ -20587,3 +20587,594 @@ d:\eclipse\mingw64\include\c++\11.2.0\bits\range_access.h:110:37: note: 'std::en
 ..\src\TaskTracker.cpp:101:81: error: request for member 'second' in 'update', which is of non-class type 'int'
   101 |                 tuple<TasksInfo, TasksInfo> t = make_tuple(update.first, update.second);
       |                                                                                 ^~~~~~
+17:55:36 **** Rebuild of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+g++ -o Sqr.exe "src\\Sqr.o" 
+17:55:38 **** Incremental Build of configuration Debug for project TaskTracker ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TaskTracker.o" "..\\src\\TaskTracker.cpp" 
+..\src\TaskTracker.cpp:31:15: error: 'TasksInfo' does not name a type
+   31 |         const TasksInfo& GetPersonTasksInfo(const string& person) const {
+      |               ^~~~~~~~~
+..\src\TaskTracker.cpp:47:15: error: 'TasksInfo' was not declared in this scope
+   47 |         tuple<TasksInfo, TasksInfo> PerformPersonTasks(const string& person, int task_count) {
+      |               ^~~~~~~~~
+..\src\TaskTracker.cpp:47:26: error: 'TasksInfo' was not declared in this scope
+   47 |         tuple<TasksInfo, TasksInfo> PerformPersonTasks(const string& person, int task_count) {
+      |                          ^~~~~~~~~
+..\src\TaskTracker.cpp:47:35: error: template argument 1 is invalid
+   47 |         tuple<TasksInfo, TasksInfo> PerformPersonTasks(const string& person, int task_count) {
+      |                                   ^
+..\src\TaskTracker.cpp:47:35: error: template argument 2 is invalid
+..\src\TaskTracker.cpp:110:21: error: 'TasksInfo' was not declared in this scope
+  110 |         map<string, TasksInfo> team;
+      |                     ^~~~~~~~~
+..\src\TaskTracker.cpp:110:30: error: template argument 2 is invalid
+  110 |         map<string, TasksInfo> team;
+      |                              ^
+..\src\TaskTracker.cpp:110:30: error: template argument 4 is invalid
+..\src\TaskTracker.cpp: In member function 'void TeamTasks::AddNewTask(const string&)':
+..\src\TaskTracker.cpp:42:23: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   42 |                 ++team[person][TaskStatus::NEW];
+      |                       ^
+..\src\TaskTracker.cpp:42:32: error: 'TaskStatus' has not been declared
+   42 |                 ++team[person][TaskStatus::NEW];
+      |                                ^~~~~~~~~~
+..\src\TaskTracker.cpp: In member function 'int TeamTasks::PerformPersonTasks(const string&, int)':
+..\src\TaskTracker.cpp:48:24: error: 'TaskStatus' was not declared in this scope
+   48 |                 vector<TaskStatus> current_tasks;
+      |                        ^~~~~~~~~~
+..\src\TaskTracker.cpp:48:34: error: template argument 1 is invalid
+   48 |                 vector<TaskStatus> current_tasks;
+      |                                  ^
+..\src\TaskTracker.cpp:48:34: error: template argument 2 is invalid
+..\src\TaskTracker.cpp:51:22: error: 'TasksInfo' was not declared in this scope
+   51 |                 pair<TasksInfo, TasksInfo> update;
+      |                      ^~~~~~~~~
+..\src\TaskTracker.cpp:51:42: error: template argument 1 is invalid
+   51 |                 pair<TasksInfo, TasksInfo> update;
+      |                                          ^
+..\src\TaskTracker.cpp:52:25: error: request for member 'count' in '((TeamTasks*)this)->TeamTasks::team', which is of non-class type 'int'
+   52 |                 if(team.count(person) != 0) {
+      |                         ^~~~~
+..\src\TaskTracker.cpp:53:52: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   53 |                         for(const auto& pers : team[person]) {
+      |                                                    ^
+..\src\TaskTracker.cpp:56:55: error: request for member 'push_back' in 'current_tasks', which is of non-class type 'int'
+   56 |                                         current_tasks.push_back(pers.first);
+      |                                                       ^~~~~~~~~
+..\src\TaskTracker.cpp:61:42: error: 'begin' was not declared in this scope; did you mean 'std::begin'?
+   61 |                         for(auto& item : current_tasks) {
+      |                                          ^~~~~~~~~~~~~
+      |                                          std::begin
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:54,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\TaskTracker.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\range_access.h:108:37: note: 'std::begin' declared here
+  108 |   template<typename _Tp> const _Tp* begin(const valarray<_Tp>&);
+      |                                     ^~~~~
+..\src\TaskTracker.cpp:61:42: error: 'end' was not declared in this scope; did you mean 'std::end'?
+   61 |                         for(auto& item : current_tasks) {
+      |                                          ^~~~~~~~~~~~~
+      |                                          std::end
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:54,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_classes.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\TaskTracker.cpp:9:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\range_access.h:110:37: note: 'std::end' declared here
+  110 |   template<typename _Tp> const _Tp* end(const valarray<_Tp>&);
+      |                                     ^~~
+..\src\TaskTracker.cpp:64:54: error: 'TaskStatus' is not a class, namespace, or enumeration
+   64 |                                                 case TaskStatus::NEW :
+      |                                                      ^~~~~~~~~~
+..\src\TaskTracker.cpp:65:66: error: request for member 'first' in 'update', which is of non-class type 'int'
+   65 |                                                         ++update.first[TaskStatus::IN_PROGRESS];
+      |                                                                  ^~~~~
+..\src\TaskTracker.cpp:65:72: error: 'TaskStatus' is not a class, namespace, or enumeration
+   65 |                                                         ++update.first[TaskStatus::IN_PROGRESS];
+      |                                                                        ^~~~~~~~~~
+..\src\TaskTracker.cpp:66:63: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   66 |                                                         --team[person][TaskStatus::NEW];
+      |                                                               ^
+..\src\TaskTracker.cpp:66:72: error: 'TaskStatus' is not a class, namespace, or enumeration
+   66 |                                                         --team[person][TaskStatus::NEW];
+      |                                                                        ^~~~~~~~~~
+..\src\TaskTracker.cpp:67:64: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   67 |                                                         if(team[person][TaskStatus::NEW] == 0) {
+      |                                                                ^
+..\src\TaskTracker.cpp:67:73: error: 'TaskStatus' is not a class, namespace, or enumeration
+   67 |                                                         if(team[person][TaskStatus::NEW] == 0) {
+      |                                                                         ^~~~~~~~~~
+..\src\TaskTracker.cpp:68:69: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   68 |                                                                 team[person].erase(TaskStatus::NEW);
+      |                                                                     ^
+..\src\TaskTracker.cpp:68:84: error: 'TaskStatus' is not a class, namespace, or enumeration
+   68 |                                                                 team[person].erase(TaskStatus::NEW);
+      |                                                                                    ^~~~~~~~~~
+..\src\TaskTracker.cpp:70:63: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   70 |                                                         ++team[person][TaskStatus::IN_PROGRESS];
+      |                                                               ^
+..\src\TaskTracker.cpp:70:72: error: 'TaskStatus' is not a class, namespace, or enumeration
+   70 |                                                         ++team[person][TaskStatus::IN_PROGRESS];
+      |                                                                        ^~~~~~~~~~
+..\src\TaskTracker.cpp:72:54: error: 'TaskStatus' is not a class, namespace, or enumeration
+   72 |                                                 case TaskStatus::IN_PROGRESS :
+      |                                                      ^~~~~~~~~~
+..\src\TaskTracker.cpp:73:66: error: request for member 'first' in 'update', which is of non-class type 'int'
+   73 |                                                         ++update.first[TaskStatus::TESTING];
+      |                                                                  ^~~~~
+..\src\TaskTracker.cpp:73:72: error: 'TaskStatus' is not a class, namespace, or enumeration
+   73 |                                                         ++update.first[TaskStatus::TESTING];
+      |                                                                        ^~~~~~~~~~
+..\src\TaskTracker.cpp:74:63: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   74 |                                                         --team[person][TaskStatus::IN_PROGRESS];
+      |                                                               ^
+..\src\TaskTracker.cpp:74:72: error: 'TaskStatus' is not a class, namespace, or enumeration
+   74 |                                                         --team[person][TaskStatus::IN_PROGRESS];
+      |                                                                        ^~~~~~~~~~
+..\src\TaskTracker.cpp:75:64: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   75 |                                                         if(team[person][TaskStatus::IN_PROGRESS] == 0) {
+      |                                                                ^
+..\src\TaskTracker.cpp:75:73: error: 'TaskStatus' is not a class, namespace, or enumeration
+   75 |                                                         if(team[person][TaskStatus::IN_PROGRESS] == 0) {
+      |                                                                         ^~~~~~~~~~
+..\src\TaskTracker.cpp:76:69: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   76 |                                                                 team[person].erase(TaskStatus::IN_PROGRESS);
+      |                                                                     ^
+..\src\TaskTracker.cpp:76:84: error: 'TaskStatus' is not a class, namespace, or enumeration
+   76 |                                                                 team[person].erase(TaskStatus::IN_PROGRESS);
+      |                                                                                    ^~~~~~~~~~
+..\src\TaskTracker.cpp:78:63: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   78 |                                                         ++team[person][TaskStatus::TESTING];
+      |                                                               ^
+..\src\TaskTracker.cpp:78:72: error: 'TaskStatus' is not a class, namespace, or enumeration
+   78 |                                                         ++team[person][TaskStatus::TESTING];
+      |                                                                        ^~~~~~~~~~
+..\src\TaskTracker.cpp:80:54: error: 'TaskStatus' is not a class, namespace, or enumeration
+   80 |                                                 case TaskStatus::TESTING :
+      |                                                      ^~~~~~~~~~
+..\src\TaskTracker.cpp:81:66: error: request for member 'first' in 'update', which is of non-class type 'int'
+   81 |                                                         ++update.first[TaskStatus::DONE];
+      |                                                                  ^~~~~
+..\src\TaskTracker.cpp:81:72: error: 'TaskStatus' is not a class, namespace, or enumeration
+   81 |                                                         ++update.first[TaskStatus::DONE];
+      |                                                                        ^~~~~~~~~~
+..\src\TaskTracker.cpp:82:63: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   82 |                                                         --team[person][TaskStatus::TESTING];
+      |                                                               ^
+..\src\TaskTracker.cpp:82:72: error: 'TaskStatus' is not a class, namespace, or enumeration
+   82 |                                                         --team[person][TaskStatus::TESTING];
+      |                                                                        ^~~~~~~~~~
+..\src\TaskTracker.cpp:83:64: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   83 |                                                         if(team[person][TaskStatus::TESTING] == 0) {
+      |                                                                ^
+..\src\TaskTracker.cpp:83:73: error: 'TaskStatus' is not a class, namespace, or enumeration
+   83 |                                                         if(team[person][TaskStatus::TESTING] == 0) {
+      |                                                                         ^~~~~~~~~~
+..\src\TaskTracker.cpp:84:69: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   84 |                                                                 team[person].erase(TaskStatus::TESTING);
+      |                                                                     ^
+..\src\TaskTracker.cpp:84:84: error: 'TaskStatus' is not a class, namespace, or enumeration
+   84 |                                                                 team[person].erase(TaskStatus::TESTING);
+      |                                                                                    ^~~~~~~~~~
+..\src\TaskTracker.cpp:86:63: error: no match for 'operator[]' (operand types are 'int' and 'const string' {aka 'const std::__cxx11::basic_string<char>'})
+   86 |                                                         ++team[person][TaskStatus::DONE];
+      |                                                               ^
+..\src\TaskTracker.cpp:86:72: error: 'TaskStatus' is not a class, namespace, or enumeration
+   86 |                                                         ++team[person][TaskStatus::DONE];
+      |                                                                        ^~~~~~~~~~
+..\src\TaskTracker.cpp:88:54: error: 'TaskStatus' is not a class, namespace, or enumeration
+   88 |                                                 case TaskStatus::DONE :
+      |                                                      ^~~~~~~~~~
+..\src\TaskTracker.cpp:93:52: error: 'TaskStatus' is not a class, namespace, or enumeration
+   93 |                                         if(item != TaskStatus::DONE) {
+      |                                                    ^~~~~~~~~~
+..\src\TaskTracker.cpp:94:58: error: request for member 'second' in 'update', which is of non-class type 'int'
+   94 |                                                 ++update.second[item];
+      |                                                          ^~~~~~
+..\src\TaskTracker.cpp:101:67: error: request for member 'first' in 'update', which is of non-class type 'int'
+  101 |                 tuple<TasksInfo, TasksInfo> t = make_tuple(update.first, update.second);
+      |                                                                   ^~~~~
+..\src\TaskTracker.cpp:101:81: error: request for member 'second' in 'update', which is of non-class type 'int'
+  101 |                 tuple<TasksInfo, TasksInfo> t = make_tuple(update.first, update.second);
+      |                                                                                 ^~~~~~
+Info: Nothing to build for Sqr
+Info: Nothing to build for Sqr
+17:56:57 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+g++ -o Sqr.exe "src\\Sqr.o" 
+18:00:09 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+g++ -o Sqr.exe "src\\Sqr.o" 
+18:02:02 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+g++ -o Sqr.exe "src\\Sqr.o" 
+18:06:26 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+g++ -o Sqr.exe "src\\Sqr.o" 
+Info: Nothing to build for Sqr
+18:10:03 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+..\src\Sqr.cpp: In function 'std::map<Key, Value> operator*(const std::map<Key, Value>&, const std::map<Key, Value>&)':
+..\src\Sqr.cpp:45:9: error: 'Key' was not declared in this scope
+   45 |     map<Key, Value> new_m;
+      |         ^~~
+..\src\Sqr.cpp:45:14: error: 'Value' was not declared in this scope
+   45 |     map<Key, Value> new_m;
+      |              ^~~~~
+..\src\Sqr.cpp:45:19: error: template argument 1 is invalid
+   45 |     map<Key, Value> new_m;
+      |                   ^
+..\src\Sqr.cpp:45:19: error: template argument 2 is invalid
+..\src\Sqr.cpp:45:19: error: template argument 3 is invalid
+..\src\Sqr.cpp:45:19: error: template argument 4 is invalid
+..\src\Sqr.cpp:46:33: error: expected ';' before ')' token
+   46 |     for(int i = 0; i < m1.size()) {
+      |                                 ^
+      |                                 ;
+..\src\Sqr.cpp:47:17: error: request for member 'first' in 'i', which is of non-class type 'int'
+   47 |         new_m[i.first] = m1[i] * m2[i];
+      |                 ^~~~~
+18:10:28 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+..\src\Sqr.cpp: In function 'std::map<Key, Value> operator*(const std::map<Key, Value>&, const std::map<Key, Value>&)':
+..\src\Sqr.cpp:45:9: error: 'Key' was not declared in this scope
+   45 |     map<Key, Value> new_m;
+      |         ^~~
+..\src\Sqr.cpp:45:14: error: 'Value' was not declared in this scope
+   45 |     map<Key, Value> new_m;
+      |              ^~~~~
+..\src\Sqr.cpp:45:19: error: template argument 1 is invalid
+   45 |     map<Key, Value> new_m;
+      |                   ^
+..\src\Sqr.cpp:45:19: error: template argument 2 is invalid
+..\src\Sqr.cpp:45:19: error: template argument 3 is invalid
+..\src\Sqr.cpp:45:19: error: template argument 4 is invalid
+..\src\Sqr.cpp:46:33: error: expected ';' before ')' token
+   46 |     for(int i = 0; i < m1.size()) {
+      |                                 ^
+      |                                 ;
+..\src\Sqr.cpp:47:14: error: invalid types 'int[int]' for array subscript
+   47 |         new_m[i] = m1[i] * m2[i];
+      |              ^
+18:11:06 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+..\src\Sqr.cpp: In function 'std::map<Key, Value> operator*(const std::map<Key, Value>&, const std::map<Key, Value>&)':
+..\src\Sqr.cpp:46:33: error: expected ';' before ')' token
+   46 |     for(int i = 0; i < m1.size()) {
+      |                                 ^
+      |                                 ;
+18:11:17 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+g++ -o Sqr.exe "src\\Sqr.o" 
+18:12:14 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+..\src\Sqr.cpp: In instantiation of 'std::map<Key, Value> operator*(const std::map<Key, Value>&, const std::map<Key, Value>&) [with Key = int; Value = std::pair<int, int>]':
+..\src\Sqr.cpp:76:31:   required from 'std::map<Key, Value> Sqr(const std::map<Key, Value>&) [with Key = int; Value = std::pair<int, int>]'
+..\src\Sqr.cpp:133:29:   required from here
+..\src\Sqr.cpp:47:22: warning: comparison of integer expressions of different signedness: 'int' and 'std::map<int, std::pair<int, int> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   47 |     for(int i = 0; i < m1.size(); ++i) {
+      |                    ~~^~~~~~~~~~~
+..\src\Sqr.cpp:48:22: error: passing 'const std::map<int, std::pair<int, int> >' as 'this' argument discards qualifiers [-fpermissive]
+   48 |         new_m[i] = m1[i] * m2[i];
+      |                    ~~^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\Sqr.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:492:7: note:   in call to 'std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = int; _Tp = std::pair<int, int>; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, std::pair<int, int> > >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = std::pair<int, int>; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]'
+  492 |       operator[](const key_type& __k)
+      |       ^~~~~~~~
+..\src\Sqr.cpp:48:30: error: passing 'const std::map<int, std::pair<int, int> >' as 'this' argument discards qualifiers [-fpermissive]
+   48 |         new_m[i] = m1[i] * m2[i];
+      |                            ~~^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\Sqr.cpp:11:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:492:7: note:   in call to 'std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = int; _Tp = std::pair<int, int>; _Compare = std::less<int>; _Alloc = std::allocator<std::pair<const int, std::pair<int, int> > >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = std::pair<int, int>; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = int]'
+  492 |       operator[](const key_type& __k)
+      |       ^~~~~~~~
+18:12:42 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+..\src\Sqr.cpp: In instantiation of 'std::map<Key, Value> operator*(const std::map<Key, Value>&, const std::map<Key, Value>&) [with Key = int; Value = std::pair<int, int>]':
+..\src\Sqr.cpp:76:31:   required from 'std::map<Key, Value> Sqr(const std::map<Key, Value>&) [with Key = int; Value = std::pair<int, int>]'
+..\src\Sqr.cpp:133:29:   required from here
+..\src\Sqr.cpp:47:22: warning: comparison of integer expressions of different signedness: 'int' and 'std::map<int, std::pair<int, int> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   47 |     for(int i = 0; i < m1.size(); ++i) {
+      |                    ~~^~~~~~~~~~~
+g++ -o Sqr.exe "src\\Sqr.o" 
+18:13:35 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+..\src\Sqr.cpp: In function 'std::map<Key, Value> operator*(const std::map<Key, Value>&, const std::map<Key, Value>&)':
+..\src\Sqr.cpp:47:24: error: 'stitic_cast' was not declared in this scope; did you mean 'static_assert'?
+   47 |     for(int i = 0; i < stitic_cast<int>(m1.size()); ++i) {
+      |                        ^~~~~~~~~~~
+      |                        static_assert
+..\src\Sqr.cpp:47:36: error: expected primary-expression before 'int'
+   47 |     for(int i = 0; i < stitic_cast<int>(m1.size()); ++i) {
+      |                                    ^~~
+..\src\Sqr.cpp:47:36: error: expected ';' before 'int'
+   47 |     for(int i = 0; i < stitic_cast<int>(m1.size()); ++i) {
+      |                                    ^~~
+      |                                    ;
+..\src\Sqr.cpp:47:36: error: expected primary-expression before 'int'
+   47 |     for(int i = 0; i < stitic_cast<int>(m1.size()); ++i) {
+      |                                    ^~~
+..\src\Sqr.cpp:47:36: error: expected ')' before 'int'
+   47 |     for(int i = 0; i < stitic_cast<int>(m1.size()); ++i) {
+      |        ~                           ^~~
+      |                                    )
+..\src\Sqr.cpp:47:39: error: expected unqualified-id before '>' token
+   47 |     for(int i = 0; i < stitic_cast<int>(m1.size()); ++i) {
+      |                                       ^
+..\src\Sqr.cpp:47:5: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
+   47 |     for(int i = 0; i < stitic_cast<int>(m1.size()); ++i) {
+      |     ^~~
+..\src\Sqr.cpp:47:53: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
+   47 |     for(int i = 0; i < stitic_cast<int>(m1.size()); ++i) {
+      |                                                     ^~
+..\src\Sqr.cpp:47:55: error: 'i' was not declared in this scope
+   47 |     for(int i = 0; i < stitic_cast<int>(m1.size()); ++i) {
+      |                                                       ^
+18:15:44 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+g++ -o Sqr.exe "src\\Sqr.o" 
+Info: Nothing to build for Sqr
+18:21:16 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+g++ -o Sqr.exe "src\\Sqr.o" 
+Info: Nothing to build for Sqr
+18:21:56 **** Incremental Build of configuration Debug for project Sqr ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sqr.o" "..\\src\\Sqr.cpp" 
+g++ -o Sqr.exe "src\\Sqr.o" 
+18:38:10 **** Rebuild of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+g++ -o GetRefStrict.exe "src\\GetRefStrict.o" 
+Info: Nothing to build for GetRefStrict
+18:40:59 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+g++ -o GetRefStrict.exe "src\\GetRefStrict.o" 
+18:41:10 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:38:36: error: invalid initialization of reference of type 'std::string&' {aka 'std::__cxx11::basic_string<char>&'} from expression of type 'int'
+   38 |         string& item = GetRefStrict(m, 0);
+      |                        ~~~~~~~~~~~~^~~~~~
+..\src\GetRefStrict.cpp: In instantiation of 'K& GetRefStrict(std::map<K, T>&, const K&) [with K = int; T = std::__cxx11::basic_string<char>]':
+..\src\GetRefStrict.cpp:38:29:   required from here
+..\src\GetRefStrict.cpp:29:28: error: invalid conversion from 'std::map<int, std::__cxx11::basic_string<char> >::mapped_type*' {aka 'std::__cxx11::basic_string<char>*'} to 'int' [-fpermissive]
+   29 |                 return &m[k];
+      |                            ^
+      |                            |
+      |                            std::map<int, std::__cxx11::basic_string<char> >::mapped_type* {aka std::__cxx11::basic_string<char>*}
+..\src\GetRefStrict.cpp:29:28: error: cannot bind rvalue '(int)(&(& m)->std::map<int, std::__cxx11::basic_string<char> >::operator[]((* & k)))' to 'int&'
+18:41:29 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:38:40: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+   38 |         string& item = GetRefStrict(m, 0);
+      |                                        ^
+..\src\GetRefStrict.cpp:21:34: note:   initializing argument 2 of 'K& GetRefStrict(std::map<K, T>&, K&) [with K = int; T = std::__cxx11::basic_string<char>]'
+   21 | K& GetRefStrict(map<K, T>& m, K& k)
+      |                               ~~~^
+18:42:31 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:38:40: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+   38 |         string& item = GetRefStrict(m, 0);
+      |                                        ^
+..\src\GetRefStrict.cpp:21:34: note:   initializing argument 2 of 'K& GetRefStrict(std::map<K, T>&, K&) [with K = int; T = std::__cxx11::basic_string<char>]'
+   21 | K& GetRefStrict(map<K, T>& m, K& k)
+      |                               ~~~^
+18:42:44 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:38:40: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+   38 |         string& item = GetRefStrict(m, 0);
+      |                                        ^
+..\src\GetRefStrict.cpp:21:34: note:   initializing argument 2 of 'K& GetRefStrict(std::map<K, T>&, K&) [with K = int; T = std::__cxx11::basic_string<char>]'
+   21 | K& GetRefStrict(map<K, T>& m, K& k)
+      |                               ~~~^
+18:45:51 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:44:40: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+   44 |         string& item = GetRefStrict(m, 0);
+      |                                        ^
+..\src\GetRefStrict.cpp:21:34: note:   initializing argument 2 of 'K& GetRefStrict(std::map<K, T>&, K&) [with K = int; T = std::__cxx11::basic_string<char>]'
+   21 | K& GetRefStrict(map<K, T>& m, K& k)
+      |                               ~~~^
+18:46:57 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp:20:19: error: expected nested-name-specifier before 'K'
+   20 | template<typename K&, typename T>
+      |                   ^
+..\src\GetRefStrict.cpp:20:20: error: expected '>' before '&' token
+   20 | template<typename K&, typename T>
+      |                    ^
+..\src\GetRefStrict.cpp:21:1: error: 'K' does not name a type
+   21 | K& GetRefStrict(map<K, T>& m, K& k)
+      | ^
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:44:40: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+   44 |         string& item = GetRefStrict(m, 0);
+      |                                        ^
+..\src\GetRefStrict.cpp:17:29: note:   initializing argument 2 of 'K& GetRefStrict(std::map<K, T>&, K&) [with K = int; T = std::__cxx11::basic_string<char>]'
+   17 | K& GetRefStrict(map<K, T>&, K&);
+      |                             ^~
+18:47:06 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:44:40: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+   44 |         string& item = GetRefStrict(m, 0);
+      |                                        ^
+..\src\GetRefStrict.cpp:21:34: note:   initializing argument 2 of 'K& GetRefStrict(std::map<K, T>&, K&) [with K = int; T = std::__cxx11::basic_string<char>]'
+   21 | K& GetRefStrict(map<K, T>& m, K& k)
+      |                               ~~~^
+18:47:31 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:38:40: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+   38 |         string& item = GetRefStrict(m, 0);
+      |                                        ^
+..\src\GetRefStrict.cpp:21:34: note:   initializing argument 2 of 'K& GetRefStrict(std::map<K, T>&, K&) [with K = int; T = std::__cxx11::basic_string<char>]'
+   21 | K& GetRefStrict(map<K, T>& m, K& k)
+      |                               ~~~^
+18:47:57 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:38:36: error: invalid initialization of reference of type 'std::string&' {aka 'std::__cxx11::basic_string<char>&'} from expression of type 'int'
+   38 |         string& item = GetRefStrict(m, 0);
+      |                        ~~~~~~~~~~~~^~~~~~
+..\src\GetRefStrict.cpp: In instantiation of 'K& GetRefStrict(std::map<K, T>&, const K&) [with K = int; T = std::__cxx11::basic_string<char>]':
+..\src\GetRefStrict.cpp:38:29:   required from here
+..\src\GetRefStrict.cpp:29:31: error: invalid conversion from 'std::map<int, std::__cxx11::basic_string<char> >::mapped_type*' {aka 'std::__cxx11::basic_string<char>*'} to 'int' [-fpermissive]
+   29 |                 return &m.at(k);
+      |                               ^
+      |                               |
+      |                               std::map<int, std::__cxx11::basic_string<char> >::mapped_type* {aka std::__cxx11::basic_string<char>*}
+..\src\GetRefStrict.cpp:29:31: error: cannot bind rvalue '(int)(&(& m)->std::map<int, std::__cxx11::basic_string<char> >::at((* & k)))' to 'int&'
+18:48:07 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:38:40: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+   38 |         string& item = GetRefStrict(m, 0);
+      |                                        ^
+..\src\GetRefStrict.cpp:21:34: note:   initializing argument 2 of 'K& GetRefStrict(std::map<K, T>&, K&) [with K = int; T = std::__cxx11::basic_string<char>]'
+   21 | K& GetRefStrict(map<K, T>& m, K& k)
+      |                               ~~~^
+18:50:13 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:38:36: error: no matching function for call to 'GetRefStrict(std::map<int, std::__cxx11::basic_string<char> >&, int)'
+   38 |         string& item = GetRefStrict(m, 0);
+      |                        ~~~~~~~~~~~~^~~~~~
+..\src\GetRefStrict.cpp:17:4: note: candidate: 'K& GetRefStrict(std::map<K, T>&, K&) [with K = int; T = std::__cxx11::basic_string<char>]' (near match)
+   17 | K& GetRefStrict(map<K, T>&, K&);
+      |    ^~~~~~~~~~~~
+..\src\GetRefStrict.cpp:17:4: note:   conversion of argument 2 would be ill-formed:
+..\src\GetRefStrict.cpp:38:40: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+   38 |         string& item = GetRefStrict(m, 0);
+      |                                        ^
+..\src\GetRefStrict.cpp:21:4: note: candidate: 'T& GetRefStrict(std::map<K, T>&, K&) [with K = int; T = std::__cxx11::basic_string<char>]' (near match)
+   21 | T& GetRefStrict(map<K, T>& m, K& k)
+      |    ^~~~~~~~~~~~
+..\src\GetRefStrict.cpp:21:4: note:   conversion of argument 2 would be ill-formed:
+..\src\GetRefStrict.cpp:38:40: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+   38 |         string& item = GetRefStrict(m, 0);
+      |                                        ^
+18:50:28 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:38:40: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+   38 |         string& item = GetRefStrict(m, 0);
+      |                                        ^
+..\src\GetRefStrict.cpp:21:34: note:   initializing argument 2 of 'T& GetRefStrict(std::map<K, T>&, K&) [with K = int; T = std::__cxx11::basic_string<char>]'
+   21 | T& GetRefStrict(map<K, T>& m, K& k)
+      |                               ~~~^
+18:50:49 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+g++ -o GetRefStrict.exe "src\\GetRefStrict.o" 
+18:51:01 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:38:40: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+   38 |         string& item = GetRefStrict(m, 0);
+      |                                        ^
+..\src\GetRefStrict.cpp:21:34: note:   initializing argument 2 of 'T& GetRefStrict(std::map<K, T>&, K&) [with K = int; T = std::__cxx11::basic_string<char>]'
+   21 | T& GetRefStrict(map<K, T>& m, K& k)
+      |                               ~~~^
+18:51:21 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:38:36: error: no matching function for call to 'GetRefStrict(std::map<int, std::__cxx11::basic_string<char> >&, unsigned int)'
+   38 |         string& item = GetRefStrict(m, 0u);
+      |                        ~~~~~~~~~~~~^~~~~~~
+..\src\GetRefStrict.cpp:21:4: note: candidate: 'template<class K, class T> T& GetRefStrict(std::map<K, T>&, K&)'
+   21 | T& GetRefStrict(map<K, T>& m, K& k)
+      |    ^~~~~~~~~~~~
+..\src\GetRefStrict.cpp:21:4: note:   template argument deduction/substitution failed:
+..\src\GetRefStrict.cpp:38:36: note:   deduced conflicting types for parameter 'K' ('int' and 'unsigned int')
+   38 |         string& item = GetRefStrict(m, 0u);
+      |                        ~~~~~~~~~~~~^~~~~~~
+18:51:27 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+..\src\GetRefStrict.cpp: In function 'int main()':
+..\src\GetRefStrict.cpp:38:40: error: cannot bind non-const lvalue reference of type 'int&' to an rvalue of type 'int'
+   38 |         string& item = GetRefStrict(m, 0);
+      |                                        ^
+..\src\GetRefStrict.cpp:21:34: note:   initializing argument 2 of 'T& GetRefStrict(std::map<K, T>&, K&) [with K = int; T = std::__cxx11::basic_string<char>]'
+   21 | T& GetRefStrict(map<K, T>& m, K& k)
+      |                               ~~~^
+18:51:32 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+g++ -o GetRefStrict.exe "src\\GetRefStrict.o" 
+Info: Nothing to build for GetRefStrict
+18:58:42 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+g++ -o GetRefStrict.exe "src\\GetRefStrict.o" 
+Info: Nothing to build for GetRefStrict
+19:00:50 **** Incremental Build of configuration Debug for project GetRefStrict ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetRefStrict.o" "..\\src\\GetRefStrict.cpp" 
+g++ -o GetRefStrict.exe "src\\GetRefStrict.o" 
+Info: Nothing to build for GetRefStrict
+21:44:21 **** Rebuild of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Decomposition.o" "..\\src\\Decomposition.cpp" 
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In member function 'BusesForStopResponse BusManager::GetBusesForStop(const string&) const':
+..\src\starter.cpp:63:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   63 |   }
+      |   ^
+..\src\starter.cpp: In member function 'StopsForBusResponse BusManager::GetStopsForBus(const string&) const':
+..\src\starter.cpp:67:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   67 |   }
+      |   ^
+..\src\starter.cpp: In member function 'AllBusesResponse BusManager::GetAllBuses() const':
+..\src\starter.cpp:71:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   71 |   }
+      |   ^
+g++ -o Decomposition.exe "src\\Decomposition.o" "src\\starter.o" 
+d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\starter.o: in function `std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~_Vector_base()':
+C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/starter.cpp:76: multiple definition of `main'; src\Decomposition.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/Decomposition.cpp:8: first defined here
+collect2.exe: error: ld returned 1 exit status
