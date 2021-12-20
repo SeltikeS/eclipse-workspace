@@ -21178,3 +21178,2122 @@ g++ -o Decomposition.exe "src\\Decomposition.o" "src\\starter.o"
 d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\starter.o: in function `std::_Vector_base<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::~_Vector_base()':
 C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/starter.cpp:76: multiple definition of `main'; src\Decomposition.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/Decomposition.cpp:8: first defined here
 collect2.exe: error: ld returned 1 exit status
+21:56:00 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In function 'std::istream& operator>>(std::istream&, Query&)':
+..\src\starter.cpp:29:20: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'QueryType')
+   29 |                 is >> type;
+      |                 ~~ ^~ ~~~~
+      |                 |     |
+      |                 |     QueryType
+      |                 std::istream {aka std::basic_istream<char>}
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:120:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:120:36: note:   no known conversion for argument 1 from 'QueryType' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'}
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:124:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]'
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:124:32: note:   no known conversion for argument 1 from 'QueryType' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:131:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:131:30: note:   no known conversion for argument 1 from 'QueryType' to 'std::ios_base& (*)(std::ios_base&)'
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:168:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:168:24: note:   no known conversion for argument 1 from 'QueryType' to 'bool&'
+  168 |       operator>>(bool& __n)
+      |                  ~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:172:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]'
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:172:25: note:   no known conversion for argument 1 from 'QueryType' to 'short int&'
+  172 |       operator>>(short& __n);
+      |                  ~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:175:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:175:34: note:   no known conversion for argument 1 from 'QueryType' to 'short unsigned int&'
+  175 |       operator>>(unsigned short& __n)
+      |                  ~~~~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:179:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]'
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:179:23: note:   no known conversion for argument 1 from 'QueryType' to 'int&'
+  179 |       operator>>(int& __n);
+      |                  ~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:182:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:182:32: note:   no known conversion for argument 1 from 'QueryType' to 'unsigned int&'
+  182 |       operator>>(unsigned int& __n)
+      |                  ~~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:186:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:186:24: note:   no known conversion for argument 1 from 'QueryType' to 'long int&'
+  186 |       operator>>(long& __n)
+      |                  ~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:190:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:190:33: note:   no known conversion for argument 1 from 'QueryType' to 'long unsigned int&'
+  190 |       operator>>(unsigned long& __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:195:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:195:29: note:   no known conversion for argument 1 from 'QueryType' to 'long long int&'
+  195 |       operator>>(long long& __n)
+      |                  ~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:199:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:199:38: note:   no known conversion for argument 1 from 'QueryType' to 'long long unsigned int&'
+  199 |       operator>>(unsigned long long& __n)
+      |                  ~~~~~~~~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:214:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:214:25: note:   no known conversion for argument 1 from 'QueryType' to 'float&'
+  214 |       operator>>(float& __f)
+      |                  ~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:218:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:218:26: note:   no known conversion for argument 1 from 'QueryType' to 'double&'
+  218 |       operator>>(double& __f)
+      |                  ~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:222:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:222:31: note:   no known conversion for argument 1 from 'QueryType' to 'long double&'
+  222 |       operator>>(long double& __f)
+      |                  ~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:235:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:235:25: note:   no known conversion for argument 1 from 'QueryType' to 'void*&'
+  235 |       operator>>(void*& __p)
+      |                  ~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:259:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]'
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:259:36: note:   no known conversion for argument 1 from 'QueryType' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  259 |       operator>>(__streambuf_type* __sb);
+      |                  ~~~~~~~~~~~~~~~~~~^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:56,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.tcc:1485:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 1485 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.tcc:1485:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'QueryType'
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\istream:995,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\istream.tcc:958:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)'
+  958 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\istream.tcc:958:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   deduced conflicting types for parameter '_CharT' ('char' and 'QueryType')
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:756:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)'
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:756:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   cannot convert 'type' (type 'QueryType') to type 'unsigned char&'
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:761:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)'
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:761:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   cannot convert 'type' (type 'QueryType') to type 'signed char&'
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:803:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)'
+  803 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:803:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   mismatched types '_CharT*' and 'QueryType'
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:825:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)'
+  825 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:825:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   cannot convert 'type' (type 'QueryType') to type 'unsigned char*'
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:831:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)'
+  831 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:831:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   cannot convert 'type' (type 'QueryType') to type 'signed char*'
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:985:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+  985 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:985:5: note:   template argument deduction/substitution failed:
+d:\eclipse\mingw64\include\c++\11.2.0\istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = QueryType&]':
+..\src\starter.cpp:29:9:   required from here
+d:\eclipse\mingw64\include\c++\11.2.0\istream:985:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+..\src\starter.cpp:23:10: note: candidate: 'std::istream& operator>>(std::istream&, Query&)'
+   23 | istream& operator >> (istream& is, Query& q) {
+      |          ^~~~~~~~
+..\src\starter.cpp:23:43: note:   no known conversion for argument 2 from 'QueryType' to 'Query&'
+   23 | istream& operator >> (istream& is, Query& q) {
+      |                                    ~~~~~~~^
+..\src\starter.cpp:31:22: error: 'newbus' was not declared in this scope
+   31 |                 case newbus
+      |                      ^~~~~~
+..\src\starter.cpp:31:28: error: expected ':' before '}' token
+   31 |                 case newbus
+      |                            ^
+      |                            :
+   32 |                 }
+      |                 ~           
+..\src\starter.cpp:32:17: error: expected primary-expression before '}' token
+   32 |                 }
+      |                 ^
+..\src\starter.cpp:30:23: warning: enumeration value 'NewBus' not handled in switch [-Wswitch]
+   30 |                 switch(type) {
+      |                       ^
+..\src\starter.cpp:30:23: warning: enumeration value 'BusesForStop' not handled in switch [-Wswitch]
+..\src\starter.cpp:30:23: warning: enumeration value 'StopsForBus' not handled in switch [-Wswitch]
+..\src\starter.cpp:30:23: warning: enumeration value 'AllBuses' not handled in switch [-Wswitch]
+..\src\starter.cpp: In member function 'BusesForStopResponse BusManager::GetBusesForStop(const string&) const':
+..\src\starter.cpp:74:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   74 |   }
+      |   ^
+..\src\starter.cpp: In member function 'StopsForBusResponse BusManager::GetStopsForBus(const string&) const':
+..\src\starter.cpp:78:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   78 |   }
+      |   ^
+..\src\starter.cpp: In member function 'AllBusesResponse BusManager::GetAllBuses() const':
+..\src\starter.cpp:82:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   82 |   }
+      |   ^
+21:59:33 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In function 'std::istream& operator>>(std::istream&, Query&)':
+..\src\starter.cpp:29:20: error: no match for 'operator>>' (operand types are 'std::istream' {aka 'std::basic_istream<char>'} and 'QueryType')
+   29 |                 is >> type;
+      |                 ~~ ^~ ~~~~
+      |                 |     |
+      |                 |     QueryType
+      |                 std::istream {aka std::basic_istream<char>}
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:120:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__istream_type& (*)(std::basic_istream<_CharT, _Traits>::__istream_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:120:36: note:   no known conversion for argument 1 from 'QueryType' to 'std::basic_istream<char>::__istream_type& (*)(std::basic_istream<char>::__istream_type&)' {aka 'std::basic_istream<char>& (*)(std::basic_istream<char>&)'}
+  120 |       operator>>(__istream_type& (*__pf)(__istream_type&))
+      |                  ~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:124:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__ios_type& (*)(std::basic_istream<_CharT, _Traits>::__ios_type&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>; std::basic_istream<_CharT, _Traits>::__ios_type = std::basic_ios<char>]'
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:124:32: note:   no known conversion for argument 1 from 'QueryType' to 'std::basic_istream<char>::__ios_type& (*)(std::basic_istream<char>::__ios_type&)' {aka 'std::basic_ios<char>& (*)(std::basic_ios<char>&)'}
+  124 |       operator>>(__ios_type& (*__pf)(__ios_type&))
+      |                  ~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:131:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(std::ios_base& (*)(std::ios_base&)) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:131:30: note:   no known conversion for argument 1 from 'QueryType' to 'std::ios_base& (*)(std::ios_base&)'
+  131 |       operator>>(ios_base& (*__pf)(ios_base&))
+      |                  ~~~~~~~~~~~~^~~~~~~~~~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:168:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(bool&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  168 |       operator>>(bool& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:168:24: note:   no known conversion for argument 1 from 'QueryType' to 'bool&'
+  168 |       operator>>(bool& __n)
+      |                  ~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:172:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(short int&) [with _CharT = char; _Traits = std::char_traits<char>]'
+  172 |       operator>>(short& __n);
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:172:25: note:   no known conversion for argument 1 from 'QueryType' to 'short int&'
+  172 |       operator>>(short& __n);
+      |                  ~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:175:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(short unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  175 |       operator>>(unsigned short& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:175:34: note:   no known conversion for argument 1 from 'QueryType' to 'short unsigned int&'
+  175 |       operator>>(unsigned short& __n)
+      |                  ~~~~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:179:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(int&) [with _CharT = char; _Traits = std::char_traits<char>]'
+  179 |       operator>>(int& __n);
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:179:23: note:   no known conversion for argument 1 from 'QueryType' to 'int&'
+  179 |       operator>>(int& __n);
+      |                  ~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:182:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  182 |       operator>>(unsigned int& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:182:32: note:   no known conversion for argument 1 from 'QueryType' to 'unsigned int&'
+  182 |       operator>>(unsigned int& __n)
+      |                  ~~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:186:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  186 |       operator>>(long& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:186:24: note:   no known conversion for argument 1 from 'QueryType' to 'long int&'
+  186 |       operator>>(long& __n)
+      |                  ~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:190:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  190 |       operator>>(unsigned long& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:190:33: note:   no known conversion for argument 1 from 'QueryType' to 'long unsigned int&'
+  190 |       operator>>(unsigned long& __n)
+      |                  ~~~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:195:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  195 |       operator>>(long long& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:195:29: note:   no known conversion for argument 1 from 'QueryType' to 'long long int&'
+  195 |       operator>>(long long& __n)
+      |                  ~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:199:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long long unsigned int&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  199 |       operator>>(unsigned long long& __n)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:199:38: note:   no known conversion for argument 1 from 'QueryType' to 'long long unsigned int&'
+  199 |       operator>>(unsigned long long& __n)
+      |                  ~~~~~~~~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:214:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(float&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  214 |       operator>>(float& __f)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:214:25: note:   no known conversion for argument 1 from 'QueryType' to 'float&'
+  214 |       operator>>(float& __f)
+      |                  ~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:218:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  218 |       operator>>(double& __f)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:218:26: note:   no known conversion for argument 1 from 'QueryType' to 'double&'
+  218 |       operator>>(double& __f)
+      |                  ~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:222:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(long double&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  222 |       operator>>(long double& __f)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:222:31: note:   no known conversion for argument 1 from 'QueryType' to 'long double&'
+  222 |       operator>>(long double& __f)
+      |                  ~~~~~~~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:235:7: note: candidate: 'std::basic_istream<_CharT, _Traits>::__istream_type& std::basic_istream<_CharT, _Traits>::operator>>(void*&) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__istream_type = std::basic_istream<char>]'
+  235 |       operator>>(void*& __p)
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:235:25: note:   no known conversion for argument 1 from 'QueryType' to 'void*&'
+  235 |       operator>>(void*& __p)
+      |                  ~~~~~~~^~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:259:7: note: candidate: 'std::basic_istream<_CharT, _Traits>& std::basic_istream<_CharT, _Traits>::operator>>(std::basic_istream<_CharT, _Traits>::__streambuf_type*) [with _CharT = char; _Traits = std::char_traits<char>; std::basic_istream<_CharT, _Traits>::__streambuf_type = std::basic_streambuf<char>]'
+  259 |       operator>>(__streambuf_type* __sb);
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:259:36: note:   no known conversion for argument 1 from 'QueryType' to 'std::basic_istream<char>::__streambuf_type*' {aka 'std::basic_streambuf<char>*'}
+  259 |       operator>>(__streambuf_type* __sb);
+      |                  ~~~~~~~~~~~~~~~~~~^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:56,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.tcc:1485:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 1485 |     operator>>(basic_istream<_CharT, _Traits>& __in,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.tcc:1485:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   mismatched types 'std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'QueryType'
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\istream:995,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\istream.tcc:958:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT&)'
+  958 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT& __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\istream.tcc:958:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   deduced conflicting types for parameter '_CharT' ('char' and 'QueryType')
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:756:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char&)'
+  756 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char& __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:756:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   cannot convert 'type' (type 'QueryType') to type 'unsigned char&'
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:761:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char&)'
+  761 |     operator>>(basic_istream<char, _Traits>& __in, signed char& __c)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:761:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   cannot convert 'type' (type 'QueryType') to type 'signed char&'
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:803:5: note: candidate: 'template<class _CharT, class _Traits> std::basic_istream<_CharT, _Traits>& std::operator>>(std::basic_istream<_CharT, _Traits>&, _CharT*)'
+  803 |     operator>>(basic_istream<_CharT, _Traits>& __in, _CharT* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:803:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   mismatched types '_CharT*' and 'QueryType'
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:825:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, unsigned char*)'
+  825 |     operator>>(basic_istream<char, _Traits>& __in, unsigned char* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:825:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   cannot convert 'type' (type 'QueryType') to type 'unsigned char*'
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:831:5: note: candidate: 'template<class _Traits> std::basic_istream<char, _Traits>& std::operator>>(std::basic_istream<char, _Traits>&, signed char*)'
+  831 |     operator>>(basic_istream<char, _Traits>& __in, signed char* __s)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:831:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:29:23: note:   cannot convert 'type' (type 'QueryType') to type 'signed char*'
+   29 |                 is >> type;
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\iostream:40,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\istream:985:5: note: candidate: 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&)'
+  985 |     operator>>(_Istream&& __is, _Tp&& __x)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\istream:985:5: note:   template argument deduction/substitution failed:
+d:\eclipse\mingw64\include\c++\11.2.0\istream: In substitution of 'template<class _Istream, class _Tp> _Istream&& std::operator>>(_Istream&&, _Tp&&) [with _Istream = std::basic_istream<char>&; _Tp = QueryType&]':
+..\src\starter.cpp:29:9:   required from here
+d:\eclipse\mingw64\include\c++\11.2.0\istream:985:5: error: no type named 'type' in 'struct std::enable_if<false, void>'
+..\src\starter.cpp:23:10: note: candidate: 'std::istream& operator>>(std::istream&, Query&)'
+   23 | istream& operator >> (istream& is, Query& q) {
+      |          ^~~~~~~~
+..\src\starter.cpp:23:43: note:   no known conversion for argument 2 from 'QueryType' to 'Query&'
+   23 | istream& operator >> (istream& is, Query& q) {
+      |                                    ~~~~~~~^
+..\src\starter.cpp: In member function 'BusesForStopResponse BusManager::GetBusesForStop(const string&) const':
+..\src\starter.cpp:85:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   85 |   }
+      |   ^
+..\src\starter.cpp: In member function 'StopsForBusResponse BusManager::GetStopsForBus(const string&) const':
+..\src\starter.cpp:89:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   89 |   }
+      |   ^
+..\src\starter.cpp: In member function 'AllBusesResponse BusManager::GetAllBuses() const':
+..\src\starter.cpp:93:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   93 |   }
+      |   ^
+22:09:57 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In member function 'BusesForStopResponse BusManager::GetBusesForStop(const string&) const':
+..\src\starter.cpp:73:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   73 |   }
+      |   ^
+..\src\starter.cpp: In member function 'StopsForBusResponse BusManager::GetStopsForBus(const string&) const':
+..\src\starter.cpp:77:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   77 |   }
+      |   ^
+..\src\starter.cpp: In member function 'AllBusesResponse BusManager::GetAllBuses() const':
+..\src\starter.cpp:81:3: warning: no return statement in function returning non-void [-Wreturn-type]
+   81 |   }
+      |   ^
+g++ -o Decomposition.exe "src\\Decomposition.o" "src\\starter.o" 
+d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\starter.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/starter.cpp:86: multiple definition of `main'; src\Decomposition.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/Decomposition.cpp:8: first defined here
+collect2.exe: error: ld returned 1 exit status
+23:11:44 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In member function 'BusesForStopResponse BusManager::GetBusesForStop(const string&) const':
+..\src\starter.cpp:92:9: warning: no return statement in function returning non-void [-Wreturn-type]
+   92 |         }
+      |         ^
+..\src\starter.cpp: In member function 'StopsForBusResponse BusManager::GetStopsForBus(const string&) const':
+..\src\starter.cpp:96:9: warning: no return statement in function returning non-void [-Wreturn-type]
+   96 |         }
+      |         ^
+..\src\starter.cpp: In member function 'AllBusesResponse BusManager::GetAllBuses() const':
+..\src\starter.cpp:100:9: warning: no return statement in function returning non-void [-Wreturn-type]
+  100 |         }
+      |         ^
+g++ -o Decomposition.exe "src\\Decomposition.o" "src\\starter.o" 
+d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\starter.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/starter.cpp:108: multiple definition of `main'; src\Decomposition.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/Decomposition.cpp:8: first defined here
+collect2.exe: error: ld returned 1 exit status
+23:17:17 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In member function 'BusesForStopResponse BusManager::GetBusesForStop(const string&) const':
+..\src\starter.cpp:95:51: error: passing 'const std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >' as 'this' argument discards qualifiers [-fpermissive]
+   95 |                 return { stop, stops_to_buses[stop] };
+      |                                                   ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\starter.cpp:5:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:492:7: note:   in call to 'std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::__cxx11::basic_string<char> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > > >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = std::vector<std::__cxx11::basic_string<char> >; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = std::__cxx11::basic_string<char>]'
+  492 |       operator[](const key_type& __k)
+      |       ^~~~~~~~
+..\src\starter.cpp: In member function 'StopsForBusResponse BusManager::GetStopsForBus(const string&) const':
+..\src\starter.cpp:100:9: warning: no return statement in function returning non-void [-Wreturn-type]
+  100 |         }
+      |         ^
+..\src\starter.cpp: In member function 'AllBusesResponse BusManager::GetAllBuses() const':
+..\src\starter.cpp:104:9: warning: no return statement in function returning non-void [-Wreturn-type]
+  104 |         }
+      |         ^
+23:17:42 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In member function 'BusesForStopResponse BusManager::GetBusesForStop(const string&) const':
+..\src\starter.cpp:97:53: error: passing 'const std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >' as 'this' argument discards qualifiers [-fpermissive]
+   97 |                 response.buses = stops_to_buses[stop];
+      |                                                     ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\starter.cpp:5:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:492:7: note:   in call to 'std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::__cxx11::basic_string<char> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > > >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = std::vector<std::__cxx11::basic_string<char> >; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = std::__cxx11::basic_string<char>]'
+  492 |       operator[](const key_type& __k)
+      |       ^~~~~~~~
+..\src\starter.cpp: In member function 'StopsForBusResponse BusManager::GetStopsForBus(const string&) const':
+..\src\starter.cpp:103:9: warning: no return statement in function returning non-void [-Wreturn-type]
+  103 |         }
+      |         ^
+..\src\starter.cpp: In member function 'AllBusesResponse BusManager::GetAllBuses() const':
+..\src\starter.cpp:107:9: warning: no return statement in function returning non-void [-Wreturn-type]
+  107 |         }
+      |         ^
+23:18:24 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In member function 'StopsForBusResponse BusManager::GetStopsForBus(const string&) const':
+..\src\starter.cpp:103:9: warning: no return statement in function returning non-void [-Wreturn-type]
+  103 |         }
+      |         ^
+..\src\starter.cpp: In member function 'AllBusesResponse BusManager::GetAllBuses() const':
+..\src\starter.cpp:107:9: warning: no return statement in function returning non-void [-Wreturn-type]
+  107 |         }
+      |         ^
+g++ -o Decomposition.exe "src\\Decomposition.o" "src\\starter.o" 
+d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\starter.o: in function `void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/starter.cpp:115: multiple definition of `main'; src\Decomposition.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/Decomposition.cpp:8: first defined here
+collect2.exe: error: ld returned 1 exit status
+23:18:45 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In member function 'StopsForBusResponse BusManager::GetStopsForBus(const string&) const':
+..\src\starter.cpp:103:9: warning: no return statement in function returning non-void [-Wreturn-type]
+  103 |         }
+      |         ^
+..\src\starter.cpp: In member function 'AllBusesResponse BusManager::GetAllBuses() const':
+..\src\starter.cpp:107:9: warning: no return statement in function returning non-void [-Wreturn-type]
+  107 |         }
+      |         ^
+g++ -o Decomposition.exe "src\\Decomposition.o" "src\\starter.o" 
+d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\starter.o: in function `void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/starter.cpp:115: multiple definition of `main'; src\Decomposition.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/Decomposition.cpp:8: first defined here
+collect2.exe: error: ld returned 1 exit status
+23:18:52 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In member function 'StopsForBusResponse BusManager::GetStopsForBus(const string&) const':
+..\src\starter.cpp:100:9: warning: no return statement in function returning non-void [-Wreturn-type]
+  100 |         }
+      |         ^
+..\src\starter.cpp: In member function 'AllBusesResponse BusManager::GetAllBuses() const':
+..\src\starter.cpp:104:9: warning: no return statement in function returning non-void [-Wreturn-type]
+  104 |         }
+      |         ^
+g++ -o Decomposition.exe "src\\Decomposition.o" "src\\starter.o" 
+d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\starter.o: in function `void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/starter.cpp:112: multiple definition of `main'; src\Decomposition.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/Decomposition.cpp:8: first defined here
+collect2.exe: error: ld returned 1 exit status
+23:19:35 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In member function 'AllBusesResponse BusManager::GetAllBuses() const':
+..\src\starter.cpp:105:9: warning: no return statement in function returning non-void [-Wreturn-type]
+  105 |         }
+      |         ^
+g++ -o Decomposition.exe "src\\Decomposition.o" "src\\starter.o" 
+d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\starter.o: in function `void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/starter.cpp:113: multiple definition of `main'; src\Decomposition.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/Decomposition.cpp:8: first defined here
+collect2.exe: error: ld returned 1 exit status
+23:20:32 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In member function 'AllBusesResponse BusManager::GetAllBuses() const':
+..\src\starter.cpp:105:24: error: could not convert '((const BusManager*)this)->BusManager::buses_to_stops' from 'const std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >' to 'AllBusesResponse'
+  105 |                 return buses_to_stops;
+      |                        ^~~~~~~~~~~~~~
+      |                        |
+      |                        const std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >
+23:21:59 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+g++ -o Decomposition.exe "src\\Decomposition.o" "src\\starter.o" 
+d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\starter.o: in function `void std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > >::_M_realloc_insert<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&>(__gnu_cxx::__normal_iterator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >*, std::vector<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> >, std::allocator<std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > > > >, std::__cxx11::basic_string<char, std::char_traits<char>, std::allocator<char> > const&)':
+C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/starter.cpp:114: multiple definition of `main'; src\Decomposition.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/Decomposition.cpp:8: first defined here
+collect2.exe: error: ld returned 1 exit status
+23:32:30 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In function 'std::ostream& operator<<(std::ostream&, const BusesForStopResponse&)':
+..\src\starter.cpp:59:20: error: no match for 'operator==' (operand types are 'const string' {aka 'const std::__cxx11::basic_string<char>'} and 'int')
+   59 |         if (r.stop == 0) {
+      |             ~~~~~~ ^~ ~
+      |               |       |
+      |               |       int
+      |               const string {aka const std::__cxx11::basic_string<char>}
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:64,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_pair.h:466:5: note: candidate: 'template<class _T1, class _T2> constexpr bool std::operator==(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)'
+  466 |     operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_pair.h:466:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::pair<_T1, _T2>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:419:5: note: candidate: 'template<class _Iterator> constexpr bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)'
+  419 |     operator==(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:419:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:458:5: note: candidate: 'template<class _IteratorL, class _IteratorR> constexpr bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)'
+  458 |     operator==(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:458:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1533:5: note: candidate: 'template<class _IteratorL, class _IteratorR> constexpr bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)'
+ 1533 |     operator==(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1533:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::move_iterator<_IteratorL>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1601:5: note: candidate: 'template<class _Iterator> constexpr bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)'
+ 1601 |     operator==(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1601:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::move_iterator<_IteratorL>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\postypes.h:222:5: note: candidate: 'template<class _StateT> bool std::operator==(const std::fpos<_StateT>&, const std::fpos<_StateT>&)'
+  222 |     operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\postypes.h:222:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::fpos<_StateT>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:41,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:230:5: note: candidate: 'template<class _T1, class _T2> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_T2>&)'
+  230 |     operator==(const allocator<_T1>&, const allocator<_T2>&)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:230:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::allocator<_CharT>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:534:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator==(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)'
+  534 |     operator==(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:534:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'std::__cxx11::basic_string<char>' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:540:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator==(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)'
+  540 |     operator==(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:540:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'std::__cxx11::basic_string<char>' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:563:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator==(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)'
+  563 |     operator==(__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:563:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   mismatched types 'std::basic_string_view<_CharT, _Traits>' and 'int'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6225:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6225 |     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6225:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'int'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6233:5: note: candidate: 'template<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const std::__cxx11::basic_string<_CharT>&, const std::__cxx11::basic_string<_CharT>&)'
+ 6233 |     operator==(const basic_string<_CharT>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6233:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   mismatched types 'const std::__cxx11::basic_string<_CharT>' and 'int'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6247:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)'
+ 6247 |     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6247:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   mismatched types 'const _CharT*' and 'int'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6288:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6288 |     operator==(const _CharT* __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6288:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   mismatched types 'const _CharT*' and 'std::__cxx11::basic_string<char>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_facets.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_ios.h:37,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:44,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\streambuf_iterator.h:226:5: note: candidate: 'template<class _CharT, class _Traits> bool std::operator==(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)'
+  226 |     operator==(const istreambuf_iterator<_CharT, _Traits>& __a,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\streambuf_iterator.h:226:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::istreambuf_iterator<_CharT, _Traits>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\vector:67,
+                 from ..\src\starter.cpp:4:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1892:5: note: candidate: 'template<class _Tp, class _Alloc> bool std::operator==(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)'
+ 1892 |     operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1892:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::vector<_Tp, _Alloc>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\tuple:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:63,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\starter.cpp:5:
+d:\eclipse\mingw64\include\c++\11.2.0\array:276:5: note: candidate: 'template<class _Tp, long long unsigned int _Nm> bool std::operator==(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)'
+  276 |     operator==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\array:276:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::array<_Tp, _Nm>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:63,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\starter.cpp:5:
+d:\eclipse\mingw64\include\c++\11.2.0\tuple:1513:5: note: candidate: 'template<class ... _TElements, class ... _UElements> constexpr bool std::operator==(const std::tuple<_Tps ...>&, const std::tuple<_Args2 ...>&)'
+ 1513 |     operator==(const tuple<_TElements...>& __t,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\tuple:1513:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::tuple<_Tps ...>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\starter.cpp:5:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:1463:5: note: candidate: 'template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)'
+ 1463 |     operator==(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:1463:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::map<_Key, _Tp, _Compare, _Allocator>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:62,
+                 from ..\src\starter.cpp:5:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multimap.h:1128:5: note: candidate: 'template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)'
+ 1128 |     operator==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multimap.h:1128:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::multimap<_Key, _Tp, _Compare, _Allocator>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1121:5: note: candidate: 'template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)'
+ 1121 |     operator==(const __normal_iterator<_IteratorL, _Container>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1121:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1129:5: note: candidate: 'template<class _Iterator, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)'
+ 1129 |     operator==(const __normal_iterator<_Iterator, _Container>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1129:5: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\x86_64-w64-mingw32\bits\c++allocator.h:33,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:46,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:41,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\ext\new_allocator.h:183:9: note: candidate: 'template<class _Up> bool __gnu_cxx::operator==(const __gnu_cxx::new_allocator<char>&, const __gnu_cxx::new_allocator<_Tp>&)'
+  183 |         operator==(const new_allocator&, const new_allocator<_Up>&)
+      |         ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ext\new_allocator.h:183:9: note:   template argument deduction/substitution failed:
+..\src\starter.cpp:59:23: note:   mismatched types 'const __gnu_cxx::new_allocator<_Tp>' and 'int'
+   59 |         if (r.stop == 0) {
+      |                       ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:46,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:344:3: note: candidate: 'bool std::operator==(const std::error_code&, const std::error_code&)'
+  344 |   operator==(const error_code& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:344:32: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_code&'
+  344 |   operator==(const error_code& __lhs, const error_code& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:351:3: note: candidate: 'bool std::operator==(const std::error_code&, const std::error_condition&)'
+  351 |   operator==(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:351:32: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_code&'
+  351 |   operator==(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:359:3: note: candidate: 'bool std::operator==(const std::error_condition&, const std::error_condition&)'
+  359 |   operator==(const error_condition& __lhs,
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:359:37: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_condition&'
+  359 |   operator==(const error_condition& __lhs,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:392:3: note: candidate: 'bool std::operator==(const std::error_condition&, const std::error_code&)'
+  392 |   operator==(const error_condition& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:392:37: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_condition&'
+  392 |   operator==(const error_condition& __lhs, const error_code& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:41,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:216:7: note: candidate: 'bool std::operator==(const std::allocator<char>&, const std::allocator<char>&)'
+  216 |       operator==(const allocator&, const allocator&) _GLIBCXX_NOTHROW
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:216:18: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::allocator<char>&'
+  216 |       operator==(const allocator&, const allocator&) _GLIBCXX_NOTHROW
+      |                  ^~~~~~~~~~~~~~~~
+23:32:37 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In function 'std::ostream& operator<<(std::ostream&, const BusesForStopResponse&)':
+..\src\starter.cpp:59:23: error: 'null' was not declared in this scope
+   59 |         if (r.stop == null) {
+      |                       ^~~~
+23:32:43 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In function 'std::ostream& operator<<(std::ostream&, const BusesForStopResponse&)':
+..\src\starter.cpp:59:20: error: no match for 'operator==' (operand types are 'const string' {aka 'const std::__cxx11::basic_string<char>'} and 'long long int')
+   59 |         if (r.stop == NULL) {
+      |                    ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:64,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_pair.h:466:5: note: candidate: 'template<class _T1, class _T2> constexpr bool std::operator==(const std::pair<_T1, _T2>&, const std::pair<_T1, _T2>&)'
+  466 |     operator==(const pair<_T1, _T2>& __x, const pair<_T1, _T2>& __y)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_pair.h:466:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::pair<_T1, _T2>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:419:5: note: candidate: 'template<class _Iterator> constexpr bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_Iterator>&)'
+  419 |     operator==(const reverse_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:419:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:458:5: note: candidate: 'template<class _IteratorL, class _IteratorR> constexpr bool std::operator==(const std::reverse_iterator<_Iterator>&, const std::reverse_iterator<_IteratorR>&)'
+  458 |     operator==(const reverse_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:458:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::reverse_iterator<_Iterator>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1533:5: note: candidate: 'template<class _IteratorL, class _IteratorR> constexpr bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorR>&)'
+ 1533 |     operator==(const move_iterator<_IteratorL>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1533:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::move_iterator<_IteratorL>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1601:5: note: candidate: 'template<class _Iterator> constexpr bool std::operator==(const std::move_iterator<_IteratorL>&, const std::move_iterator<_IteratorL>&)'
+ 1601 |     operator==(const move_iterator<_Iterator>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1601:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::move_iterator<_IteratorL>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:40,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\postypes.h:222:5: note: candidate: 'template<class _StateT> bool std::operator==(const std::fpos<_StateT>&, const std::fpos<_StateT>&)'
+  222 |     operator==(const fpos<_StateT>& __lhs, const fpos<_StateT>& __rhs)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\postypes.h:222:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::fpos<_StateT>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:41,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:230:5: note: candidate: 'template<class _T1, class _T2> bool std::operator==(const std::allocator<_CharT>&, const std::allocator<_T2>&)'
+  230 |     operator==(const allocator<_T1>&, const allocator<_T2>&)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:230:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::allocator<_CharT>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:534:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator==(std::basic_string_view<_CharT, _Traits>, std::basic_string_view<_CharT, _Traits>)'
+  534 |     operator==(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:534:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'std::__cxx11::basic_string<char>' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:540:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator==(std::basic_string_view<_CharT, _Traits>, std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >)'
+  540 |     operator==(basic_string_view<_CharT, _Traits> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:540:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'std::__cxx11::basic_string<char>' is not derived from 'std::basic_string_view<_CharT, _Traits>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:563:5: note: candidate: 'template<class _CharT, class _Traits> constexpr bool std::operator==(std::__type_identity_t<std::basic_string_view<_CharT, _Traits> >, std::basic_string_view<_CharT, _Traits>)'
+  563 |     operator==(__type_identity_t<basic_string_view<_CharT, _Traits>> __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\string_view:563:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   mismatched types 'std::basic_string_view<_CharT, _Traits>' and 'long long int'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6225:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6225 |     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6225:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   mismatched types 'const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>' and 'long long int'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6233:5: note: candidate: 'template<class _CharT> typename __gnu_cxx::__enable_if<std::__is_char<_Tp>::__value, bool>::__type std::operator==(const std::__cxx11::basic_string<_CharT>&, const std::__cxx11::basic_string<_CharT>&)'
+ 6233 |     operator==(const basic_string<_CharT>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6233:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   mismatched types 'const std::__cxx11::basic_string<_CharT>' and 'long long int'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6247:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&, const _CharT*)'
+ 6247 |     operator==(const basic_string<_CharT, _Traits, _Alloc>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6247:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   mismatched types 'const _CharT*' and 'long long int'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:55,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6288:5: note: candidate: 'template<class _CharT, class _Traits, class _Alloc> bool std::operator==(const _CharT*, const std::__cxx11::basic_string<_CharT, _Traits, _Allocator>&)'
+ 6288 |     operator==(const _CharT* __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_string.h:6288:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   mismatched types 'const _CharT*' and 'std::__cxx11::basic_string<char>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\locale_facets.h:48,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\basic_ios.h:37,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:44,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\streambuf_iterator.h:226:5: note: candidate: 'template<class _CharT, class _Traits> bool std::operator==(const std::istreambuf_iterator<_CharT, _Traits>&, const std::istreambuf_iterator<_CharT, _Traits>&)'
+  226 |     operator==(const istreambuf_iterator<_CharT, _Traits>& __a,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\streambuf_iterator.h:226:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::istreambuf_iterator<_CharT, _Traits>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\vector:67,
+                 from ..\src\starter.cpp:4:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1892:5: note: candidate: 'template<class _Tp, class _Alloc> bool std::operator==(const std::vector<_Tp, _Alloc>&, const std::vector<_Tp, _Alloc>&)'
+ 1892 |     operator==(const vector<_Tp, _Alloc>& __x, const vector<_Tp, _Alloc>& __y)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_vector.h:1892:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::vector<_Tp, _Alloc>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\tuple:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:63,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\starter.cpp:5:
+d:\eclipse\mingw64\include\c++\11.2.0\array:276:5: note: candidate: 'template<class _Tp, long long unsigned int _Nm> bool std::operator==(const std::array<_Tp, _Nm>&, const std::array<_Tp, _Nm>&)'
+  276 |     operator==(const array<_Tp, _Nm>& __one, const array<_Tp, _Nm>& __two)
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\array:276:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::array<_Tp, _Nm>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:63,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\starter.cpp:5:
+d:\eclipse\mingw64\include\c++\11.2.0\tuple:1513:5: note: candidate: 'template<class ... _TElements, class ... _UElements> constexpr bool std::operator==(const std::tuple<_Tps ...>&, const std::tuple<_Args2 ...>&)'
+ 1513 |     operator==(const tuple<_TElements...>& __t,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\tuple:1513:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::tuple<_Tps ...>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\starter.cpp:5:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:1463:5: note: candidate: 'template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::map<_Key, _Tp, _Compare, _Allocator>&, const std::map<_Key, _Tp, _Compare, _Allocator>&)'
+ 1463 |     operator==(const map<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:1463:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::map<_Key, _Tp, _Compare, _Allocator>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:62,
+                 from ..\src\starter.cpp:5:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multimap.h:1128:5: note: candidate: 'template<class _Key, class _Tp, class _Compare, class _Alloc> bool std::operator==(const std::multimap<_Key, _Tp, _Compare, _Allocator>&, const std::multimap<_Key, _Tp, _Compare, _Allocator>&)'
+ 1128 |     operator==(const multimap<_Key, _Tp, _Compare, _Alloc>& __x,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_multimap.h:1128:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const std::multimap<_Key, _Tp, _Compare, _Allocator>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1121:5: note: candidate: 'template<class _IteratorL, class _IteratorR, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_IteratorL, _Container>&, const __gnu_cxx::__normal_iterator<_IteratorR, _Container>&)'
+ 1121 |     operator==(const __normal_iterator<_IteratorL, _Container>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1121:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const __gnu_cxx::__normal_iterator<_IteratorL, _Container>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_algobase.h:67,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:39,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1129:5: note: candidate: 'template<class _Iterator, class _Container> bool __gnu_cxx::operator==(const __gnu_cxx::__normal_iterator<_Iterator, _Container>&, const __gnu_cxx::__normal_iterator<_Iterator, _Container>&)'
+ 1129 |     operator==(const __normal_iterator<_Iterator, _Container>& __lhs,
+      |     ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_iterator.h:1129:5: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   'const string' {aka 'const std::__cxx11::basic_string<char>'} is not derived from 'const __gnu_cxx::__normal_iterator<_Iterator, _Container>'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\x86_64-w64-mingw32\bits\c++allocator.h:33,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:46,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:41,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\ext\new_allocator.h:183:9: note: candidate: 'template<class _Up> bool __gnu_cxx::operator==(const __gnu_cxx::new_allocator<char>&, const __gnu_cxx::new_allocator<_Tp>&)'
+  183 |         operator==(const new_allocator&, const new_allocator<_Up>&)
+      |         ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\ext\new_allocator.h:183:9: note:   template argument deduction/substitution failed:
+In file included from d:\eclipse\mingw64\x86_64-w64-mingw32\include\stdint.h:32,
+                 from d:\eclipse\mingw64\lib\gcc\x86_64-w64-mingw32\11.2.0\include\stdint.h:9,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\cstdint:41,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\bits\char_traits.h:699,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\string:40,
+                 from ..\src\starter.cpp:1:
+..\src\starter.cpp:59:23: note:   mismatched types 'const __gnu_cxx::new_allocator<_Tp>' and 'long long int'
+   59 |         if (r.stop == NULL) {
+      |                       ^~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\bits\ios_base.h:46,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ios:42,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\ostream:38,
+                 from d:\eclipse\mingw64\include\c++\11.2.0\iostream:39,
+                 from ..\src\starter.cpp:2:
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:344:3: note: candidate: 'bool std::operator==(const std::error_code&, const std::error_code&)'
+  344 |   operator==(const error_code& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:344:32: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_code&'
+  344 |   operator==(const error_code& __lhs, const error_code& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:351:3: note: candidate: 'bool std::operator==(const std::error_code&, const std::error_condition&)'
+  351 |   operator==(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:351:32: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_code&'
+  351 |   operator==(const error_code& __lhs, const error_condition& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:359:3: note: candidate: 'bool std::operator==(const std::error_condition&, const std::error_condition&)'
+  359 |   operator==(const error_condition& __lhs,
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:359:37: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_condition&'
+  359 |   operator==(const error_condition& __lhs,
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:392:3: note: candidate: 'bool std::operator==(const std::error_condition&, const std::error_code&)'
+  392 |   operator==(const error_condition& __lhs, const error_code& __rhs) noexcept
+      |   ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\system_error:392:37: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::error_condition&'
+  392 |   operator==(const error_condition& __lhs, const error_code& __rhs) noexcept
+      |              ~~~~~~~~~~~~~~~~~~~~~~~^~~~~
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\string:41,
+                 from ..\src\starter.cpp:1:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:216:7: note: candidate: 'bool std::operator==(const std::allocator<char>&, const std::allocator<char>&)'
+  216 |       operator==(const allocator&, const allocator&) _GLIBCXX_NOTHROW
+      |       ^~~~~~~~
+d:\eclipse\mingw64\include\c++\11.2.0\bits\allocator.h:216:18: note:   no known conversion for argument 1 from 'const string' {aka 'const std::__cxx11::basic_string<char>'} to 'const std::allocator<char>&'
+  216 |       operator==(const allocator&, const allocator&) _GLIBCXX_NOTHROW
+      |                  ^~~~~~~~~~~~~~~~
+23:33:01 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+g++ -o Decomposition.exe "src\\Decomposition.o" "src\\starter.o" 
+d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\starter.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/starter.cpp:127: multiple definition of `main'; src\Decomposition.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/Decomposition.cpp:8: first defined here
+collect2.exe: error: ld returned 1 exit status
+23:34:15 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+g++ -o Decomposition.exe "src\\Decomposition.o" "src\\starter.o" 
+d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\starter.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/starter.cpp:129: multiple definition of `main'; src\Decomposition.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/Decomposition.cpp:8: first defined here
+collect2.exe: error: ld returned 1 exit status
+23:43:09 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In function 'std::ostream& operator<<(std::ostream&, const StopsForBusResponse&)':
+..\src\starter.cpp:80:63: error: 'bus' was not declared in this scope
+   80 |                 for (const string& stop : r.buses_to_stops.at(bus)) {
+      |                                                               ^~~
+..\src\starter.cpp:82:29: error: 'stops_to_buses' was not declared in this scope
+   82 |                         if (stops_to_buses[stop].size() == 1) {
+      |                             ^~~~~~~~~~~~~~
+23:44:46 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In function 'std::ostream& operator<<(std::ostream&, const StopsForBusResponse&)':
+..\src\starter.cpp:83:29: error: 'stops_to_buses' was not declared in this scope
+   83 |                         if (stops_to_buses[stop].size() == 1) {
+      |                             ^~~~~~~~~~~~~~
+..\src\starter.cpp:87:45: error: 'bus' was not declared in this scope
+   87 |                                         if (bus != other_bus) {
+      |                                             ^~~
+23:45:04 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In function 'std::ostream& operator<<(std::ostream&, const StopsForBusResponse&)':
+..\src\starter.cpp:83:50: error: passing 'const std::map<std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > >' as 'this' argument discards qualifiers [-fpermissive]
+   83 |                         if (r.stops_to_buses[stop].size() == 1) {
+      |                                                  ^
+In file included from d:\eclipse\mingw64\include\c++\11.2.0\map:61,
+                 from ..\src\starter.cpp:5:
+d:\eclipse\mingw64\include\c++\11.2.0\bits\stl_map.h:492:7: note:   in call to 'std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type& std::map<_Key, _Tp, _Compare, _Alloc>::operator[](const key_type&) [with _Key = std::__cxx11::basic_string<char>; _Tp = std::vector<std::__cxx11::basic_string<char> >; _Compare = std::less<std::__cxx11::basic_string<char> >; _Alloc = std::allocator<std::pair<const std::__cxx11::basic_string<char>, std::vector<std::__cxx11::basic_string<char> > > >; std::map<_Key, _Tp, _Compare, _Alloc>::mapped_type = std::vector<std::__cxx11::basic_string<char> >; std::map<_Key, _Tp, _Compare, _Alloc>::key_type = std::__cxx11::basic_string<char>]'
+  492 |       operator[](const key_type& __k)
+      |       ^~~~~~~~
+..\src\starter.cpp:86:64: error: 'stops_to_buses' was not declared in this scope
+   86 |                                 for (const string& other_bus : stops_to_buses[stop]) {
+      |                                                                ^~~~~~~~~~~~~~
+..\src\starter.cpp:87:45: error: 'bus' was not declared in this scope
+   87 |                                         if (bus != other_bus) {
+      |                                             ^~~
+23:45:22 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In function 'std::ostream& operator<<(std::ostream&, const StopsForBusResponse&)':
+..\src\starter.cpp:86:64: error: 'stops_to_buses' was not declared in this scope
+   86 |                                 for (const string& other_bus : stops_to_buses[stop]) {
+      |                                                                ^~~~~~~~~~~~~~
+..\src\starter.cpp:87:45: error: 'bus' was not declared in this scope
+   87 |                                         if (bus != other_bus) {
+      |                                             ^~~
+23:45:42 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+..\src\starter.cpp: In function 'std::ostream& operator<<(std::ostream&, const StopsForBusResponse&)':
+..\src\starter.cpp:87:45: error: 'bus' was not declared in this scope
+   87 |                                         if (bus != other_bus) {
+      |                                             ^~~
+23:45:53 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+g++ -o Decomposition.exe "src\\Decomposition.o" "src\\starter.o" 
+d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\starter.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/starter.cpp:147: multiple definition of `main'; src\Decomposition.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/Decomposition.cpp:8: first defined here
+collect2.exe: error: ld returned 1 exit status
+23:50:22 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+g++ -o Decomposition.exe "src\\Decomposition.o" "src\\starter.o" 
+d:/eclipse/mingw64/bin/../lib/gcc/x86_64-w64-mingw32/11.2.0/../../../../x86_64-w64-mingw32/bin/ld.exe: src\starter.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/starter.cpp:158: multiple definition of `main'; src\Decomposition.o:C:\Users\SeltikeS\eclipse-workspace\Decomposition\Debug/../src/Decomposition.cpp:8: first defined here
+collect2.exe: error: ld returned 1 exit status
+23:50:45 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -o Decomposition.exe "src\\starter.o" 
+Info: Nothing to build for Decomposition
+Info: Nothing to build for Decomposition
+Info: Nothing to build for Decomposition
+14:11:12 **** Incremental Build of configuration Debug for project Decomposition ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\starter.o" "..\\src\\starter.cpp" 
+g++ -o Decomposition.exe "src\\starter.o" 
+14:11:15 **** Rebuild of configuration Debug for project test_equation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_equation.o" "..\\src\\test_equation.cpp" 
+..\src\test_equation.cpp: In function 'int GetDistinctRealRootCount(double, double, double)':
+..\src\test_equation.cpp:100:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  100 | }
+      | ^
+g++ -o test_equation.exe "src\\test_equation.o" 
+14:47:03 **** Incremental Build of configuration Debug for project test_equation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_equation.o" "..\\src\\test_equation.cpp" 
+..\src\test_equation.cpp: In function 'int GetDistinctRealRootCount(double, double, double)':
+..\src\test_equation.cpp:121:45: error: 'sqrt' was not declared in this scope
+  121 |                         double x1 = (-1*b + sqrt(d)) / (2*a);
+      |                                             ^~~~
+..\src\test_equation.cpp:121:32: warning: unused variable 'x1' [-Wunused-variable]
+  121 |                         double x1 = (-1*b + sqrt(d)) / (2*a);
+      |                                ^~
+..\src\test_equation.cpp:123:32: warning: unused variable 'x2' [-Wunused-variable]
+  123 |                         double x2 = (-1*b - sqrt(d)) / (2*a);
+      |                                ^~
+..\src\test_equation.cpp:128:32: warning: unused variable 'x' [-Wunused-variable]
+  128 |                         double x = -1*b / (2*a);
+      |                                ^
+..\src\test_equation.cpp: In function 'void TestAll(const TestRunner&)':
+..\src\test_equation.cpp:158:19: error: passing 'const TestRunner' as 'this' argument discards qualifiers [-fpermissive]
+  158 |         tr.RunTest(TestZeroAPosBPosC, "TestZeroAPosBPosC");
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\test_equation.cpp:76:8: note:   in call to 'void TestRunner::RunTest(TestFunc, const string&) [with TestFunc = void (*)(); std::string = std::__cxx11::basic_string<char>]'
+   76 |   void RunTest(TestFunc func, const string& test_name) {
+      |        ^~~~~~~
+14:47:26 **** Incremental Build of configuration Debug for project test_equation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_equation.o" "..\\src\\test_equation.cpp" 
+..\src\test_equation.cpp: In function 'int GetDistinctRealRootCount(double, double, double)':
+..\src\test_equation.cpp:122:32: warning: unused variable 'x1' [-Wunused-variable]
+  122 |                         double x1 = (-1*b + sqrt(d)) / (2*a);
+      |                                ^~
+..\src\test_equation.cpp:124:32: warning: unused variable 'x2' [-Wunused-variable]
+  124 |                         double x2 = (-1*b - sqrt(d)) / (2*a);
+      |                                ^~
+..\src\test_equation.cpp:129:32: warning: unused variable 'x' [-Wunused-variable]
+  129 |                         double x = -1*b / (2*a);
+      |                                ^
+..\src\test_equation.cpp: In function 'void TestAll(const TestRunner&)':
+..\src\test_equation.cpp:159:19: error: passing 'const TestRunner' as 'this' argument discards qualifiers [-fpermissive]
+  159 |         tr.RunTest(TestZeroAPosBPosC, "TestZeroAPosBPosC");
+      |         ~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\test_equation.cpp:77:8: note:   in call to 'void TestRunner::RunTest(TestFunc, const string&) [with TestFunc = void (*)(); std::string = std::__cxx11::basic_string<char>]'
+   77 |   void RunTest(TestFunc func, const string& test_name) {
+      |        ^~~~~~~
+14:48:04 **** Incremental Build of configuration Debug for project test_equation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_equation.o" "..\\src\\test_equation.cpp" 
+..\src\test_equation.cpp: In function 'int GetDistinctRealRootCount(double, double, double)':
+..\src\test_equation.cpp:122:32: warning: unused variable 'x1' [-Wunused-variable]
+  122 |                         double x1 = (-1*b + sqrt(d)) / (2*a);
+      |                                ^~
+..\src\test_equation.cpp:124:32: warning: unused variable 'x2' [-Wunused-variable]
+  124 |                         double x2 = (-1*b - sqrt(d)) / (2*a);
+      |                                ^~
+..\src\test_equation.cpp:129:32: warning: unused variable 'x' [-Wunused-variable]
+  129 |                         double x = -1*b / (2*a);
+      |                                ^
+g++ -o test_equation.exe "src\\test_equation.o" 
+14:48:31 **** Incremental Build of configuration Debug for project test_equation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_equation.o" "..\\src\\test_equation.cpp" 
+g++ -o test_equation.exe "src\\test_equation.o" 
+Info: Nothing to build for test_equation
+14:49:28 **** Incremental Build of configuration Debug for project test_equation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_equation.o" "..\\src\\test_equation.cpp" 
+g++ -o test_equation.exe "src\\test_equation.o" 
+Info: Nothing to build for test_equation
+14:49:58 **** Incremental Build of configuration Debug for project test_equation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_equation.o" "..\\src\\test_equation.cpp" 
+g++ -o test_equation.exe "src\\test_equation.o" 
+14:51:20 **** Incremental Build of configuration Debug for project test_equation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_equation.o" "..\\src\\test_equation.cpp" 
+g++ -o test_equation.exe "src\\test_equation.o" 
+15:01:15 **** Incremental Build of configuration Debug for project test_equation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_equation.o" "..\\src\\test_equation.cpp" 
+..\src\test_equation.cpp: In function 'void TestAll(TestRunner&)':
+..\src\test_equation.cpp:183:20: error: 'TestZeroAZeroBPosC' was not declared in this scope; did you mean 'TestZeroAZeroC'?
+  183 |         tr.RunTest(TestZeroAZeroBPosC, "TestZeroAZeroBPosC");
+      |                    ^~~~~~~~~~~~~~~~~~
+      |                    TestZeroAZeroC
+15:02:50 **** Incremental Build of configuration Debug for project test_equation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_equation.o" "..\\src\\test_equation.cpp" 
+g++ -o test_equation.exe "src\\test_equation.o" 
+Info: Nothing to build for test_equation
+15:03:13 **** Incremental Build of configuration Debug for project test_equation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_equation.o" "..\\src\\test_equation.cpp" 
+g++ -o test_equation.exe "src\\test_equation.o" 
+Info: Nothing to build for test_equation
+15:03:23 **** Incremental Build of configuration Debug for project test_equation ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_equation.o" "..\\src\\test_equation.cpp" 
+g++ -o test_equation.exe "src\\test_equation.o" 
+15:05:47 **** Rebuild of configuration Debug for project GetDistinctRealRootCount ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetDistinctRealRootCount.o" "..\\src\\GetDistinctRealRootCount.cpp" 
+g++ -o GetDistinctRealRootCount.exe "src\\GetDistinctRealRootCount.o" 
+15:07:57 **** Incremental Build of configuration Debug for project GetDistinctRealRootCount ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetDistinctRealRootCount.o" "..\\src\\GetDistinctRealRootCount.cpp" 
+g++ -o GetDistinctRealRootCount.exe "src\\GetDistinctRealRootCount.o" 
+15:13:19 **** Rebuild of configuration Debug for project test_GetDistinctRealRootCount ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_GetDistinctRealRootCount.o" "..\\src\\test_GetDistinctRealRootCount.cpp" 
+g++ -o test_GetDistinctRealRootCount.exe "src\\test_GetDistinctRealRootCount.o" 
+Info: Nothing to build for test_GetDistinctRealRootCount
+15:21:02 **** Rebuild of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+..\src\test_person.cpp: In function 'void TestZeroA()':
+..\src\test_person.cpp:168:21: error: 'GetDistinctRealRootCount' was not declared in this scope
+  168 |         AssertEqual(GetDistinctRealRootCount(0, 1, 1), 1, "Test zero A pos B pos C");
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+Info: Nothing to build for test_GetDistinctRealRootCount
+15:37:15 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+..\src\test_person.cpp: In function 'void TestChangeLastName()':
+..\src\test_person.cpp:179:21: error: 'GetDistinctRealRootCount' was not declared in this scope
+  179 |         AssertEqual(GetDistinctRealRootCount(0, 1, 1), 1, "Test zero A pos B pos C");
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\test_person.cpp: In function 'void TestGetFullName()':
+..\src\test_person.cpp:184:21: error: 'GetDistinctRealRootCount' was not declared in this scope
+  184 |         AssertEqual(GetDistinctRealRootCount(0, 1, 1), 1, "Test zero A pos B pos C");
+      |                     ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\test_person.cpp: In function 'void TestAll(TestRunner&)':
+..\src\test_person.cpp:196:20: error: 'TestZeroA' was not declared in this scope
+  196 |         tr.RunTest(TestZeroA, "TestZeroA");
+      |                    ^~~~~~~~~
+Info: Nothing to build for test_GetDistinctRealRootCount
+15:38:15 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+Info: Nothing to build for test_person
+Info: Nothing to build for test_GetDistinctRealRootCount
+15:38:47 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+Info: Nothing to build for test_person
+Info: Nothing to build for test_GetDistinctRealRootCount
+15:42:19 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+Info: Nothing to build for test_person
+15:42:28 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+15:42:37 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+15:45:04 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+..\src\test_person.cpp: In function 'void TestChangeLastName()':
+..\src\test_person.cpp:182:9: error: 'p' was not declared in this scope
+  182 |         p.ChangeLastName(1990, "Frolova");
+      |         ^
+Info: Nothing to build for test_GetDistinctRealRootCount
+15:45:17 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+Info: Nothing to build for test_GetDistinctRealRootCount
+15:46:00 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+Info: Nothing to build for test_person
+Info: Nothing to build for test_GetDistinctRealRootCount
+15:46:17 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+Info: Nothing to build for test_GetDistinctRealRootCount
+15:46:26 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+Info: Nothing to build for test_person
+15:46:32 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+15:46:46 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+15:46:58 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+15:47:09 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+Info: Nothing to build for test_GetDistinctRealRootCount
+15:52:59 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+g++ -o test_person.exe "src\\test_person.o" 
+Info: Nothing to build for test_person
+Info: Nothing to build for test_GetDistinctRealRootCount
+15:55:16 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+..\src\test_person.cpp: In function 'void TestChangeFirstName()':
+..\src\test_person.cpp:168:9: error: 'Person' was not declared in this scope
+  168 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:169:9: error: 'p' was not declared in this scope
+  169 |         p.ChangeFirstName(1990, "Polina");
+      |         ^
+..\src\test_person.cpp: In function 'void TestChangeLastName()':
+..\src\test_person.cpp:182:9: error: 'Person' was not declared in this scope
+  182 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:183:9: error: 'p' was not declared in this scope
+  183 |         p.ChangeLastName(1990, "Frolova");
+      |         ^
+..\src\test_person.cpp: In function 'void TestGetFullName()':
+..\src\test_person.cpp:195:9: error: 'Person' was not declared in this scope
+  195 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:196:21: error: 'p' was not declared in this scope
+  196 |         AssertEqual(p.GetFullName(1990), "Incognito", "Test zero Person");
+      |                     ^
+Info: Nothing to build for test_GetDistinctRealRootCount
+15:58:56 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+..\src\test_person.cpp: In function 'void TestChangeFirstName()':
+..\src\test_person.cpp:168:9: error: 'Person' was not declared in this scope
+  168 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:169:9: error: 'p' was not declared in this scope
+  169 |         p.ChangeFirstName(1990, "Polina");
+      |         ^
+..\src\test_person.cpp: In function 'void TestChangeLastName()':
+..\src\test_person.cpp:182:9: error: 'Person' was not declared in this scope
+  182 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:183:9: error: 'p' was not declared in this scope
+  183 |         p.ChangeLastName(1990, "Frolova");
+      |         ^
+..\src\test_person.cpp: In function 'void TestGetFullName()':
+..\src\test_person.cpp:195:9: error: 'Person' was not declared in this scope
+  195 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:196:21: error: 'p' was not declared in this scope
+  196 |         AssertEqual(p.GetFullName(1990), "Incognito", "Test zero Person");
+      |                     ^
+18:19:14 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+..\src\test_person.cpp: In function 'void TestChangeFirstName()':
+..\src\test_person.cpp:168:9: error: 'Person' was not declared in this scope
+  168 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:169:9: error: 'p' was not declared in this scope
+  169 |         p.ChangeFirstName(1990, "Polina");
+      |         ^
+..\src\test_person.cpp: In function 'void TestChangeLastName()':
+..\src\test_person.cpp:182:9: error: 'Person' was not declared in this scope
+  182 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:183:9: error: 'p' was not declared in this scope
+  183 |         p.ChangeLastName(1990, "Frolova");
+      |         ^
+..\src\test_person.cpp: In function 'void TestGetFullName()':
+..\src\test_person.cpp:195:9: error: 'Person' was not declared in this scope
+  195 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:196:21: error: 'p' was not declared in this scope
+  196 |         AssertEqual(p.GetFullName(1990), "Incognito", "Test zero Person");
+      |                     ^
+18:19:14 **** Rebuild of configuration Debug for project test_rational ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_rational.o" "..\\src\\test_rational.cpp" 
+..\src\test_rational.cpp: In constructor 'Rational::Rational(int, int)':
+..\src\test_rational.cpp:111:49: error: 'gcd' was not declared in this scope
+  111 |                         m_numerator(numerator / gcd(numerator, denominator)),
+      |                                                 ^~~
+..\src\test_rational.cpp: In function 'void TestNegativeNumbers()':
+..\src\test_rational.cpp:221:18: error: redeclaration of 'Rational r'
+  221 |         Rational r(6, -8);
+      |                  ^
+..\src\test_rational.cpp:217:18: note: 'Rational r' previously declared here
+  217 |         Rational r(-4, 6);
+      |                  ^
+..\src\test_rational.cpp:225:18: error: redeclaration of 'Rational r'
+  225 |         Rational r(-10, -12);
+      |                  ^
+..\src\test_rational.cpp:217:18: note: 'Rational r' previously declared here
+  217 |         Rational r(-4, 6);
+      |                  ^
+18:19:27 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+..\src\test_person.cpp: In function 'void TestChangeFirstName()':
+..\src\test_person.cpp:168:9: error: 'Person' was not declared in this scope
+  168 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:169:9: error: 'p' was not declared in this scope
+  169 |         p.ChangeFirstName(1990, "Polina");
+      |         ^
+..\src\test_person.cpp: In function 'void TestChangeLastName()':
+..\src\test_person.cpp:182:9: error: 'Person' was not declared in this scope
+  182 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:183:9: error: 'p' was not declared in this scope
+  183 |         p.ChangeLastName(1990, "Frolova");
+      |         ^
+..\src\test_person.cpp: In function 'void TestGetFullName()':
+..\src\test_person.cpp:195:9: error: 'Person' was not declared in this scope
+  195 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:196:21: error: 'p' was not declared in this scope
+  196 |         AssertEqual(p.GetFullName(1990), "Incognito", "Test zero Person");
+      |                     ^
+18:19:27 **** Incremental Build of configuration Debug for project test_rational ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_rational.o" "..\\src\\test_rational.cpp" 
+..\src\test_rational.cpp: In constructor 'Rational::Rational(int, int)':
+..\src\test_rational.cpp:111:49: error: 'gcd' was not declared in this scope
+  111 |                         m_numerator(numerator / gcd(numerator, denominator)),
+      |                                                 ^~~
+18:23:40 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+..\src\test_person.cpp: In function 'void TestChangeFirstName()':
+..\src\test_person.cpp:168:9: error: 'Person' was not declared in this scope
+  168 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:169:9: error: 'p' was not declared in this scope
+  169 |         p.ChangeFirstName(1990, "Polina");
+      |         ^
+..\src\test_person.cpp: In function 'void TestChangeLastName()':
+..\src\test_person.cpp:182:9: error: 'Person' was not declared in this scope
+  182 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:183:9: error: 'p' was not declared in this scope
+  183 |         p.ChangeLastName(1990, "Frolova");
+      |         ^
+..\src\test_person.cpp: In function 'void TestGetFullName()':
+..\src\test_person.cpp:195:9: error: 'Person' was not declared in this scope
+  195 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:196:21: error: 'p' was not declared in this scope
+  196 |         AssertEqual(p.GetFullName(1990), "Incognito", "Test zero Person");
+      |                     ^
+18:23:41 **** Incremental Build of configuration Debug for project test_rational ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_rational.o" "..\\src\\test_rational.cpp" 
+..\src\test_rational.cpp: In constructor 'Rational::Rational(int, int)':
+..\src\test_rational.cpp:111:49: error: 'gcd' was not declared in this scope
+  111 |                         m_numerator(numerator / gcd(numerator, denominator)),
+      |                                                 ^~~
+18:24:27 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+..\src\test_person.cpp: In function 'void TestChangeFirstName()':
+..\src\test_person.cpp:168:9: error: 'Person' was not declared in this scope
+  168 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:169:9: error: 'p' was not declared in this scope
+  169 |         p.ChangeFirstName(1990, "Polina");
+      |         ^
+..\src\test_person.cpp: In function 'void TestChangeLastName()':
+..\src\test_person.cpp:182:9: error: 'Person' was not declared in this scope
+  182 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:183:9: error: 'p' was not declared in this scope
+  183 |         p.ChangeLastName(1990, "Frolova");
+      |         ^
+..\src\test_person.cpp: In function 'void TestGetFullName()':
+..\src\test_person.cpp:195:9: error: 'Person' was not declared in this scope
+  195 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:196:21: error: 'p' was not declared in this scope
+  196 |         AssertEqual(p.GetFullName(1990), "Incognito", "Test zero Person");
+      |                     ^
+18:24:28 **** Incremental Build of configuration Debug for project test_rational ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_rational.o" "..\\src\\test_rational.cpp" 
+..\src\test_rational.cpp: In constructor 'Rational::Rational(int, int)':
+..\src\test_rational.cpp:111:49: error: 'gcd' was not declared in this scope
+  111 |                         m_numerator(numerator / gcd(numerator, denominator)),
+      |                                                 ^~~
+18:24:48 **** Incremental Build of configuration Debug for project test_person ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_person.o" "..\\src\\test_person.cpp" 
+..\src\test_person.cpp: In function 'void TestChangeFirstName()':
+..\src\test_person.cpp:168:9: error: 'Person' was not declared in this scope
+  168 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:169:9: error: 'p' was not declared in this scope
+  169 |         p.ChangeFirstName(1990, "Polina");
+      |         ^
+..\src\test_person.cpp: In function 'void TestChangeLastName()':
+..\src\test_person.cpp:182:9: error: 'Person' was not declared in this scope
+  182 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:183:9: error: 'p' was not declared in this scope
+  183 |         p.ChangeLastName(1990, "Frolova");
+      |         ^
+..\src\test_person.cpp: In function 'void TestGetFullName()':
+..\src\test_person.cpp:195:9: error: 'Person' was not declared in this scope
+  195 |         Person p;
+      |         ^~~~~~
+..\src\test_person.cpp:196:21: error: 'p' was not declared in this scope
+  196 |         AssertEqual(p.GetFullName(1990), "Incognito", "Test zero Person");
+      |                     ^
+18:24:48 **** Incremental Build of configuration Debug for project test_rational ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_rational.o" "..\\src\\test_rational.cpp" 
+g++ -o test_rational.exe "src\\test_rational.o" 
+Info: Nothing to build for test_rational
+Info: Nothing to build for test_rational
+18:27:13 **** Incremental Build of configuration Debug for project test_rational ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_rational.o" "..\\src\\test_rational.cpp" 
+..\src\test_rational.cpp: In function 'void TestDefault()':
+..\src\test_rational.cpp:204:9: error: 'Rational' was not declared in this scope
+  204 |         Rational r;
+      |         ^~~~~~~~
+..\src\test_rational.cpp:205:21: error: 'r' was not declared in this scope
+  205 |         AssertEqual(r.Numerator(), 0, "Test default Numerator");
+      |                     ^
+..\src\test_rational.cpp: In function 'void TestFractionReduction()':
+..\src\test_rational.cpp:211:9: error: 'Rational' was not declared in this scope
+  211 |         Rational r(4, 6);
+      |         ^~~~~~~~
+..\src\test_rational.cpp:212:21: error: 'r' was not declared in this scope
+  212 |         AssertEqual(r.Numerator(), 2, "Test fraction reduction Numerator");
+      |                     ^
+..\src\test_rational.cpp: In function 'void TestNegativeNumbers()':
+..\src\test_rational.cpp:218:9: error: 'Rational' was not declared in this scope
+  218 |         Rational r1(-4, 6);
+      |         ^~~~~~~~
+..\src\test_rational.cpp:219:21: error: 'r1' was not declared in this scope
+  219 |         AssertEqual(r1.Numerator(), -2, "Test negative Numerator with positive Denominator");
+      |                     ^~
+..\src\test_rational.cpp:222:17: error: expected ';' before 'r2'
+  222 |         Rational r2(6, -8);
+      |                 ^~~
+      |                 ;
+..\src\test_rational.cpp:223:21: error: 'r2' was not declared in this scope
+  223 |         AssertEqual(r2.Numerator(), -3, "Test positive Numerator with negative Denominator");
+      |                     ^~
+..\src\test_rational.cpp:226:17: error: expected ';' before 'r3'
+  226 |         Rational r3(-10, -12);
+      |                 ^~~
+      |                 ;
+..\src\test_rational.cpp:227:21: error: 'r3' was not declared in this scope
+  227 |         AssertEqual(r3.Numerator(), 5, "Test negative Numerator with negative Denominator");
+      |                     ^~
+..\src\test_rational.cpp: In function 'void TestZero()':
+..\src\test_rational.cpp:234:9: error: 'Rational' was not declared in this scope
+  234 |         Rational r(0, 5);
+      |         ^~~~~~~~
+..\src\test_rational.cpp:235:21: error: 'r' was not declared in this scope
+  235 |         AssertEqual(r.Numerator(), 0, "Test zero Numerator");
+      |                     ^
+18:45:42 **** Rebuild of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+..\src\test_palindrome.cpp: In function 'bool IsPalindrom(const string&)':
+..\src\test_palindrome.cpp:112:1: warning: no return statement in function returning non-void [-Wreturn-type]
+  112 | }
+      | ^
+..\src\test_palindrome.cpp: In function 'void TestDefault()':
+..\src\test_palindrome.cpp:122:9: error: 'Rational' was not declared in this scope
+  122 |         Rational r;
+      |         ^~~~~~~~
+..\src\test_palindrome.cpp:123:21: error: 'r' was not declared in this scope
+  123 |         AssertEqual(r.Numerator(), 0, "Test default Numerator");
+      |                     ^
+18:50:54 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+..\src\test_palindrome.cpp: In function 'bool IsPalindrom(const string&)':
+..\src\test_palindrome.cpp:110:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  110 |         for (int i = 0; i < str.size() / 2; ++i) {
+      |                         ~~^~~~~~~~~~~~~~~~
+..\src\test_palindrome.cpp: In function 'void TestDefault()':
+..\src\test_palindrome.cpp:127:9: error: 'Rational' was not declared in this scope
+  127 |         Rational r;
+      |         ^~~~~~~~
+..\src\test_palindrome.cpp:128:21: error: 'r' was not declared in this scope
+  128 |         AssertEqual(r.Numerator(), 0, "Test default Numerator");
+      |                     ^
+18:52:50 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+..\src\test_palindrome.cpp: In function 'bool IsPalindrom(const string&)':
+..\src\test_palindrome.cpp:110:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  110 |         for (int i = 0; i < str.size() / 2; ++i) {
+      |                         ~~^~~~~~~~~~~~~~~~
+..\src\test_palindrome.cpp: In function 'void TestAll(TestRunner&)':
+..\src\test_palindrome.cpp:138:20: error: 'TestDefault' was not declared in this scope
+  138 |         tr.RunTest(TestDefault, "TestDefault");
+      |                    ^~~~~~~~~~~
+18:53:08 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+..\src\test_palindrome.cpp: In function 'bool IsPalindrom(const string&)':
+..\src\test_palindrome.cpp:110:27: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+  110 |         for (int i = 0; i < str.size() / 2; ++i) {
+      |                         ~~^~~~~~~~~~~~~~~~
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+18:53:31 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+18:56:29 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+18:58:50 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+18:58:57 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+19:01:06 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+..\src\test_palindrome.cpp:133:1: error: 'Void' does not name a type; did you mean 'void'?
+  133 | Void TestSimplePalindrome()
+      | ^~~~
+      | void
+..\src\test_palindrome.cpp: In function 'void TestAll(TestRunner&)':
+..\src\test_palindrome.cpp:152:20: error: 'TestSimplePalindrome' was not declared in this scope
+  152 |         tr.RunTest(TestSimplePalindrome, "TestSimplePalindrome");
+      |                    ^~~~~~~~~~~~~~~~~~~~
+19:01:26 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+19:07:39 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+19:08:01 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+19:08:27 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+..\src\test_palindrome.cpp: In function 'void TestSimpleString()':
+..\src\test_palindrome.cpp:127:16: error: 'IsPalindrom' was not declared in this scope
+  127 |         Assert(IsPalindrom(""), "Test void string is palindrom");
+      |                ^~~~~~~~~~~
+..\src\test_palindrome.cpp: In function 'void TestSimplePalindrome()':
+..\src\test_palindrome.cpp:135:16: error: 'IsPalindrom' was not declared in this scope
+  135 |         Assert(IsPalindrom("abcba"), "Simple palindrome");
+      |                ^~~~~~~~~~~
+..\src\test_palindrome.cpp: In function 'void TestErrors()':
+..\src\test_palindrome.cpp:141:17: error: 'IsPalindrom' was not declared in this scope
+  141 |         Assert(!IsPalindrom("abcb"), "Ignore last symbol");
+      |                 ^~~~~~~~~~~
+19:08:35 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+19:14:39 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+19:17:00 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+19:19:06 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+19:21:42 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+19:23:37 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+..\src\test_palindrome.cpp: In function 'void TestAll(TestRunner&)':
+..\src\test_palindrome.cpp:166:20: error: 'TestVoidString' was not declared in this scope
+  166 |         tr.RunTest(TestVoidString, "TestVoidString");
+      |                    ^~~~~~~~~~~~~~
+19:23:45 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+19:28:28 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+19:30:24 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+19:30:34 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+19:30:40 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+19:30:43 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+19:30:50 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+19:31:40 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+19:35:55 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+19:36:04 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+19:38:04 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+19:45:11 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+..\src\test_palindrome.cpp: In function 'void TestVoidString()':
+..\src\test_palindrome.cpp:127:9: error: 'AssertEquel' was not declared in this scope; did you mean 'AssertEqual'?
+  127 |         AssertEquel(IsPalindrom(""), true , "Test void string is palindrom");
+      |         ^~~~~~~~~~~
+      |         AssertEqual
+19:45:30 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+19:47:26 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+19:47:48 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+..\src\test_palindrome.cpp: In function 'void TestVoidString()':
+..\src\test_palindrome.cpp:127:21: error: 'IsPalindrom' was not declared in this scope
+  127 |         AssertEqual(IsPalindrom(""), true , "Test void string is palindrom");
+      |                     ^~~~~~~~~~~
+..\src\test_palindrome.cpp: In function 'void TestSingleSymbolString()':
+..\src\test_palindrome.cpp:132:16: error: 'IsPalindrom' was not declared in this scope
+  132 |         Assert(IsPalindrom("a"), "Test single symbol string is palindrom");
+      |                ^~~~~~~~~~~
+..\src\test_palindrome.cpp: In function 'void TestSpaceIgnore()':
+..\src\test_palindrome.cpp:137:16: error: 'IsPalindrom' was not declared in this scope
+  137 |         Assert(IsPalindrom("a   a"), "Test spaces not ignored");
+      |                ^~~~~~~~~~~
+..\src\test_palindrome.cpp: In function 'void TestSimplePalindrome()':
+..\src\test_palindrome.cpp:142:16: error: 'IsPalindrom' was not declared in this scope
+  142 |         Assert(IsPalindrom("abcba"), "Simple palindrome");
+      |                ^~~~~~~~~~~
+..\src\test_palindrome.cpp: In function 'void TestErrors()':
+..\src\test_palindrome.cpp:148:17: error: 'IsPalindrom' was not declared in this scope
+  148 |         Assert(!IsPalindrom("abcb"), "Ignore last symbol");
+      |                 ^~~~~~~~~~~
+19:54:03 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+22:15:27 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+22:18:58 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+22:24:25 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+22:25:22 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+Info: Nothing to build for test_palindrome
+22:27:45 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
+22:27:53 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+22:30:27 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+22:35:25 **** Incremental Build of configuration Debug for project test_palindrome ****
+Info: Internal Builder is used for build
+g++ -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\test_palindrome.o" "..\\src\\test_palindrome.cpp" 
+g++ -o test_palindrome.exe "src\\test_palindrome.o" 
+Info: Nothing to build for test_palindrome
