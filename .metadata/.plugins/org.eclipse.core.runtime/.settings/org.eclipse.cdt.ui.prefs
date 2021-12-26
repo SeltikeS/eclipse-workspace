@@ -1,5 +1,6 @@
 content_assist_autoactivation_delay=0
 eclipse.preferences.version=1
+org.eclipse.cdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates><template autoinsert\="false" context\="org.eclipse.cdt.core.cxxHeader.contenttype_context" deleted\="false" description\="Default template for newly created C++ header files" enabled\="true" id\="org.eclipse.cdt.ui.text.codetemplates.cppheaderfile" name\="Default C++ header template">${filecomment}\r\n\#pragma once\r\n\r\n${includes}\r\n\r\n${namespace_begin}\r\n\r\n${declarations}\r\n\r\n${namespace_end}\r\n\r\n</template></templates>
 scalability.detect=false
 spelling_locale_initialized=true
 spelling_user_dictionary_encoding=
